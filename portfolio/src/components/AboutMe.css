@@ -1,0 +1,98 @@
+.about-me-video-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.about-me-bg-vid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 105%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.sound-icon {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.about-me-container:hover .sound-icon {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.about-me-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  z-index: 1;
+  pointer-events: none;
+  text-align: center;
+}
+
+.about-me-text h1{
+  font-size: 7rem;
+}
+
+.about-me-text h2{
+  font-size: 1.5rem;
+  margin:0;
+  margin-top: .5rem;
+  font-weight: 600;
+}
+
+.about-me-gradient-container {
+  height: 80vh;
+  position: relative;
+  background-image: 
+    url('../Img/AboutMePole.png'), 
+    linear-gradient(126deg, rgba(253, 131, 148, 1) 26%, rgba(28, 96, 255, 1) 91%);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center -6vh, center;
+}
+
+.about-me-gradient-container p{
+  margin-bottom: 2rem;
+}
+
+.left-text {
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+  width: 38%;
+}
+
+.right-text {
+  position: absolute;
+  top: 10rem;
+  right: 20rem;
+  width: 25%;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 6rem;
+  left: 40%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1.7rem;
+}

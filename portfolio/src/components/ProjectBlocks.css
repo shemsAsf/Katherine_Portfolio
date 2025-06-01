@@ -1,0 +1,97 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    padding-top: 100px;
+}
+
+.project-block {
+    position: relative;
+    background-color: #1667ff;
+    color: white;
+    padding: 24px;
+    cursor: pointer;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+}
+
+.project-block>* {
+    position: relative;
+    z-index: 1;
+}
+
+.project-block.pb1::after {
+    background-image: url('../Img/chromaLabBG.png');
+}
+
+.project-block.pb2::after {
+    background-image: url('../Img/OuchBG.png');
+}
+
+.project-block.pb3::after {
+    background-image: url('../Img/AliceBG.png');
+}
+
+.project-block:hover::after {
+    opacity: 1;
+}
+
+.project-block.pb1 {
+    width: 50%;
+}
+
+.project-block.pb2 {
+    width: 60%;
+}
+
+.project-block.pb3 {
+    width: 80%;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+}
+
+.project-number {
+    font-size: 7.5rem;
+    font-weight: bold;
+}
+
+.project-content div {
+    margin: 0 50px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.project-subtitle {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.hover-image img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}

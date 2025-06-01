@@ -1,0 +1,40 @@
+.presentation-container {
+  margin-left: 4%;
+}
+
+div.presentation {
+  margin-top: 8vh;
+  width: fit-content;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  border-bottom: 3px solid #1C60FF;
+}
+
+h1.presentation {
+  color: #1C60FF;
+  font-size: 9rem;
+  white-space: nowrap;
+  padding-bottom: 0.5rem;
+}
+
+img.presentation {
+  height: 100px;
+  margin: 0 8rem;
+  object-fit: contain;
+  display: block;
+  margin-bottom: -3px;
+}
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem 0;
+  width: 100%;
+}
+
+.video-wrapper iframe {
+  width: 50%;
+  height: calc(50vw * 0.9);
+  max-height: 500px;
+}
