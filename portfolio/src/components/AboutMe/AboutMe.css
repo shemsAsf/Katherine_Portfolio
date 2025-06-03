@@ -59,11 +59,18 @@
   font-weight: 600;
 }
 
+.about-me-under-header {
+  top: 0;
+  height: 59.5px;
+  background: #FD8394;
+  background: linear-gradient(90deg, rgba(253, 131, 148, 1) 26%, rgba(28, 96, 255, 1) 91%);
+}
+
 .about-me-gradient-container {
   height: 80vh;
   position: relative;
   background-image: 
-    url('../Img/AboutMePole.png'), 
+    url('../../Img/AboutMePole.png'), 
     linear-gradient(126deg, rgba(253, 131, 148, 1) 26%, rgba(28, 96, 255, 1) 91%);
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;

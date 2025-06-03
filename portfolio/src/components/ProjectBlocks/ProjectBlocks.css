@@ -7,7 +7,7 @@
 
 .project-block {
     position: relative;
-    background-color: #1667ff;
+    background-color:  #1C60FF;
     color: white;
     padding: 24px;
     cursor: pointer;
@@ -38,15 +38,15 @@
 }
 
 .project-block.pb1::after {
-    background-image: url('../Img/chromaLabBG.png');
+    background-image: url('../../Img/chromaLabBG.png');
 }
 
 .project-block.pb2::after {
-    background-image: url('../Img/OuchBG.png');
+    background-image: url('../../Img/OuchBG.png');
 }
 
 .project-block.pb3::after {
-    background-image: url('../Img/AliceBG.png');
+    background-image: url('../../Img/AliceBG.png');
 }
 
 .project-block:hover::after {

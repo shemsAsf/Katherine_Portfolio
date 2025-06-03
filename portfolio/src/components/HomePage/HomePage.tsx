@@ -1,7 +1,6 @@
 
-import AboutMe from "./AboutMe";
-import "./AboutMe.css";
-import Presentation from "./Presentation";
+import AboutMe from "../AboutMe/AboutMe";
+import Presentation from "../Presentation/Presentation";
 
 export default function HomePage() {
 	return (

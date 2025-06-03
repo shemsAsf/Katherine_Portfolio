@@ -1,23 +1,20 @@
-
-
 header {
   position: fixed;
   top: 0;
   height: 60px;
   width: 100%;
   z-index: 9998;
-  mix-blend-mode: overlay;
+  mix-blend-mode: plus-lighter;
+  opacity: 77%;
   background: #fff;
 }
 
-.under-header {
-  top: 0;
-  height: 59.5px;
-  background: #FD8394;
-  background: linear-gradient(90deg, rgba(253, 131, 148, 1) 26%, rgba(28, 96, 255, 1) 91%);
+header.about-me-header {
+  mix-blend-mode: overlay;
+  opacity: 100%;
 }
 
-.above-header{
+.above-header {
   position: fixed;
   top: 0;
   display: flex;
@@ -25,12 +22,12 @@ header {
   align-items: center;
   padding: 0rem 2rem;
   height: 60px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   width: 100%;
   z-index: 9999;
 }
 
 .above-header p {
   color: #1C60FF;
-  margin:0;
+  margin: 0;
 }

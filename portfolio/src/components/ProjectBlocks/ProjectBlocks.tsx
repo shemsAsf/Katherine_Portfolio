@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import './ProjectBlocks.css';
 
 interface Project {
@@ -13,7 +14,7 @@ const projects: Project[] = [
     id: 1,
     title: 'Chroma Lab Experiment',
     subtitle: 'Video Game Development in Unreal Engine',
-    link: 'https://example.com/chroma-lab',
+    link: '/Chroma_Lab_Experiment',
     image: '/images/chroma-lab.jpg',
   },
   {
@@ -33,13 +34,15 @@ const projects: Project[] = [
 ];
 
 export default function ProjectBlocks() {
+  const navigate = useNavigate();
+
   return (
     <div className="project-container">
       {projects.map((project) => (
         <div
           key={project.id}
           className={`project-block pb${project.id}`} 
-          onClick={() => window.open(project.link, '_blank')}
+          onClick={() => navigate(project.link)}
         >
           <div className="project-content">
             <span className="project-number">{project.id}</span>

@@ -1,5 +1,5 @@
 import './Presentation.css';
-import ProjectBlocks from './ProjectBlocks';
+import ProjectBlocks from '../ProjectBlocks/ProjectBlocks';
 
 export default function Presentation() {
 	return (

@@ -1,0 +1,21 @@
+footer{
+    background: #1C60FF;
+    background: linear-gradient(90deg, rgba(28, 96, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 4%;
+}
+
+footer div{
+    width: fit-content;
+}
+
+footer p{
+    margin: 0;
+}
+
+.rotating-text{
+    width:17%
+}

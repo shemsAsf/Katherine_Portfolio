@@ -1,11 +1,14 @@
 "use client";
 
-import Header from './components/Header';
-import LoadingScreen from "./components/LoadingScreen";
+import Header from './components/Header/Header';
+import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 import './App.css';
 import { useEffect, useState } from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import HomePage from "./components/HomePage";
+import HomePage from "./components/HomePage/HomePage";
+import Footer from './components/Footer/Footer';
+import ChromaLab from './components/ChromaLab/ChromaLab';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
 	const [loading, setLoading] = useState(true);
@@ -22,10 +25,13 @@ export default function App() {
 			{loading ? (
 				<LoadingScreen />
 			) : (<div>
+      			<ScrollToTop />
 				<Header />
 				<Routes>
 					<Route path="/" element={<HomePage />} />
+					<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
 				</Routes>
+				<Footer />
 			</div>)}
 		</BrowserRouter>
 	);
