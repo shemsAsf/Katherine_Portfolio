@@ -64,6 +64,7 @@ export default function ChromaLab() {
                 </div>
                 <RandomImageBox />
             </div>
+            <div className="chl_lab_bg"></div>
         </div>
     );
 }
