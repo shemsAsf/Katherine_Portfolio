@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import "./AboutMe.css";
+import Presentation from "../Presentation/Presentation";
 
 export default function AboutMe() {
 	const videoRef = useRef<HTMLVideoElement>(null);
@@ -55,6 +56,7 @@ export default function AboutMe() {
 					<p><strong>Look thought my portfolio below!</strong></p>
 				</div>
 			</div>
+			<Presentation />
 		</div>
 	);
 }

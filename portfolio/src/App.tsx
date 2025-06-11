@@ -1,16 +1,16 @@
 "use client";
 
-import Header from './components/Header/Header';
-import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
+import Header from './components/layout/Header/Header';
+import LoadingScreen from "./components/layout/LoadingScreen/LoadingScreen";
 import './App.css';
 import { useEffect, useState } from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import HomePage from "./components/HomePage/HomePage";
-import Footer from './components/Footer/Footer';
-import ChromaLab from './components/ChromaLab/ChromaLab';
-import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/layout/Footer/Footer';
+import ChromaLab from './components/ChromaLab/ChromaLab/ChromaLab';
+import ScrollToTop from './components/layout/ScrollToTop';
 import { BrowserView, MobileView } from 'react-device-detect';
 import PhoneMode from './components/PhoneMode/PhoneMode';
+import AboutMe from './components/HomePage/AboutMe/AboutMe';
 
 export default function App() {
 	const [loading, setLoading] = useState(true);
@@ -32,7 +32,7 @@ export default function App() {
 					<Header />
 					<BrowserView>
 						<Routes>
-							<Route path="/" element={<HomePage />} />
+							<Route path="/" element={<AboutMe />} />
 							<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
 						</Routes>
 						<Footer />

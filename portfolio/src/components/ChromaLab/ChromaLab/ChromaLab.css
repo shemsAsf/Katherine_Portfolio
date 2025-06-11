@@ -101,7 +101,7 @@
 
 .cl-snd {
     background:
-        url('../../Img/CLPole.png'),
+        url('../../../Img/CLPole.png'),
         rgba(28, 96, 255, 1);
     background-size: 170%, cover;
     background-repeat: no-repeat, no-repeat;
@@ -124,7 +124,7 @@
 }
 
 .chl_lab_bg{
-    background-image: url('../../Img/Chl_lab.png');
+    background-image: url('../../../Img/Chl_lab.png');
     background-size: cover;
     height: 100vh;
 }
