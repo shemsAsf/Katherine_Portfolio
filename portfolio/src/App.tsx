@@ -9,6 +9,8 @@ import HomePage from "./components/HomePage/HomePage";
 import Footer from './components/Footer/Footer';
 import ChromaLab from './components/ChromaLab/ChromaLab';
 import ScrollToTop from './components/ScrollToTop';
+import { BrowserView, MobileView } from 'react-device-detect';
+import PhoneMode from './components/PhoneMode/PhoneMode';
 
 export default function App() {
 	const [loading, setLoading] = useState(true);
@@ -21,18 +23,26 @@ export default function App() {
 	}, []);
 
 	return (
-		<BrowserRouter>
-			{loading ? (
-				<LoadingScreen />
-			) : (<div>
-      			<ScrollToTop />
-				<Header />
-				<Routes>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
-				</Routes>
-				<Footer />
-			</div>)}
-		</BrowserRouter>
+		<>
+			<BrowserRouter>
+				{loading ? (
+					<LoadingScreen />
+				) : (<div>
+					<ScrollToTop />
+					<Header />
+					<BrowserView>
+						<Routes>
+							<Route path="/" element={<HomePage />} />
+							<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
+						</Routes>
+						<Footer />
+					</BrowserView>
+					<MobileView>
+						<PhoneMode />
+					</MobileView>
+				</div>)}
+			</BrowserRouter>
+		</>
+
 	);
 }

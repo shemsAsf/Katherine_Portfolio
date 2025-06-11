@@ -1,0 +1,23 @@
+.phone-mode {
+    background: #1C60FF;
+    background: linear-gradient(40deg, rgba(28, 96, 255, 1) 0%, rgba(253, 131, 148, 1) 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phone-mode .heading-underline {
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+}
+
+.phone-mode p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.phone-mode .logo{
+    margin-bottom: 6vh;
+}
