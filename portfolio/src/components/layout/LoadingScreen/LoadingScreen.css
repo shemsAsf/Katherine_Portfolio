@@ -4,14 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOut 1s ease-out 2s forwards;
+  animation: ease-out 2s forwards;
   background: linear-gradient(59deg,rgba(28, 96, 255, 1) 20%, rgba(253, 131, 148, 1) 100%);
   background-size: 200% 200%;
-  animation-name: gradientFade, fadeOut;
-  animation-duration: 2s, 1s;
-  animation-delay: 0s, 2s;
-  animation-fill-mode: forwards, forwards;
-  animation-timing-function: ease-in-out, ease-out;
+  animation-name: gradientFade;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-fill-mode:  forwards;
+  animation-timing-function: ease-in-out;
   text-align: center;
 }
 
@@ -35,7 +35,6 @@
   font-size: 2rem;
   color: white;
   opacity: 1;
-  animation: textFadeOut 1s ease-out 2s forwards;
 }
 
 @keyframes textFadeOut {
