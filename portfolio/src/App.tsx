@@ -16,16 +16,20 @@ import Alice from './components/ProjectsShowCase/AlicePres/Alice/Alice';
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
-	const location = useLocation(); 
+	const location = useLocation();
 
 	useEffect(() => {
 		setLoading(true);
+
+		const delay = location.pathname === '/' ? 5000 : 3000;
+
 		const timer = setTimeout(() => {
 			setLoading(false);
-		}, 5000);
+		}, delay);
 
 		return () => clearTimeout(timer);
 	}, [location.pathname]);
+
 
 	return loading ? (
 		<LoadingScreen />
