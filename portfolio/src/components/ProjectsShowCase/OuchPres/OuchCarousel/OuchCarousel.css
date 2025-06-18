@@ -1,0 +1,35 @@
+.ouch-caroussel-wrapper {
+  display: flex;
+  background-color: #FD8394;
+  height: 80vh;
+  align-items: center;
+}
+
+.ouch-text {
+  padding: 0 7vw;
+  width: 30%;
+}
+
+.ouch-cards-container {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; /* This sticks child content (CardSwap) to the right */
+  box-sizing: border-box;
+  margin-bottom: -150px;;
+}
+
+.ouch-card {
+  width: 100%;  /* fill the card container */
+  height: auto;
+}
+
+.ouch-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+

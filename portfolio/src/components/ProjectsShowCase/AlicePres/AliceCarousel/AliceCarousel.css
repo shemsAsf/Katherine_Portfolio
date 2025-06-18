@@ -1,0 +1,10 @@
+.alice-caroussel-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #FD8394;
+  align-items: center;
+}
+
+.alice-cards-container{
+    width: 100%;
+}

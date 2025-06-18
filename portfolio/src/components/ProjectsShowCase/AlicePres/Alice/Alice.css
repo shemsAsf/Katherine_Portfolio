@@ -1,0 +1,15 @@
+.project-page-title.alice{
+   margin-top: 10vh; 
+   width:50%;
+}
+
+.header-maintext.alice p {
+    width: 35%;
+    margin-left: 5%;
+}
+
+.alice-text{
+    text-align: center;
+    width: 60%;
+    margin-top: 5vh;
+}

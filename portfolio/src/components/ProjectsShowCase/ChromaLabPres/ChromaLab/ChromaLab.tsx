@@ -2,6 +2,7 @@
 
 import RandomImageBox from "../RandomImageBox/RandomImageBox";
 import "./ChromaLab.css";
+import "../../ShowCase.css"
 
 export default function ChromaLab() {
     return (
@@ -15,12 +16,12 @@ export default function ChromaLab() {
                     <img src="/Img/lines.png" className="lines-img" alt="Lines" />
                     <div className="project-page-header-wrapper">
                         <div className="project-page-title">
-                            <h1>"Chroma Lab Experiment"</h1>
+                            <h1>“Chroma Lab Experiment“</h1>
                             <h2>Video Game Development in Unreal Engine</h2>
                             <div className="heading-underline-left"></div>
                         </div>
                         <div className="cl-header-text">
-                            <div className="cl-header-maintext">
+                            <div className="header-maintext chroma">
                                 <p>
                                     The game about two cute characters, who are trying to escape a
                                     laboratory where they are being held as lab rats. The “Chroma

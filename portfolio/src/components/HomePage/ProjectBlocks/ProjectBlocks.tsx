@@ -21,14 +21,14 @@ const projects: Project[] = [
     id: 2,
     title: 'Ouch by BMTH',
     subtitle: 'Music Video in Blender',
-    link: 'https://example.com/ouch',
+    link: '/ouch',
     image: '/images/ouch.jpg',
   },
   {
     id: 3,
     title: 'Alice in the Wonderland',
     subtitle: 'Animation in After Effects',
-    link: 'https://example.com/alice',
+    link: '/alice',
     image: '/images/alice.jpg',
   },
 ];

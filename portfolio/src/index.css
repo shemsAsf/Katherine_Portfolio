@@ -4,7 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
@@ -60,7 +60,7 @@ code {
 }
 
 .heading-underline-left {
-  width: 20%;
+  width: 10vw;
   height: 2px;
   margin: 1.5rem 0 0;
   background-color: white;

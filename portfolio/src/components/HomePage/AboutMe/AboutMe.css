@@ -83,16 +83,16 @@
 
 .left-text {
   position: absolute;
-  top: 2rem;
+  top: 2%;
   left: 10rem;
-  width: 38%;
+  width: 45%;
 }
 
 .right-text {
   position: absolute;
-  top: 10rem;
-  right: 20rem;
-  width: 25%;
+  top: 17%;
+  right: 7%;
+  width: 35%;
 }
 
 .bottom-text {

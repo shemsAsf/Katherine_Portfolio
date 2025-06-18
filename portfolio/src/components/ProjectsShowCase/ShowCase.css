@@ -1,0 +1,71 @@
+.pink-under-header {
+  top: 0;
+  height: 7vh;
+  background: #FD8394;
+}
+
+.pink-Header {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-color: #FD8394;
+    overflow: hidden;
+}
+
+.overlay-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.overlay-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.project-page-title {
+    width: 50%;
+    margin-top: 0;
+    padding-left: 5%;
+}
+
+.project-page-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+    margin: 0;
+    margin-top: -3vh;
+}
+
+.project-page-title h1 {
+    font-size: 8.5rem;
+    line-height: 85%;
+}
+
+.project-page-title h2 {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    font-weight: 600;
+}
+
+.header-maintext {
+    flex-direction: column;
+}
+
+.header-maintext p {
+    margin-bottom: 0;
+}
