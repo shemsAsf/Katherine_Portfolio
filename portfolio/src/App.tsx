@@ -8,8 +8,6 @@ import { Route, BrowserRouter, Routes, useLocation } from "react-router-dom";
 import Footer from './components/layout/Footer/Footer';
 import ChromaLab from './components/ProjectsShowCase/ChromaLabPres/ChromaLab/ChromaLab';
 import ScrollToTop from './components/layout/ScrollToTop';
-import { BrowserView, MobileView } from 'react-device-detect';
-import PhoneMode from './components/PhoneMode/PhoneMode';
 import AboutMe from './components/HomePage/AboutMe/AboutMe';
 import Ouch from './components/ProjectsShowCase/OuchPres/Ouch/Ouch';
 import Alice from './components/ProjectsShowCase/AlicePres/Alice/Alice';
@@ -21,8 +19,8 @@ function AppContent() {
 	useEffect(() => {
 		setLoading(true);
 
-		const delay = location.pathname === '/' ? 5000 : 3000;
-
+		//const delay = location.pathname === '/' ? 5000 : 3000;
+		const delay = 100;
 		const timer = setTimeout(() => {
 			setLoading(false);
 		}, delay);
@@ -37,18 +35,13 @@ function AppContent() {
 		<div>
 			<ScrollToTop />
 			<Header />
-			<BrowserView>
-				<Routes>
-					<Route path="/" element={<AboutMe />} />
-					<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
-					<Route path="/Ouch" element={<Ouch />} />
-					<Route path="/Alice" element={<Alice />} />
-				</Routes>
-				<Footer />
-			</BrowserView>
-			<MobileView>
-				<PhoneMode />
-			</MobileView>
+			<Routes>
+				<Route path="/" element={<AboutMe />} />
+				<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
+				<Route path="/Ouch" element={<Ouch />} />
+				<Route path="/Alice" element={<Alice />} />
+			</Routes>
+			<Footer />
 		</div>
 	);
 }

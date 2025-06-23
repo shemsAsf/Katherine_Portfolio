@@ -12,29 +12,3 @@
 .header-maintext.ouch {
     margin-top: 6vh;
 }
-
-.ouch-pole {
-    position: absolute;
-    background-image: url('../../../../Img/OuchPole.png');
-    background-size: 170%;
-    background-repeat: no-repeat;
-    background-position: right 55vh;
-    height: 140vh;
-    width: 100%;
-}
-
-.fullwidth-video-container {
-  width: 100%;
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.fullwidth-video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}

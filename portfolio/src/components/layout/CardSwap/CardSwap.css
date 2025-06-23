@@ -1,12 +1,3 @@
-.card-swap-container {
-  position: absolute;
-  bottom: 0;
-  right: -50px;
-  perspective: 1200px;
-  overflow: visible;
-  width: 50vw;
-}
-
 .card {
   position: absolute;
   top: 50%;
@@ -17,16 +8,4 @@
   backface-visibility: hidden;
 
   transform-origin: center center;
-}
-
-@media (max-width: 768px) {
-  .card-swap-container {
-    transform: scale(0.75) translate(25%, 25%);
-  }
-}
-
-@media (max-width: 480px) {
-  .card-swap-container {
-    transform: scale(0.55) translate(25%, 25%);
-  }
 }

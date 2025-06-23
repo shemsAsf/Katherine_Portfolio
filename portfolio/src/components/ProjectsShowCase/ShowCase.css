@@ -1,14 +1,12 @@
-.pink-under-header {
-  top: 0;
-  height: 7vh;
-  background: #FD8394;
+.project-title-under-header {
+    top: 0;
+    height: 7vh;
 }
 
-.pink-Header {
+.project-title-header {
     position: relative;
     width: 100%;
     height: 120vh;
-    background-color: #FD8394;
     overflow: hidden;
 }
 
@@ -34,38 +32,111 @@
     z-index: 1;
 }
 
-.project-page-title {
+.project-title-title {
+    padding-left: 3%;
+    margin-top: 5vh;
     width: 50%;
-    margin-top: 0;
-    padding-left: 5%;
 }
 
-.project-page-header-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 75vh;
-    margin: 0;
-    margin-top: -3vh;
-}
-
-.project-page-title h1 {
-    font-size: 8.5rem;
+.project-title-title h1 {
+    font-size: 9rem;
     line-height: 85%;
 }
 
-.project-page-title h2 {
-    font-size: 2rem;
+.project-title-title h2 {
     margin: 0;
     margin-bottom: 1.5rem;
-    margin-top: 2.5rem;
+    margin-top: 5vh;
     font-weight: 600;
 }
 
-.header-maintext {
-    flex-direction: column;
+.project-title-children-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75vh;
+    margin: 0 3%;
+    margin-top: -3vh;
 }
 
-.header-maintext p {
+.speaking-pigeon {
+    width: 18%;
+    object-fit: contain;
+}
+
+.project-title-paragraph {
+    height: 100%;
+    justify-content: flex-start;
+    margin-top: 10%;
+    width:40%;
+}
+
+.project-title-components-wrapper {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    width:40%;
+}
+
+.components-list {
     margin-bottom: 0;
+}
+
+.components-list li {
+    margin-top: 1vh;
+}
+
+.project-title-comp-img {
+    height: 50px;
+    margin-right: 2%;
+}
+
+.project-text {
+    padding: 0 3vw;
+    width: 55%;
+    box-sizing: border-box;
+}
+
+.project-text-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+@media (max-width: 768px) {
+    .project-title-header {
+        height: 100vh;
+    }
+
+    .project-title-under-header {
+        top: 0;
+        height: 6.5vh;
+    }
+
+    .project-title-title {
+        width: 100%;
+    }
+
+    .project-title-title h1 {
+        font-size: 3.5rem;
+    }
+
+    .project-title-children-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-title-title h2 {
+        margin-top: 2vh;
+    }
+
+    .project-text {
+        width: 100%;
+        padding: 0 5vw;
+    }
+
+    .project-text-flex {
+        flex-direction: column;
+        gap: 2vh;
+    }
 }

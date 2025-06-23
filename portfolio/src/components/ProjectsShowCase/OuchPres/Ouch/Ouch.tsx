@@ -3,57 +3,71 @@
 import "./Ouch.css";
 import "../../ShowCase.css"
 import OuchCarousel from "../OuchCarousel/OuchCarousel";
+import ProjectTitle from "../../ProjectTitle/ProjectTitle";
+import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 
 
 export default function Ouch() {
 
 	return (
 		<>
-			<div className="pink-under-header" />
-			<div className="pink-Header">
-				<div className="overlay-div">
-					<img src="/Img/OuchPresBG.png" className="overlay-image" alt="Overlay" />
-				</div>
-				<div className="content-wrapper project-page-header-wrapper">
-
-					<div className="ouch-pole" />
-					<div className="project-page-title ouch">
-						<h1>“Ouch“</h1> <h1>by BMTH</h1>
-						<h2>Music Video in Blender</h2>
-						<div className="heading-underline-left"></div>
-					</div>
-					<div className="header-maintext ouch">
+			<ProjectTitle
+				title={['“Ouch“', 'by BMTH']}
+				subtitle="Music Video in Blender"
+				backgroundImage="/Img/OuchPresBG.png"
+				accentColor="var(--secondary-color)"
+				paragraph={(
+					<>
 						<p>
 							I worked on the (unofficial) music video for the song “Ouch”
 							by Bring Me the Horizon. Using Blender and After Effects
 							animation, the video depicts the emotional journey of a failed
 							relationship as described by the band’s lead vocalist Oliver Sykes.
 						</p>
-						<p>
-							Music clip project created for Bring Me the Horizon’s song “Ouch.”
-							Using Blender and After Effects animation, the clip portrays the
-							intense emotional journey of a failed relationship described by lead
-							vocalist Oliver Sykes.
-							The clip unfolds in a familiar room, symbolizing the stability of a
-							long-standing relationship. As the song progresses, the room transforms,
-							reflecting the sudden and chaotic changes experienced in a turbulent
-							relationship.
+					</>
+				)} components={[
+					"<strong>Animation</strong> in After Effects",
+					"Frame sketching in <strong>Adobe Illustrator</strong>",
+					"<strong>Photoshop mockups</strong>",
+				]}
+				images={[
+					"/Img/CompLogo/Blender.png",
+					"/Img/CompLogo/AfterEffect.png",
+				]} />
+				
+			<div className="ouch-caroussel-wrapper">
+				<div className="project-text">
+					<h1>project details</h1>
+					<br />
+					<div className="project-text-flex">
+						<p className="sm-txt">
+							The music clip’s visual concept revolves around{" "}
+							<strong>a room representing a failing relationship.</strong> Initially
+							stable and filled with happy memories, the room transforms
+							dramatically. Phones are thrown, lights flicker, and the presence of
+							horns on bedsheets signifies betrayal. Presents turn unsettling,
+							memories fade, and tears flow, filling the room with emotions.{" "}
+							<strong>
+								This visual journey captures the shift from stability to chaos,
+								immersing viewers in the turbulent experience of a troubled
+								relationship.
+							</strong>
+						</p>
+						<p className="sm-txt">
+							The music clip’s visual concept revolves around <strong>a room
+								representing a failing relationship.</strong> Initially stable
+							and filled with happy memories, the room transforms dramatically.
+							Phones are thrown, lights flicker, and the presence of horns on
+							bedsheets signifies betrayal. Presents turn unsettling, memories
+							fade, and tears flow, filling the room with emotions. <strong>This
+								visual journey captures the shift from stability to chaos, immersing
+								viewers in the turbulent experience of a troubled relationship.</strong>
 						</p>
 					</div>
 				</div>
+				<OuchCarousel />
 			</div>
-			<OuchCarousel />
-			<div className="fullwidth-video-container">
-				<iframe
-					src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf"
-					title="YouTube video player"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerPolicy="strict-origin-when-cross-origin"
-					allowFullScreen
-				></iframe>
-			</div>
-
+            <YouTubeEmbed src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf"/>
 		</>
 	);
 }

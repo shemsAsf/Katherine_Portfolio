@@ -1,7 +1,7 @@
 .about-me-video-container {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 94vh;
   overflow: hidden;
   cursor: pointer;
 }
@@ -35,71 +35,48 @@
   pointer-events: auto;
 }
 
-.about-me-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  font-size: 1.5rem;
-  z-index: 1;
-  pointer-events: none;
-  text-align: center;
+.about-me-background {
+  background: var(--primary-color);
 }
 
-.about-me-text h1{
-  font-size: 7rem;
-}
-
-.about-me-text h2{
-  font-size: 1.5rem;
-  margin:0;
-  margin-top: .5rem;
-  font-weight: 600;
-}
-
-.about-me-under-header {
-  top: 0;
-  height: 7vh;
-  background: #FD8394;
-  background: linear-gradient(90deg, rgba(253, 131, 148, 1) 26%, rgba(28, 96, 255, 1) 91%);
-}
-
-.about-me-gradient-container {
+.about-me-container {
   height: 80vh;
   position: relative;
-  background-image: 
-    url('../../../Img/AboutMePole.png'), 
-    linear-gradient(126deg, rgba(253, 131, 148, 1) 26%, rgba(28, 96, 255, 1) 91%);
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center -6vh, center;
+  padding: 7vh 5vw;
+  padding-right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
 }
 
-.about-me-gradient-container p{
-  margin-bottom: 2rem;
-}
-
-.left-text {
-  position: absolute;
-  top: 2%;
-  left: 10rem;
+.about-me-text{
   width: 45%;
 }
 
-.right-text {
-  position: absolute;
-  top: 17%;
-  right: 7%;
-  width: 35%;
+.about-me-text p{
+  margin-top: 8vh;
 }
 
-.bottom-text {
-  position: absolute;
-  bottom: 6rem;
-  left: 40%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 1.7rem;
+.about-me-text-para-thin{
+  width: 70%;
+}
+
+.kat-pic {
+  background-color: white;
+  width: 35%;
+  height: 70%;
+  margin-bottom: 2vw;
+  align-self: flex-end;
+  border-radius: 60px 0 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.white-cover{
+  background: white;
+  height: 10vh;
+  width: 100%;
+  border-radius: 10vh 10vh 0 0;
 }

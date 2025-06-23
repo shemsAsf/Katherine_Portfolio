@@ -1,5 +1,6 @@
-import CircularGallery from "../../../layout/CircularGallery/CircularGallery";
-import React from "react";
+"use client"
+
+import CircularGallery from "@/components/layout/CircularGallery/CircularGallery";
 import './AliceCarousel.css'
 
 const imageNames = [

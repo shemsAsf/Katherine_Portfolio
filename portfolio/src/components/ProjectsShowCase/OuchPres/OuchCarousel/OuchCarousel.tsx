@@ -1,52 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CardSwap, { Card } from '../../../layout/CardSwap/CardSwap';
 import "./OuchCarousel.css";
 
 const imageNames = [
-  "/Img/ouchCaroussel1.png",
-  "/Img/ouchCaroussel2.png",
-  "/Img/ouchCaroussel3.png",
-  "/Img/ouchCaroussel4.png",
+  "/Img/Ouch/ouchCaroussel1.png",
+  "/Img/Ouch/ouchCaroussel2.png",
+  "/Img/Ouch/ouchCaroussel3.png",
+  "/Img/Ouch/ouchCaroussel4.png",
 ];
 
-const OuchCarousel = () => {
-  return (
-    <div className="ouch-caroussel-wrapper">
-      <div className="ouch-text">
-        <p>
-          The music clip’s visual concept revolves around{" "}
-          <strong>a room representing a failing relationship.</strong> Initially
-          stable and filled with happy memories, the room transforms
-          dramatically. Phones are thrown, lights flicker, and the presence of
-          horns on bedsheets signifies betrayal. Presents turn unsettling,
-          memories fade, and tears flow, filling the room with emotions.{" "}
-          <strong>
-            This visual journey captures the shift from stability to chaos,
-            immersing viewers in the turbulent experience of a troubled
-            relationship.
-          </strong>
-        </p>
-      </div>
+export default function OuchCarousel() {
+  const [dimensions, setDimensions] = useState({ width: 1000, height: 570 });
 
-      <div className="ouch-cards-container">
-        <CardSwap
-          cardDistance={100}
-          verticalDistance={120}
-          delay={3000}
-          pauseOnHover={false}
-          height={570}
-          width={1000}
-          easing={"linear"}
-        >
-          {imageNames.map((src, idx) => (
-            <Card key={idx} className="ouch-card">
-              <img src={src} alt={`Card ${idx + 1}`} className="ouch-card-image" />
-            </Card>
-          ))}
-        </CardSwap>
-      </div>
-    </div>
+  useEffect(() => {
+    const calculateSize = () => {
+      const screenWidth = window.innerWidth;
+      const width = screenWidth * 0.9;
+      const height = width / 1.75;
+      setDimensions({ width, height });
+    };
+
+    calculateSize();
+    window.addEventListener("resize", calculateSize);
+    return () => window.removeEventListener("resize", calculateSize);
+  }, []);
+
+  return (
+      <CardSwap
+        cardDistance={100}
+        verticalDistance={
+          dimensions.width > 1024 ? 100 :
+            dimensions.width > 768 ? 80 :
+              40
+        }
+        delay={3000}
+        pauseOnHover={false}
+        easing={"linear"}
+      >
+        {imageNames.map((src, idx) => (
+          <Card key={idx} className="ouch-card">
+            <img src={src} alt={`Card ${idx + 1}`} className="ouch-card-image" />
+          </Card>
+        ))}
+      </CardSwap>
   );
 };
-
-export default OuchCarousel;

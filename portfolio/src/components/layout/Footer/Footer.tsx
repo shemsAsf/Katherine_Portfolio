@@ -20,15 +20,13 @@ export default function Footer() {
 	return (
 	<footer>
         <div>
-            <p>ekaterina potapova</p>
-            <br/>
             <p>mail: katherineaston29@gmail.com</p>
             <p>whatsapp: +393383818706</p>
             <p>linkedin: Ekaterina Potapova</p>
             <p>behance: Katherine Aston</p>
         </div>
         <div>
-				<img src="/Img/speaking pigeon.png" className="" alt="logo" />
+				<img src="/Img/speaking pigeon.png" className="footer-pigeon" alt="logo" />
         </div>
         <div className="rotating-text">{RotatingText}</div>
     </footer>

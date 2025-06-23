@@ -1,11 +1,12 @@
 footer{
-    background: #1C60FF;
-    background: linear-gradient(90deg, rgba(28, 96, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color) 0%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 5vh 4%;
+    padding: 4.2vh 4%;
+    font-size: 1rem;
 }
 
 footer div{
@@ -18,4 +19,8 @@ footer p{
 
 .rotating-text{
     width:17%
+}
+
+.footer-pigeon{
+    height: 6vh;
 }

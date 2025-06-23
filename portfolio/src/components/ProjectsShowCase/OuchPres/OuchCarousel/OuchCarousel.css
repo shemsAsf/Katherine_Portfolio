@@ -1,27 +1,30 @@
+.card-swap-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+}
+
+.card-swap-container {
+  perspective: 1200px;
+  height: 100%;
+  width: 100%;
+  margin-top: 40%;
+}
+
 .ouch-caroussel-wrapper {
   display: flex;
-  background-color: #FD8394;
+  flex-direction: row;
+  background-color: var(--secondary-color);
   height: 80vh;
   align-items: center;
-}
-
-.ouch-text {
-  padding: 0 7vw;
-  width: 30%;
-}
-
-.ouch-cards-container {
-  flex: 1;
-  position: relative;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end; /* This sticks child content (CardSwap) to the right */
-  box-sizing: border-box;
-  margin-bottom: -150px;;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .ouch-card {
-  width: 100%;  /* fill the card container */
+  width: 50vw;
   height: auto;
 }
 
@@ -33,3 +36,19 @@
   display: block;
 }
 
+@media (max-width: 768px) {
+  .card-swap-container {
+    width: 90vw;
+  }
+
+  .ouch-caroussel-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding: 4vh 3vw;
+  }
+
+  .ouch-card {
+    width: 90vw;
+    height: auto;
+  }
+}

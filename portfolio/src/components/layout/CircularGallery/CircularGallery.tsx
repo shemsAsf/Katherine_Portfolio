@@ -396,9 +396,9 @@ class Media {
     }
     this.scale = this.screen.height / 1500;
     this.plane.scale.y =
-      (this.viewport.height * (900 * this.scale)) / this.screen.height;
+      (this.viewport.height * (600 * this.scale)) / this.screen.height;
     this.plane.scale.x =
-      (this.viewport.width * (700 * this.scale)) / this.screen.width;
+      (this.viewport.width * (900 * this.scale)) / this.screen.width;
     this.plane.program.uniforms.uPlaneSizes.value = [
       this.plane.scale.x,
       this.plane.scale.y,
@@ -491,8 +491,8 @@ class App {
 
   createGeometry() {
     this.planeGeometry = new Plane(this.gl, {
-      heightSegments: 50,
-      widthSegments: 100,
+      heightSegments: 200,
+      widthSegments: 50,
     });
   }
 

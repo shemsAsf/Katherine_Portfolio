@@ -1,34 +1,60 @@
+import ProjectBlock, { ProjectBlockProps } from '@/components/HomePage/ProjectBlocks/ProjectBlock';
 import './Presentation.css';
-import ProjectBlocks from '../ProjectBlocks/ProjectBlocks';
+
+const projects: ProjectBlockProps[] = [
+	{
+		title: 'Chroma Lab Experiment',
+		subtitle: 'Video Game Development in Unreal Engine',
+		link: '/Chroma_Lab_Experiment',
+		background: '/Img/chromaLabBG.png',
+		images: [
+			"/Img/CompLogo/Unreal.png",
+			"/Img/CompLogo/Blender.png",
+			"/Img/CompLogo/Audition.png",
+			"/Img/CompLogo/Substance painter.png",
+			"/Img/CompLogo/AfterEffect.png",
+		],
+	},
+	{
+		title: 'Ouch by BMTH',
+		subtitle: 'Music Video in Blender',
+		link: '/ouch',
+		background: '/Img/OuchBG.png',
+		images: [
+			"/Img/CompLogo/Blender.png",
+			"/Img/CompLogo/AfterEffect.png"
+		]
+	},
+	{
+		title: 'Alice in the Wonderland',
+		subtitle: 'Animation in After Effects',
+		link: '/alice',
+		background: '/Img/AliceBG.png',
+		images: [
+			"/Img/CompLogo/Audition.png",
+			"/Img/CompLogo/AfterEffect.png",
+			"/Img/CompLogo/Illustrator.png",
+		]
+	},
+];
 
 export default function Presentation() {
 	return (
 		<div className='presentation-container'>
-			<div className='presentation'>
-				<h1 className="presentation">
+			<div>
+				<h1 className="blue-text presentation">
 					my works
 				</h1>
-				<img src="/Img/pixil-frame-0 (12) 1.png" className="presentation" alt="logo" />
 			</div>
-			<ProjectBlocks />
-			<div className='presentation'>
-				<h1 className="presentation">
-					my showreel
-				</h1>
-				<img src="/Img/pixil-frame-0 (12) 3.png" className="presentation" alt="logo" />
-			</div>
-
-			<div className="video-wrapper">
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/m19dTPwN9MA?si=8D3q-z0rLM7WoqP8"
-					title="YouTube video player"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerPolicy="strict-origin-when-cross-origin"
-					allowFullScreen
-				></iframe>
+			<div className='project-container'>
+				{projects.map((prj) => (
+					<ProjectBlock
+						title={prj.title}
+						subtitle={prj.subtitle}
+						images={prj.images}
+						background={prj.background}
+						link={prj.link} />
+				))}
 			</div>
 		</div>
 	);
