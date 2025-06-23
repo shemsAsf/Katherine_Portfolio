@@ -1,7 +1,7 @@
 header {
 	position: fixed;
 	top: 0;
-	height: 7vh;
+	height: 6vh;
 	width: 100%;
 	z-index: 9998;
 	background: #fff;
@@ -16,7 +16,7 @@ header {
 }
 
 .header-container {
-	margin-bottom: 7vh;
+	margin-bottom: 6vh;
 }
 
 header p {
@@ -24,22 +24,9 @@ header p {
 }
 
 .header-logo {
-	width: 3rem;
+	width: 4.5vh;
 	height: auto;
 }
 
 @media (max-width: 768px) {
-	header {
-		height: 6.5vh;
-		font-size: 1rem;
-	}
-
-	.header-logo {
-		width: 2rem;
-		height: auto;
-	}
-
-	.header-container {
-		margin-bottom: 6.5vh;
-	}
 }

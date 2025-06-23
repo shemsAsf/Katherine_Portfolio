@@ -40,10 +40,11 @@
 }
 
 .about-me-container {
-  height: 80vh;
+  height: 70vh;
   position: relative;
   padding: 7vh 5vw;
   padding-right: 0;
+  padding-top: 4vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -55,7 +56,7 @@
 }
 
 .about-me-text p{
-  margin-top: 8vh;
+  margin-top: 6vh;
 }
 
 .about-me-text-para-thin{
@@ -66,7 +67,7 @@
   background-color: white;
   width: 35%;
   height: 70%;
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
   align-self: flex-end;
   border-radius: 60px 0 0 60px;
   display: flex;
@@ -79,4 +80,10 @@
   height: 10vh;
   width: 100%;
   border-radius: 10vh 10vh 0 0;
+}
+
+.about-me-text h2{
+  margin-top:0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }

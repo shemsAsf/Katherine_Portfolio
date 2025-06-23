@@ -18,9 +18,10 @@ footer p{
 }
 
 .rotating-text{
-    width:17%
+    width:17%;
+    text-align: right;
 }
 
 .footer-pigeon{
-    height: 6vh;
+    height: 5vh;
 }

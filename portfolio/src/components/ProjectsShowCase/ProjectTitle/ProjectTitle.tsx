@@ -41,9 +41,11 @@ export default function ProjectTitle({
                             <div className="project-title-children project-title-components-wrapper">
                                 <img src="/Img/speaking pigeon 2.png" className="cl-speaking-pigeon" alt="speaking-pigeon" />
                                 <div>
-                                    {images.map((src) => (
-                                        <img src={src} className="project-title-comp-img" alt="logo" />
-                                    ))}
+                                    <div className="project-title-comp-imgs">
+                                        {images.map((src) => (
+                                            <img src={src} className="project-title-comp-img" alt="logo" />
+                                        ))}
+                                    </div>
 
                                     <ul className="components-list">
                                         {components.map((item, idx) => (
