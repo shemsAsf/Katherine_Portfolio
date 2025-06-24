@@ -45,26 +45,26 @@ export default function ChromaLab() {
                 ]} />
 
             <div className="cl-snd">
-            <div className="project-text">
-                <h1>project details</h1>
-                <br />
-                <div className="project-text-flex chroma">
-                    <p className="sm-txt">
-                        The game made in <strong>Unreal Engine</strong>
-                        from scratch. Using Blender as a 3d modeling tool
-                        and for rigging and animations, and Substance Painter
-                        for texturing, I made an environment.
-                    </p>
-                    <p className="sm-txt">
-                        It is a <strong>multiplayer, collaborative game
-                            for 2 people</strong>, where you can solve puzzles
-                        and escape a laboratory.
-                    </p>
+                <div className="project-text">
+                    <h1>project details</h1>
+                    <br />
+                    <div className="project-text-flex chroma">
+                        <p className="sm-txt">
+                            The game made in <strong>Unreal Engine</strong>
+                            from scratch. Using Blender as a 3d modeling tool
+                            and for rigging and animations, and Substance Painter
+                            for texturing, I made an environment.
+                        </p>
+                        <p className="sm-txt">
+                            It is a <strong>multiplayer, collaborative game
+                                for 2 people</strong>, where you can solve puzzles
+                            and escape a laboratory.
+                        </p>
+                    </div>
                 </div>
-            </div>
                 <RandomImageBox />
             </div>
-            <YouTubeEmbed src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"/>
+            <YouTubeEmbed src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj" />
         </div>
     );
 }

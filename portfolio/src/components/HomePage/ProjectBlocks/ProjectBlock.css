@@ -2,7 +2,7 @@
     position: relative;
     background-color: var(--primary-color);
     color: white;
-    padding: 60px 40px;
+    padding: clamp(2rem, 8vh, 5rem) clamp(2rem, 2vw, 2.5rem);
     cursor: pointer;
     height: 30vh;
     width: 12vw;
@@ -46,20 +46,15 @@
     gap: 35px;
 }
 
-
-.project-number {
-    font-size: 7.5rem;
-    font-weight: bold;
-}
-
 .project-title {
     font-weight: bold;
     font-size: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 2rem);
     margin: 0;
 }
 
 .project-subtitle {
-    font-size: 1rem;
+    font-size: clamp(.5rem, 1vw, 1rem);
     margin: 0;
 }
 
@@ -69,11 +64,11 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
-.project-logo{
+.project-logo {
     margin: 0;
 }
 
-.project-logo{
-    height: 25px;
-    margin-right: 10px;
+.project-logo {
+    height: clamp(20px, 1.7vw, 25px);
+    margin-right: clamp(5px, .5vw, 10px);
 }

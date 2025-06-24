@@ -6,6 +6,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 5vh;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 

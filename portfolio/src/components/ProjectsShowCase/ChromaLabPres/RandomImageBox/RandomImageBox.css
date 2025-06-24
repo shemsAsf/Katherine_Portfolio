@@ -2,12 +2,12 @@
     position: relative;
     width: 40%;
     height: 80vh;
-    margin-right: 10vw;
+    margin-right: 7vw;
 }
 
 .random-image {
     position: absolute;
-    width: 375px;
+    width: clamp(200px, 20vw, 375px);
     height: auto;
     object-fit: cover;
     transition: transform 0.4s ease;

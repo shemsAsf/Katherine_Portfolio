@@ -20,6 +20,7 @@ h1.presentation {
     display: flex;
     flex-direction: row;
     width: fit-content;
+    flex-wrap: wrap;
     gap: 3vw;
     margin-top: 8vh;
     margin-bottom: 25vh;

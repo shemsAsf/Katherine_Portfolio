@@ -4,25 +4,25 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: clamp(.6rem, 1.2vw, 1.6rem);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: clamp(2rem, 6.6vw, 8rem);
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: clamp(1rem, 1vw, 1.9rem);
 }
 
 .sm-txt {
-  font-size: 1.2rem;
+  font-size: (.6rem, 1vw, 1.2rem);
 }
 
 code {

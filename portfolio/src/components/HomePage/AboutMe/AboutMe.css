@@ -65,7 +65,7 @@
 
 .kat-pic {
   background-color: white;
-  width: 35%;
+  width: 33vw;
   height: 70%;
   margin-bottom: 3vw;
   align-self: flex-end;
@@ -73,6 +73,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.kat-pic img{
+  width:28vw;
 }
 
 .white-cover{
@@ -83,7 +87,7 @@
 }
 
 .about-me-text h2{
-  margin-top:0;
-  font-size: 1.5rem;
+  margin-top: 0;
+  font-size: clamp(.8rem, 1.5vw, 1.5rem);
   font-weight: 600;
 }
