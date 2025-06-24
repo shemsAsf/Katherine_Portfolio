@@ -67,7 +67,7 @@ export default function Ouch() {
 				</div>
 				<OuchCarousel />
 			</div>
-            <YouTubeEmbed src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf"/>
+            <YouTubeEmbed src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf" color="var(--secondary-color)"/>
 		</>
 	);
 }

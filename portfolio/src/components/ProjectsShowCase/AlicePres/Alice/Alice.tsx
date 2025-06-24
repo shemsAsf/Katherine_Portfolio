@@ -44,7 +44,7 @@ export default function Alice() {
 				"/Img/CompLogo/Illustrator.png",
 			]} />
 			<AliceCarousel />
-			<YouTubeEmbed src="https://www.youtube.com/embed/FtBIqwyKfEE?si=oAHJZDy8vK0kugcW" />
+			<YouTubeEmbed src="https://www.youtube.com/embed/FtBIqwyKfEE?si=oAHJZDy8vK0kugcW" color="var(--secondary-color)"/>
 		</>
 	);
 }

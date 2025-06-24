@@ -64,7 +64,7 @@ export default function ChromaLab() {
                 </div>
                 <RandomImageBox />
             </div>
-            <YouTubeEmbed src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj" />
+            <YouTubeEmbed src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj" color="var(--primary-color)"/>
         </div>
     );
 }
