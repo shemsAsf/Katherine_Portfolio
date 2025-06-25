@@ -27,16 +27,40 @@ export default function Header() {
 		return () => document.removeEventListener("mousedown", handleClickOutside);
 	}, [showNav]);
 
+	const scrollToPresentation = () => {
+		const maxAttempts = 50;
+		let attempts = 0;
+		const offset = 120;
+
+		const tryScroll = () => {
+			const el = document.getElementsByClassName('presentation-container')[0];
+			if (el) {
+				const y = el.getBoundingClientRect().top + window.scrollY - offset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			} else if (attempts < maxAttempts) {
+				attempts++;
+				setTimeout(tryScroll, 200);
+			}
+		};
+
+		tryScroll();
+	};
+
+	const handleClickPortfolio = () => {
+		navigate('/');
+		setTimeout(scrollToPresentation, 300);
+	};
+
 	return (
 		<div className="header-container">
 			<header>
 				<p onClick={() => navigate('/')}>ekaterina potapova</p>
-					<img src="/Img/BB-bird-2.png" className="header-logo" alt="logo"  onClick={() => setShowNav(!showNav)}/>
-				
+				<img src="/Img/BB-bird-2.png" className="header-logo" alt="logo" onClick={() => setShowNav(!showNav)} />
+
 				{showNav && (
 					<div className="nav-box" ref={navRef}>
 						<button onClick={() => navigate('/Contact')}>Contact me</button>
-						<button onClick={() => navigate('/portfolio')}>Portfolio</button>
+						<button onClick={handleClickPortfolio}>Portfolio</button>
 						<button onClick={() => navigate('/CV')}>CV page</button>
 						<button onClick={() => navigate('/pigeon')}>Why pigeon?</button>
 					</div>

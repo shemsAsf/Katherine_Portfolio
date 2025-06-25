@@ -1,11 +1,9 @@
 "use client";
 
-import React from 'react';
 import { useRef, useState } from "react";
-import { FaCheck, FaVolumeMute, FaVolumeUp } from 'react-icons/fa';
 import "./AboutMe.css";
 import Presentation from "@/components/HomePage/Presentation/Presentation";
-import { Check, ChevronDown, Volume2, VolumeX } from 'lucide-react';
+import { ChevronDown, Volume2, VolumeX } from 'lucide-react';
 
 export default function AboutMe() {
 	const videoRef = useRef<HTMLVideoElement>(null);
