@@ -29,7 +29,7 @@ export default function AliceCarousel() {
             </div>
 
             <div className="alice-cards-container">
-                <div style={{ height: '600px', width: '100%', position: 'relative' }}>
+                <div style={{ height: '800px', width: '100%', position: 'relative' }}>
                     <CircularGallery
                         bend={3}
                         textColor="#ffffff"

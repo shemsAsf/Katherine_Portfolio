@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import "./AboutMe.css";
 import Presentation from "@/components/HomePage/Presentation/Presentation";
 import { ChevronDown, Volume2, VolumeX } from 'lucide-react';
+import WhiteRoundCover from "@/components/layout/WhiteRoundCover/WhiteRoundCover";
 
 export default function AboutMe() {
 	const videoRef = useRef<HTMLVideoElement>(null);
@@ -68,8 +69,7 @@ export default function AboutMe() {
 						<img src="/Img/KatPic.png" alt="" />
 					</div>
 				</div>
-					<div className="white-cover" />
-
+				<WhiteRoundCover color="var(--primary-color)" />
 			</div>
 			<Presentation />
 		</div>

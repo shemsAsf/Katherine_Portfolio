@@ -4,7 +4,9 @@ import "./ChromaLab.css";
 import "../../ShowCase.css"
 import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
-import RandomImageBox from "@/components/ProjectsShowCase/ChromaLabPres/RandomImageBox/RandomImageBox";
+import ChromaCarousel from "../ChromaCarousel/ChromaCarousel";
+import ChromaBody from "../ChromaBody/ChromaBody";
+import WhiteRoundCover from "@/components/layout/WhiteRoundCover/WhiteRoundCover";
 
 export default function ChromaLab() {
     return (
@@ -62,8 +64,10 @@ export default function ChromaLab() {
                         </p>
                     </div>
                 </div>
-                <RandomImageBox />
+                <ChromaCarousel />
             </div>
+            <WhiteRoundCover color="var(--primary-color)"/>
+            <ChromaBody />
             <YouTubeEmbed src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj" color="var(--primary-color)"/>
         </div>
     );

@@ -1,13 +1,10 @@
 .cl-snd {
     background: var(--primary-color);
     background-size: over;
-    height: 90vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding-top: 5vh;
-    overflow-x: hidden;
-    overflow-y: visible;
 }
 
 
