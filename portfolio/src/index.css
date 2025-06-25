@@ -21,6 +21,10 @@ h2 {
   font-size: clamp(1rem, 1vw, 1.9rem);
 }
 
+h3 {
+  font-size: clamp(.6rem, 1.2vw, 1.6rem);
+}
+
 .sm-txt {
   font-size: (.6rem, 1vw, 1.2rem);
 }

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
-import Header from './components/layout/Header/Header';
-import Footer from './components/layout/Footer/Footer';
-import ScrollToTop from './components/layout/ScrollToTop';
-import LoadingScreen from "./components/layout/LoadingScreen/LoadingScreen";
-import AboutMe from './components/HomePage/AboutMe/AboutMe';
-import ChromaLab from './components/ProjectsShowCase/ChromaLabPres/ChromaLab/ChromaLab';
-import Ouch from './components/ProjectsShowCase/OuchPres/Ouch/Ouch';
-import Alice from './components/ProjectsShowCase/AlicePres/Alice/Alice';
+import Header from '@/components/layout/Header/Header';
+import Footer from '@/components/layout/Footer/Footer';
+import ScrollToTop from '@/components/layout/ScrollToTop';
+import LoadingScreen from "@/components/layout/LoadingScreen/LoadingScreen";
+import AboutMe from '@/components/HomePage/AboutMe/AboutMe';
+import ChromaLab from '@/components/ProjectsShowCase/ChromaLabPres/ChromaLab/ChromaLab';
+import Ouch from '@/components/ProjectsShowCase/OuchPres/Ouch/Ouch';
+import Alice from '@/components/ProjectsShowCase/AlicePres/Alice/Alice';
+import CV from "@/components/CV/CVcomp/CV";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
@@ -64,6 +65,7 @@ function AppContent() {
 				<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
 				<Route path="/Ouch" element={<Ouch />} />
 				<Route path="/Alice" element={<Alice />} />
+				<Route path="/CV" element={<CV />} />
 			</Routes>
 			<Footer />
 

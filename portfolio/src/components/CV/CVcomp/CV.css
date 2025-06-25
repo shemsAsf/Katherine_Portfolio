@@ -1,0 +1,101 @@
+.CV-main{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 14vh;
+    padding: 14vh 7vw;
+}
+
+.CV-main h2{
+	margin-bottom: 5vh;
+}
+
+.CV-title h2{
+	margin-bottom: 0;
+}
+
+.CV-title{
+    text-align: center;
+}
+
+.CV-history-wrapper{
+    display: flex;
+    gap: 6vw;
+}
+
+.CV-history{
+    width: 25%;
+}
+
+.CV-timeline{
+    border-left: solid 4px;
+    padding-left: 2vw;
+    padding-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.CV-history h2{
+    padding-left: calc(2vw + 4px);
+}
+
+.CV-profile h2{
+    padding-left: 0;
+}
+
+.CV-profile{
+    width: 50%;
+}
+
+.CV-history h3 {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.CV-history p {
+  margin-top: 0;
+}
+
+.CV-history h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(-2vw - 13px);
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.CV-history h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(-2vw + 4px - 13px);
+  width: 18px;
+  height: 18px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.CV-skills{
+	display: flex;
+	gap: 130px;
+}
+
+.CV-skills p{
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+.CV-legal{
+	width: 30%;
+}
