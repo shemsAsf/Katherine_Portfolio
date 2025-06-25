@@ -1,7 +1,7 @@
 .about-me-video-container {
   position: relative;
   width: 100%;
-  height: 94vh;
+  height: 95vh;
   overflow: hidden;
   cursor: pointer;
 }
@@ -17,23 +17,44 @@
   z-index: 0;
 }
 
-.sound-icon {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  z-index: 100;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 6px;
-  border-radius: 6px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-8px);
+  }
 }
 
-.about-me-container:hover .sound-icon {
-  opacity: 1;
-  pointer-events: auto;
+.video-v-icon {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: white;
+  opacity: 0.8;
+  animation: bounce 1.6s ease-in-out infinite;
 }
+
+.sound-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.sound-text {
+  margin-left: 8px;
+}
+
 
 .about-me-background {
   background: var(--primary-color);
