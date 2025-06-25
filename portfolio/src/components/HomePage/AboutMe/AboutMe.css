@@ -74,6 +74,8 @@
 
 .about-me-text{
   width: 45%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .about-me-text p{

@@ -8,7 +8,6 @@ export default function LoadingScreen() {
       <div className="loading-text">
         <h1>ekaterina potapova</h1>
         <h2>Multidisciplinary Designer & Motion Artist</h2>
-        <div className="heading-underline"></div>
       </div>
     </div>
   );

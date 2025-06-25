@@ -32,7 +32,7 @@ export default function AboutMe() {
 
 				{/* Check icon (bottom center) */}
 				<div className="video-v-icon">
-					<ChevronDown size={40} />
+					<ChevronDown size={50} />
 				</div>
 
 				{/* Sound control overlay */}

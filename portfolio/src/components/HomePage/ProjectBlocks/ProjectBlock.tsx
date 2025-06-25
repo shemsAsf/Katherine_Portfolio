@@ -31,7 +31,7 @@ export default function ProjectBlock({
                         <img src={src} className="project-logo" alt="logo" />
                     ))}
                 </div>
-                <p className="project-title">“{title}“</p>
+                <p className="project-title" dangerouslySetInnerHTML={{ __html: title }}></p>
                 <p className="project-subtitle">{subtitle}</p>
             </div>
         </div>
