@@ -31,9 +31,8 @@ export default function Header() {
 		<div className="header-container">
 			<header>
 				<p onClick={() => navigate('/')}>ekaterina potapova</p>
-				<div className="logo-container" onClick={() => setShowNav(!showNav)} ref={logoRef}>
-					<img src="/Img/BB-bird-2.png" className="header-logo" alt="logo" />
-				</div>
+					<img src="/Img/BB-bird-2.png" className="header-logo" alt="logo"  onClick={() => setShowNav(!showNav)}/>
+				
 				{showNav && (
 					<div className="nav-box" ref={navRef}>
 						<button onClick={() => navigate('/Contact')}>Contact me</button>

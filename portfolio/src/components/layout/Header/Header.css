@@ -1,12 +1,12 @@
 .header-container {
-	margin-bottom: clamp(3rem, 6vh, 5rem);
+	height: clamp(3rem, 5vh, 4rem);
 	position: relative;
 }
 
 header {
 	position: fixed;
 	top: 0;
-	height: clamp(3rem, 6vh, 5rem);
+	height: clamp(3rem, 5vh, 4rem);
 	width: 100%;
 	z-index: 9998;
 	background: #fff;
@@ -17,7 +17,7 @@ header {
 	padding: 0 2vw;
 	box-sizing: border-box;
 	color: var(--primary-color);
-	font-size: clamp(1rem, 4vh, 1.5rem);
+	font-size: clamp(1rem, 4vh, 1.3rem);
 }
 
 header p {
@@ -26,9 +26,10 @@ header p {
 }
 
 .header-logo {
-	width: clamp(2rem, 3.8vh, 3rem);
-	height: auto;
+	width: auto;
+	height: 2.5vh;
 	cursor: pointer;
+	image-rendering: crisp-edges;
 }
 
 .logo-container {
@@ -60,6 +61,7 @@ header p {
 	cursor: pointer;
 	transition: background 0.3s;
 	font-size: clamp(.5rem, 2vw, 1.5rem);
+	font-family: 'Fractul';
 }
 
 .nav-box button:hover {
