@@ -24,4 +24,9 @@ footer p{
 
 .footer-pigeon{
     height: 5vh;
+	image-rendering: pixelated;
+}
+
+.footer-div{
+    width:20%;
 }

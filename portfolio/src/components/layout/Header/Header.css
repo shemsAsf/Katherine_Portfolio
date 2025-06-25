@@ -29,7 +29,7 @@ header p {
 	width: auto;
 	height: 2.5vh;
 	cursor: pointer;
-	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 }
 
 .logo-container {

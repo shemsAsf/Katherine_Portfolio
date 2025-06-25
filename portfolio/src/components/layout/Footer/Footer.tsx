@@ -19,7 +19,7 @@ export default function Footer() {
     let RotatingText = rotatingTexts[getRandomInt(rotatingTexts.length)]
 	return (
 	<footer>
-        <div>
+        <div className="footer-div">
             <p>mail: katherineaston29@gmail.com</p>
             <p>whatsapp: +393383818706</p>
             <p>linkedin: Ekaterina Potapova</p>
@@ -28,7 +28,7 @@ export default function Footer() {
         <div>
 				<img src="/Img/speaking pigeon.png" className="footer-pigeon" alt="logo" />
         </div>
-        <div className="rotating-text">{RotatingText}</div>
+        <div className="rotating-text footer-div">{RotatingText}</div>
     </footer>
 	);
 }
