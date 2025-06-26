@@ -14,7 +14,7 @@ export default function Ouch() {
 			<ProjectTitle
 				title={['“Ouch“', 'by BMTH']}
 				subtitle="Music Video in Blender"
-				backgroundImage="/Img/OuchPresBG.png"
+				backgroundImage="/Img/Ouch/OuchBG.jpg"
 				accentColor="var(--secondary-color)"
 				paragraph={(
 					<>
