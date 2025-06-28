@@ -65,14 +65,14 @@ export default function ChromaBody() {
                         src={`${process.env.PUBLIC_URL}/Img/ChromaLab/ChromaGallery/${name}`}
                         alt={`img-${index}`}
                         onClick={() => openImage(index)}
-                        className="chroma-gallery-image"
+                        className="chroma-gallery-image hover-target"
                     />
                 ))}
             </div>
 
             {selectedIndex !== null && (
                 <div className="lightbox" onClick={closeLightbox}>
-                    <button className="nav-button left" onClick={prevImage}>
+                    <button className="nav-button left hover-target" onClick={prevImage}>
                         <ChevronLeft size={50} />
                     </button>
                     <img
@@ -80,7 +80,7 @@ export default function ChromaBody() {
                         alt="fullscreen"
                         className="lightbox-image"
                     />
-                    <button className="nav-button right" onClick={nextImage}>
+                    <button className="nav-button right hover-target" onClick={nextImage}>
                         <ChevronRight size={50} />
                     </button>
                 </div>

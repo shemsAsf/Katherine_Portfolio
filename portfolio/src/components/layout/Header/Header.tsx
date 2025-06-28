@@ -60,17 +60,17 @@ export default function Header() {
 	return (
 		<div className="header-container">
 			<header>
-				<p onClick={() => handleNavigate('/')}>ekaterina potapova</p>
+				<p className="hover-target" onClick={() => handleNavigate('/')}>ekaterina potapova</p>
 				<div ref={logoRef}>
-					<img src="/Img/Pigeons/header_pigeon.png" className="header-logo" alt="logo" onClick={() => setShowNav(!showNav)} />
+					<img src="/Img/Pigeons/header_pigeon.png" className="header-logo hover-target" alt="logo" onClick={() => setShowNav(!showNav)} />
 				</div>
 
 				{showNav && (
 					<div className="nav-box" ref={navRef}>
-						<button onClick={() => handleNavigate('/Contact')}>Contact me</button>
-						<button onClick={handleClickPortfolio}>Portfolio</button>
-						<button onClick={() => handleNavigate('/CV')}>CV page</button>
-						<button onClick={() => handleNavigate('/pigeon')}>Why pigeon?</button>
+						<button className="hover-target" onClick={() => handleNavigate('/Contact')}>Contact me</button>
+						<button className="hover-target" onClick={handleClickPortfolio}>Portfolio</button>
+						<button className="hover-target" onClick={() => handleNavigate('/CV')}>CV page</button>
+						<button className="hover-target" onClick={() => handleNavigate('/pigeon')}>Why pigeon?</button>
 					</div>
 				)}
 			</header>

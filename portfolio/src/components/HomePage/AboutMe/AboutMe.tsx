@@ -24,7 +24,7 @@ export default function AboutMe() {
 			<div className="about-me-video-container" onClick={handleClick}>
 				<video
 					ref={videoRef}
-					className="about-me-bg-vid"
+					className="about-me-bg-vid hover-target"
 					src="/Vid/Presentation.mp4"
 					autoPlay
 					loop

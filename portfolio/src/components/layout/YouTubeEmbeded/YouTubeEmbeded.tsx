@@ -18,7 +18,7 @@ export default function YouTubeEmbed({ src, color, text_color }: YouTubeEmbedPro
                 <DecoratedText
                     text="video"
                     decoratedIndex={4}
-                    imageSrc={"/Img/Pigeons/hat_pigeon.png"}
+                    imageSrc={color == "white" ? "/Img/Pigeons/hat_pigeon.png" : "/Img/Pigeons/hat_pigeon_white.png"}
                 />
             </h1>
             <iframe

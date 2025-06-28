@@ -21,7 +21,7 @@ export default function ProjectBlock({
     return (
 
         <div
-            className={`project-block`}
+            className={`project-block hover-target`}
             onClick={() => navigate(link)}
             style={{ '--bg-url': `url(${background})` } as React.CSSProperties}
         >

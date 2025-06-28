@@ -21,7 +21,7 @@
 }
 
 .contact-links a {
-  color: #f98092;
+  color: var(--secondary-color);
   text-decoration: none;
   font-size: 1.5vw;
   transition: opacity 0.3s;
