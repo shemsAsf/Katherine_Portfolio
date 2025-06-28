@@ -1,0 +1,17 @@
+.mouse-follower {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #FF8D1C;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease, transform 0.05s linear;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.mouse-follower.visible {
+  opacity: 1;
+}

@@ -9,6 +9,7 @@ import ChromaLab from '@/components/ProjectsShowCase/ChromaLabPres/ChromaLab/Chr
 import Ouch from '@/components/ProjectsShowCase/OuchPres/Ouch/Ouch';
 import Alice from '@/components/ProjectsShowCase/AlicePres/Alice/Alice';
 import CV from "@/components/CV/CVcomp/CV";
+import MouseFollower from "./components/layout/MouseTracker/MouseFollower";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
@@ -59,6 +60,7 @@ function AppContent() {
 	return (
 		<div style={{ position: "relative" }}>
 			<ScrollToTop />
+			<MouseFollower />
 			<Header />
 			<Routes>
 				<Route path="/" element={<AboutMe />} />
