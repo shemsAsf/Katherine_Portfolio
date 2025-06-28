@@ -10,6 +10,8 @@ import Ouch from '@/components/ProjectsShowCase/OuchPres/Ouch/Ouch';
 import Alice from '@/components/ProjectsShowCase/AlicePres/Alice/Alice';
 import CV from "@/components/CV/CVcomp/CV";
 import MouseFollower from "./components/layout/MouseTracker/MouseFollower";
+import { BrowserView, MobileView } from "react-device-detect";
+import PhoneMode from "./components/PhoneMode/PhoneMode";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
@@ -109,8 +111,15 @@ function AppContent() {
 
 export default function App() {
 	return (
-		<BrowserRouter>
-			<AppContent />
-		</BrowserRouter>
+		<>
+			<BrowserView>
+				<BrowserRouter>
+					<AppContent />
+				</BrowserRouter>
+			</BrowserView>
+			<MobileView>
+				<PhoneMode />
+			</MobileView>
+		</>
 	);
 }
