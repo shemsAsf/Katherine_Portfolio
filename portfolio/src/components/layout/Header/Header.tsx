@@ -61,9 +61,7 @@ export default function Header() {
 		<div className="header-container">
 			<header>
 				<p className="hover-target" onClick={() => handleNavigate('/')}>ekaterina potapova</p>
-				<div ref={logoRef}>
-					<img src="/Img/Pigeons/header_pigeon.png" className="header-logo hover-target" alt="logo" onClick={() => setShowNav(!showNav)} />
-				</div>
+				<img src="/Img/Pigeons/header_pigeon.png" className="header-logo hover-target" alt="logo" onClick={() => setShowNav(!showNav)} />
 
 				{showNav && (
 					<div className="nav-box" ref={navRef}>
