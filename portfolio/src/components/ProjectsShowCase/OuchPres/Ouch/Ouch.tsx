@@ -5,6 +5,7 @@ import "../../ShowCase.css"
 import OuchCarousel from "../OuchCarousel/OuchCarousel";
 import ProjectTitle from "../../ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
+import WhiteRoundCover from "@/components/layout/WhiteRoundCover/WhiteRoundCover";
 
 
 export default function Ouch() {
@@ -34,40 +35,43 @@ export default function Ouch() {
 					"/Img/CompLogo/Blender.png",
 					"/Img/CompLogo/AfterEffect.png",
 				]} />
-				
-			<div className="ouch-caroussel-wrapper">
+
+			<div className="ouch-project">
 				<div className="project-text">
 					<h1>project details</h1>
 					<br />
-					<div className="project-text-flex">
-						<p className="sm-txt">
-							The music clip’s visual concept revolves around{" "}
-							<strong>a room representing a failing relationship.</strong> Initially
-							stable and filled with happy memories, the room transforms
-							dramatically. Phones are thrown, lights flicker, and the presence of
-							horns on bedsheets signifies betrayal. Presents turn unsettling,
-							memories fade, and tears flow, filling the room with emotions.{" "}
-							<strong>
-								This visual journey captures the shift from stability to chaos,
-								immersing viewers in the turbulent experience of a troubled
-								relationship.
-							</strong>
-						</p>
-						<p className="sm-txt">
-							The music clip’s visual concept revolves around <strong>a room
-								representing a failing relationship.</strong> Initially stable
-							and filled with happy memories, the room transforms dramatically.
-							Phones are thrown, lights flicker, and the presence of horns on
-							bedsheets signifies betrayal. Presents turn unsettling, memories
-							fade, and tears flow, filling the room with emotions. <strong>This
-								visual journey captures the shift from stability to chaos, immersing
-								viewers in the turbulent experience of a troubled relationship.</strong>
-						</p>
+					<div className="ouch-caroussel-wrapper">
+						<div className="project-text-flex">
+							<p className="sm-txt">
+								The music clip’s visual concept revolves around{" "}
+								<strong>a room representing a failing relationship.</strong> Initially
+								stable and filled with happy memories, the room transforms
+								dramatically. Phones are thrown, lights flicker, and the presence of
+								horns on bedsheets signifies betrayal. Presents turn unsettling,
+								memories fade, and tears flow, filling the room with emotions.{" "}
+								<strong>
+									This visual journey captures the shift from stability to chaos,
+									immersing viewers in the turbulent experience of a troubled
+									relationship.
+								</strong>
+							</p>
+							<p className="sm-txt">
+								The music clip’s visual concept revolves around <strong>a room
+									representing a failing relationship.</strong> Initially stable
+								and filled with happy memories, the room transforms dramatically.
+								Phones are thrown, lights flicker, and the presence of horns on
+								bedsheets signifies betrayal. Presents turn unsettling, memories
+								fade, and tears flow, filling the room with emotions. <strong>This
+									visual journey captures the shift from stability to chaos, immersing
+									viewers in the turbulent experience of a troubled relationship.</strong>
+							</p>
+						</div>
+					<OuchCarousel />
 					</div>
 				</div>
-				<OuchCarousel />
+				<WhiteRoundCover color="var(--secondary-color)" />
 			</div>
-            <YouTubeEmbed src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf" color="var(--secondary-color)"/>
+			<YouTubeEmbed src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf" color="white" />
 		</>
 	);
 }

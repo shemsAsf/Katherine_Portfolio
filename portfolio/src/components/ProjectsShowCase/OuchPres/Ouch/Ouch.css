@@ -12,3 +12,10 @@
 .header-maintext.ouch {
     margin-top: 6vh;
 }
+
+.ouch-caroussel-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5vh;;
+}

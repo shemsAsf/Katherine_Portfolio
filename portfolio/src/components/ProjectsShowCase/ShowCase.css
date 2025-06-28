@@ -92,13 +92,13 @@
 
 .project-text {
     padding: 0 3vw;
-    width: 45%;
     box-sizing: border-box;
 }
 
 .project-text-flex {
     display: flex;
     flex-direction: row;
+    width: 45%;
     gap: 3vw;
 }
 

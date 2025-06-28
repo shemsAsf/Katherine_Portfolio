@@ -12,15 +12,15 @@
   margin-top: 40%;
 }
 
-.ouch-caroussel-wrapper {
+.ouch-project {
   display: flex;
   flex-direction: row;
   background-color: var(--secondary-color);
-  height: 80vh;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   overflow: hidden;
+  padding-top: 5vh;
 }
 
 .ouch-card {
@@ -34,6 +34,8 @@
   object-fit: cover;
   border-radius: 12px;
   display: block;
+  z-index: 9;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -41,7 +43,7 @@
     width: 90vw;
   }
 
-  .ouch-caroussel-wrapper {
+  .ouch-project {
     flex-direction: column;
     height: auto;
     padding: 4vh 3vw;
