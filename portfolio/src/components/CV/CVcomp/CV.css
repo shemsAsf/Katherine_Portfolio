@@ -1,52 +1,52 @@
-.CV-main{
-    min-height: 100vh;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    gap: 14vh;
-    padding: 14vh 7vw;
+.CV-main {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 14vh;
+  padding: 14vh 7vw;
 }
 
-.CV-main h2{
-	margin-bottom: 5vh;
+.CV-main h2 {
+  margin-bottom: 5vh;
 }
 
-.CV-title h2{
-	margin-bottom: 0;
+.CV-title h2 {
+  margin-bottom: 0;
 }
 
-.CV-title{
-    text-align: center;
+.CV-title {
+  text-align: center;
 }
 
-.CV-history-wrapper{
-    display: flex;
-    gap: 6vw;
+.CV-history-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
-.CV-history{
-    width: 25%;
+.CV-history {
+  width: 25%;
 }
 
-.CV-timeline{
-    border-left: solid 4px;
-    padding-left: 2vw;
-    padding-top: .5rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+.CV-timeline {
+  border-left: solid 4px;
+  padding-left: 2vw;
+  padding-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 
-.CV-history h2{
-    padding-left: calc(2vw + 4px);
+.CV-history h2 {
+  padding-left: calc(2vw + 4px);
 }
 
-.CV-profile h2{
-    padding-left: 0;
+.CV-profile h2 {
+  padding-left: 0;
 }
 
-.CV-profile{
-    width: 50%;
+.CV-profile {
+  width: 30vw;
 }
 
 .CV-history h3 {
@@ -86,16 +86,20 @@
   transform: translateY(-50%);
 }
 
-.CV-skills{
-	display: flex;
-	gap: 130px;
+.CV-skills {
+  display: flex;
+  justify-content: space-between;
 }
 
-.CV-skills p{
-	margin-bottom: 20px;
-	margin-top: 0;
+.CV-skills p {
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
-.CV-legal{
-	width: 30%;
+.soft-skills {
+  width: 30vw;
+}
+
+.CV-legal {
+  width: 30%;
 }

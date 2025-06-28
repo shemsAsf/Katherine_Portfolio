@@ -13,7 +13,7 @@ export default function Alice() {
 		<><ProjectTitle
 			title={['“Alice in the Wonderland”']}
 			subtitle="Animation in After Effects"
-			backgroundImage="/Img/AliceBG.png"
+			backgroundImage="/Img/Alice/AliceBackground.jpeg"
 			accentColor="var(--secondary-color)"
 			paragraph={(
 				<>

@@ -68,7 +68,6 @@ export default function Header() {
 						<button className="hover-target" onClick={() => handleNavigate('/Contact')}>Contact me</button>
 						<button className="hover-target" onClick={handleClickPortfolio}>Portfolio</button>
 						<button className="hover-target" onClick={() => handleNavigate('/CV')}>CV page</button>
-						<button className="hover-target" onClick={() => handleNavigate('/pigeon')}>Why pigeon?</button>
 					</div>
 				)}
 			</header>

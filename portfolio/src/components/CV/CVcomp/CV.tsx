@@ -97,7 +97,7 @@ export default function CV() {
                     <h2>HARD SKILLS</h2>
                     <ToolsGrid />
                 </div>
-                <div>
+                <div className="soft-skills">
                     <h2>SOFT SKILLS</h2>
                     <p>Time management</p>
                     <p>Communication</p>
