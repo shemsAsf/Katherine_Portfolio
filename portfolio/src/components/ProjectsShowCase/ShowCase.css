@@ -102,6 +102,10 @@
     gap: 3vw;
 }
 
+.project-title-pigeon{
+    width:5vw;
+}
+
 @media (max-width: 768px) {
     .project-title-header {
         height: 100vh;

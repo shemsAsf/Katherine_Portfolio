@@ -5,7 +5,8 @@ import "../../ShowCase.css"
 import OuchCarousel from "../OuchCarousel/OuchCarousel";
 import ProjectTitle from "../../ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
-import WhiteRoundCover from "@/components/layout/WhiteRoundCover/WhiteRoundCover";
+import DecoratedText from "@/components/DecoratedText/DecoratedText";
+import RoundCover from "@/components/layout/RoundCover/RoundCover";
 
 
 export default function Ouch() {
@@ -38,7 +39,13 @@ export default function Ouch() {
 
 			<div className="ouch-project">
 				<div className="project-text">
-					<h1>project details</h1>
+					<h1>
+						<DecoratedText
+							text="project details"
+							decoratedIndex={11}
+							imageSrc={"/Img/Pigeons/idea_pigeon.png"}
+						/>
+					</h1>
 					<br />
 					<div className="ouch-caroussel-wrapper">
 						<div className="project-text-flex">
@@ -66,12 +73,15 @@ export default function Ouch() {
 									viewers in the turbulent experience of a troubled relationship.</strong>
 							</p>
 						</div>
-					<OuchCarousel />
+						<OuchCarousel />
 					</div>
 				</div>
-				<WhiteRoundCover color="var(--secondary-color)" />
+				<RoundCover bg_color="var(--secondary-color)" color="white" />
 			</div>
-			<YouTubeEmbed src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf" color="white" />
+			<YouTubeEmbed
+				src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf"
+				color="white"
+				text_color="var(--secondary-color)" />
 		</>
 	);
 }

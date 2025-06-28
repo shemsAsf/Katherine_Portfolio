@@ -3,6 +3,7 @@
 import { useState } from "react";
 import "./ChromaBody.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import DecoratedText from "@/components/DecoratedText/DecoratedText";
 
 const carousselImgs = [
     'HighresScreenshot00131.png',
@@ -43,8 +44,15 @@ export default function ChromaBody() {
 
     return (
         <div className="chroma-body">
+            <h1 className="blue-text presentation chroma-body-title">
+                <DecoratedText
+                    text="branding"
+                    decoratedIndex={2}
+                    imageSrc={"/Img/Pigeons/paint-pigeon.png"}
+                />
+            </h1>
             <div className="chroma-walking-guys">
-                <img src="\Img\ChromaLab\ChromaBody\Colors_5.gif" />
+                <img src="\Img\ChromaLab\ChromaBody\cl_walking.gif" />
             </div>
             <div className="chroma-color-palet">
                 <img src="\Img\ChromaLab\ChromaBody\Gifs for portfolio_text.gif" />
@@ -65,7 +73,7 @@ export default function ChromaBody() {
             {selectedIndex !== null && (
                 <div className="lightbox" onClick={closeLightbox}>
                     <button className="nav-button left" onClick={prevImage}>
-                        <ChevronLeft size={50}/>
+                        <ChevronLeft size={50} />
                     </button>
                     <img
                         src={`${process.env.PUBLIC_URL}/Img/ChromaLab/ChromaGallery/${carousselImgs[selectedIndex]}`}
@@ -73,7 +81,7 @@ export default function ChromaBody() {
                         className="lightbox-image"
                     />
                     <button className="nav-button right" onClick={nextImage}>
-                        <ChevronRight size={50}/>
+                        <ChevronRight size={50} />
                     </button>
                 </div>
             )}

@@ -4,7 +4,8 @@ import { useRef, useState } from "react";
 import "./AboutMe.css";
 import Presentation from "@/components/HomePage/Presentation/Presentation";
 import { ChevronDown, Volume2, VolumeX } from 'lucide-react';
-import WhiteRoundCover from "@/components/layout/WhiteRoundCover/WhiteRoundCover";
+import DecoratedText from "@/components/DecoratedText/DecoratedText";
+import RoundCover from "@/components/layout/RoundCover/RoundCover";
 
 export default function AboutMe() {
 	const videoRef = useRef<HTMLVideoElement>(null);
@@ -47,7 +48,13 @@ export default function AboutMe() {
 			<div className="about-me-background">
 				<div className="about-me-container">
 					<div className="about-me-text">
-						<h1>about me</h1>
+						<h1>
+							<DecoratedText
+								text="about me"
+								decoratedIndex={7}
+								imageSrc={"/Img/Pigeons/speaking_pigeon.png"}
+							/>
+						</h1>
 						<h2>Multidisciplinary Designer & Motion Artist</h2>
 						<p className="about-me-text-para">
 							With a strong foundation in graphic design, I focus on
@@ -69,7 +76,7 @@ export default function AboutMe() {
 						<img src="/Img/KatPic.png" alt="" />
 					</div>
 				</div>
-				<WhiteRoundCover color="var(--primary-color)" />
+				<RoundCover bg_color="var(--primary-color)" color="white" />
 			</div>
 			<Presentation />
 		</div>

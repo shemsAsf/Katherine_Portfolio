@@ -5,6 +5,7 @@ import "../../ShowCase.css"
 import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 import AliceCarousel from "@/components/ProjectsShowCase/AlicePres/AliceCarousel/AliceCarousel";
+import RoundCover from "@/components/layout/RoundCover/RoundCover";
 
 export default function Alice() {
 
@@ -44,7 +45,11 @@ export default function Alice() {
 				"/Img/CompLogo/Illustrator.png",
 			]} />
 			<AliceCarousel />
-			<YouTubeEmbed src="https://www.youtube.com/embed/FtBIqwyKfEE?si=oAHJZDy8vK0kugcW" color="var(--secondary-color)"/>
+			<RoundCover bg_color="var(--secondary-color)" color="white"/>
+			<YouTubeEmbed
+				src="https://www.youtube.com/embed/FtBIqwyKfEE?si=oAHJZDy8vK0kugcW"
+				color="white"
+				text_color="var(--secondary-color)" />
 		</>
 	);
 }

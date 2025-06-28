@@ -12,19 +12,8 @@
   margin-top: 40%;
 }
 
-.ouch-project {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--secondary-color);
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  overflow: hidden;
-  padding-top: 5vh;
-}
-
 .ouch-card {
-  width: 50vw;
+  width: 45vw;
   height: auto;
 }
 

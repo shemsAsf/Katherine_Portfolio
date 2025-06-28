@@ -1,5 +1,6 @@
 import ProjectBlock, { ProjectBlockProps } from '@/components/HomePage/ProjectBlocks/ProjectBlock';
 import './Presentation.css';
+import DecoratedText from '@/components/DecoratedText/DecoratedText';
 
 const projects: ProjectBlockProps[] = [
 	{
@@ -43,7 +44,11 @@ export default function Presentation() {
 		<div className='presentation-container'>
 			<div>
 				<h1 className="blue-text presentation">
-					my works
+					<DecoratedText
+						text="my works"
+						decoratedIndex={7}
+						imageSrc={"/Img/Pigeons/paint-pigeon.png"}
+					/>
 				</h1>
 			</div>
 			<div className='project-container'>

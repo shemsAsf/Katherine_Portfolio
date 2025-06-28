@@ -62,7 +62,7 @@ export default function Header() {
 			<header>
 				<p onClick={() => handleNavigate('/')}>ekaterina potapova</p>
 				<div ref={logoRef}>
-					<img src="/Img/BB-bird-2.png" className="header-logo" alt="logo" onClick={() => setShowNav(!showNav)} />
+					<img src="/Img/Pigeons/header_pigeon.png" className="header-logo" alt="logo" onClick={() => setShowNav(!showNav)} />
 				</div>
 
 				{showNav && (

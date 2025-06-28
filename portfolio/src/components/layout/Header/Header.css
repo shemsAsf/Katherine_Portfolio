@@ -28,7 +28,7 @@ header p {
 .header-logo {
 	width: auto;
 	height: 2.5vh;
-	cursor: pointer;
+	/* cursor: pointer; */
 	image-rendering: pixelated;
 }
 

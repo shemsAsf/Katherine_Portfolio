@@ -1,0 +1,12 @@
+.cover-bg{
+    height: 10vh;
+    width: 100%;
+}
+
+.cover{
+  height: 100%;
+  width: 100%;
+  border-radius: 10vh 10vh 0 0;
+  z-index: 10;
+  position: relative;
+}

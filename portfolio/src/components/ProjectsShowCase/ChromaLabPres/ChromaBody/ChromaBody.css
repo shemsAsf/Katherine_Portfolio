@@ -1,26 +1,30 @@
-.chroma-walking-guys img{
-    width: 100%;
-    height: auto;
+.chroma-walking-guys img {
+  width: 100%;
+  height: auto;
 }
 
-.chroma-walking-guys{
-    width: 50vw;
+.chroma-walking-guys {
+  width: 50vw;
 }
 
-.chroma-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 5vw;
-    gap: 3vw;
+.chroma-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5vw;
+  gap: 3vw;
 }
 
-.chroma-color-palet{
-    width: 100%;
+.chroma-body-title {
+  width: 100%;
 }
 
-.chroma-color-palet img{
-    width: 50%;
+.chroma-color-palet {
+  width: 100%;
+}
+
+.chroma-color-palet img {
+  width: 50%;
 }
 
 .chroma-image-gallery {

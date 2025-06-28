@@ -26,7 +26,7 @@ export default function Footer() {
             <p>behance: Katherine Aston</p>
         </div>
         <div>
-				<img src="/Img/speaking pigeon.png" className="footer-pigeon" alt="logo" />
+				<img src="/Img/Pigeons/laptop_pigeon.png" className="footer-pigeon" alt="logo" />
         </div>
         <div className="rotating-text footer-div">{RotatingText}</div>
     </footer>

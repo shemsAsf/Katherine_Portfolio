@@ -6,7 +6,8 @@ import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitl
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 import ChromaCarousel from "../ChromaCarousel/ChromaCarousel";
 import ChromaBody from "../ChromaBody/ChromaBody";
-import WhiteRoundCover from "@/components/layout/WhiteRoundCover/WhiteRoundCover";
+import DecoratedText from "@/components/DecoratedText/DecoratedText";
+import RoundCover from "@/components/layout/RoundCover/RoundCover";
 
 export default function ChromaLab() {
     return (
@@ -48,7 +49,13 @@ export default function ChromaLab() {
 
             <div className="cl-snd">
                 <div className="project-text">
-                    <h1>project details</h1>
+                    <h1>
+                        <DecoratedText
+                            text="project details"
+                            decoratedIndex={8}
+                            imageSrc={"/Img/Pigeons/gaming_pigeon.png"}
+                        />
+                    </h1>
                     <br />
                     <div className="project-text-flex chroma">
                         <p className="sm-txt">
@@ -66,9 +73,13 @@ export default function ChromaLab() {
                 </div>
                 <ChromaCarousel />
             </div>
-            <WhiteRoundCover color="var(--primary-color)"/>
+            <RoundCover bg_color="var(--primary-color)" color="white" />
             <ChromaBody />
-            <YouTubeEmbed src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj" color="var(--primary-color)"/>
+            <RoundCover bg_color="white" color="var(--primary-color)" />
+            <YouTubeEmbed
+                src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"
+                color="var(--primary-color)"
+                text_color="white" />
         </div>
     );
 }
