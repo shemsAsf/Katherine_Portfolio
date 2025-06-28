@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
 import Header from '@/components/layout/Header/Header';
 import Footer from '@/components/layout/Footer/Footer';
@@ -13,10 +13,14 @@ import MouseFollower from "./components/layout/MouseTracker/MouseFollower";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
+	const [showLoader, setShowLoader] = useState(true);
+	const [isFirstJoin, setIsFirstJoin] = useState(true);
+	const isInitialMount = useRef(true);
 	const location = useLocation();
 
 	useEffect(() => {
 		setLoading(true);
+		setShowLoader(true);
 
 		const checkMediaReady = () => {
 			const images = Array.from(document.images);
@@ -32,14 +36,16 @@ function AppContent() {
 
 			const videoPromises = videos.map(video =>
 				new Promise(resolve => {
-					if (video.readyState >= 3) return resolve(true); // HAVE_FUTURE_DATA
-					video.addEventListener('loadeddata', () => resolve(true), { once: true });
+					if (video.readyState >= 4) return resolve(true); // HAVE_ENOUGH_DATA
+					video.addEventListener('canplaythrough', () => resolve(true), { once: true });
 					video.addEventListener('error', () => resolve(true), { once: true });
 				})
 			);
 
 			Promise.all([...imagePromises, ...videoPromises]).then(() => {
 				setLoading(false);
+				// Wait for fade-out transition before removing loader
+				setTimeout(() => setShowLoader(false), 500); // 500ms matches CSS transition duration
 			});
 		};
 
@@ -57,6 +63,14 @@ function AppContent() {
 		};
 	}, [location.pathname]);
 
+	useEffect(() => {
+		if (isInitialMount.current) {
+			isInitialMount.current = false;
+		} else {
+			setIsFirstJoin(false);
+		}
+	}, [location.pathname]);
+
 	return (
 		<div style={{ position: "relative" }}>
 			<ScrollToTop />
@@ -71,7 +85,7 @@ function AppContent() {
 			</Routes>
 			<Footer />
 
-			{loading && (
+			{showLoader && (
 				<div
 					style={{
 						position: "fixed",
@@ -81,9 +95,12 @@ function AppContent() {
 						height: "100vh",
 						backgroundColor: "white",
 						zIndex: 9999,
+						opacity: loading ? 1 : 0,
+						pointerEvents: loading ? "auto" : "none",
+						transition: "opacity 0.5s ease",
 					}}
 				>
-					<LoadingScreen />
+					<LoadingScreen isFirstJoin={isFirstJoin} />
 				</div>
 			)}
 		</div>

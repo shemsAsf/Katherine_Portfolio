@@ -4,30 +4,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: ease-out 2s forwards;
   background: linear-gradient(59deg, var(--primary-color) 20%, var(--secondary-color) 100%);
   background-size: 200% 200%;
-  animation-name: gradientFade;
-  animation-duration: 5s;
-  animation-delay: 0s;
-  animation-fill-mode:  forwards;
+  animation-name: gradientPulse;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   text-align: center;
 }
 
-@keyframes gradientFade {
-  from {
+@keyframes gradientPulse {
+  0% {
     background-position: 0% 0%;
   }
-  to {
+
+  50% {
     background-position: 100% 100%;
   }
-}
 
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
+  100% {
+    background-position: 0% 0%;
   }
 }
 
@@ -37,16 +34,10 @@
   opacity: 1;
 }
 
-.loading-screen h2{
+.loading-screen h2 {
   font-weight: 400;
 }
 
 .loading-screen h1 {
   font-size: clamp(3rem, 6vw, 7rem);
-}
-
-@keyframes textFadeOut {
-  to {
-    opacity: 0;
-  }
 }
