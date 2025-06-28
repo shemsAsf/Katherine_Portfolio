@@ -3,7 +3,7 @@
     background-color: var(--primary-color);
     color: white;
     padding: 6vh 2vw;
-    cursor: pointer;
+    /* cursor: pointer; */
     height: 30vh;
     width: 12vw;
     display: flex;

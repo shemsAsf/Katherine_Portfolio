@@ -1,3 +1,7 @@
+body {
+  cursor: none;
+}
+
 .mouse-follower {
   position: fixed;
   width: 25px;

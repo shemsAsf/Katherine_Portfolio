@@ -35,7 +35,7 @@
   height: 300px;
   object-fit: cover;
   transition: transform 0.3s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .chroma-gallery-image:hover {
@@ -73,7 +73,7 @@
   background: none;
   border: none;
   color: white;
-  cursor: pointer;
+  /* cursor: pointer; */
   user-select: none;
   z-index: 1001;
   padding: 10px;
