@@ -2,6 +2,7 @@ import PercentageBar from "../../layout/PercentageBar/PercentageBar";
 import ToolsGrid from "../ToolsGrid/ToolsGrid";
 import Timeline from "../Timeline/Timeline"; // <-- import it here
 import "./CV.css";
+import DecoratedText from "@/components/DecoratedText/DecoratedText";
 
 export default function CV() {
     const workTimeline = [
@@ -72,7 +73,17 @@ export default function CV() {
     return (
         <div className="CV-main">
             <div className="CV-title">
-                <h1>Curriculum<br />Vitae</h1>
+                <h1>
+                    <DecoratedText
+                        text="Curriculum"
+                        decoratedIndex={9}
+                        imageSrc={"/Img/Pigeons/speaking_pigeon.png"}
+                        style={{
+                            transform: "translate(-23%, -110%)",
+                            width: "clamp(1rem, 7vw, 6rem)",
+                        }}
+                    />
+                    <br />Vitae</h1>
                 <br />
                 <h2>Multidisciplinary Designer & Motion Artist</h2>
             </div>
@@ -108,8 +119,8 @@ export default function CV() {
                 </div>
             </div>
             <div className="CV-legal">
-                * I authorize the processing of personal 
-                data contained in my curriculum vitae based 
+                * I authorize the processing of personal
+                data contained in my curriculum vitae based
                 on art. 13 GDPR 679/16.
             </div>
         </div>
