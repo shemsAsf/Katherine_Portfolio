@@ -12,6 +12,7 @@ import CV from "@/components/CV/CVcomp/CV";
 import MouseFollower from "./components/layout/MouseTracker/MouseFollower";
 import { BrowserView, MobileView } from "react-device-detect";
 import PhoneMode from "./components/PhoneMode/PhoneMode";
+import Contact from "./components/Contact/Contact";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
@@ -84,8 +85,9 @@ function AppContent() {
 				<Route path="/Ouch" element={<Ouch />} />
 				<Route path="/Alice" element={<Alice />} />
 				<Route path="/CV" element={<CV />} />
+				<Route path="/Contact" element={<Contact />} />
 			</Routes>
-			<Footer />
+			{location.pathname !== '/Contact' && <Footer />}
 
 			{showLoader && (
 				<div
