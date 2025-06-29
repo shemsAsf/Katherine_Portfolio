@@ -17,16 +17,16 @@ export default function Contact() {
             </div>
             <RoundCover bg_color='var(--secondary-color)' color="white" />
             <div className="contact-links">
-                <a href="https://wa.me/+393383818706" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/+393383818706" className='hover-target' target="_blank" rel="noopener noreferrer">
                     whatsapp
                 </a>
-                <a href="https://www.linkedin.com/in/katherine-aston/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/katherine-aston/" className='hover-target' target="_blank" rel="noopener noreferrer">
                     linkedin
                 </a>
-                <a href="https://www.behance.net/katherineaston#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.behance.net/katherineaston#" className='hover-target' target="_blank" rel="noopener noreferrer">
                     behance
                 </a>
-                <a href="mailto:katherineaston29@gmail.com">
+                <a href="mailto:katherineaston29@gmail.com" className='hover-target'>
                     mail
                 </a>
             </div>

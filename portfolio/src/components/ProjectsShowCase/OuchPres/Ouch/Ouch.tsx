@@ -78,6 +78,7 @@ export default function Ouch() {
 				</div>
 				<RoundCover bg_color="var(--secondary-color)" color="white" />
 			</div>
+			
 			<YouTubeEmbed
 				src="https://www.youtube.com/embed/kA7W6T8-zdg?si=ohd0d9B1qL3XnVuf"
 				color="white"
