@@ -1,109 +1,188 @@
+/* --- VIDEO STUFF -- */
+
 .about-me-video-container {
-  position: relative;
-  width: 100%;
-  height: 95vh;
-  overflow: hidden;
-  /* cursor: pointer; */
+	position: relative;
+	width: 100%;
+	height: 95vh;
+	overflow: hidden;
+	/* cursor: pointer; */
 }
 
 .about-me-bg-vid {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 105%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 105%;
+	height: 100%;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+	z-index: 0;
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  50% {
-    transform: translateX(-50%) translateY(-8px);
-  }
+
+	0%,
+	100% {
+		transform: translateX(-50%) translateY(0);
+	}
+
+	50% {
+		transform: translateX(-50%) translateY(-8px);
+	}
 }
 
 .video-v-icon {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  color: white;
-  opacity: 0.8;
-  animation: bounce 1.6s ease-in-out infinite;
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	color: white;
+	opacity: 0.8;
+	animation: bounce 1.6s ease-in-out infinite;
 }
 
 .sound-overlay {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  background: rgba(0,0,0,0.5);
-  padding: 8px 12px;
-  border-radius: 8px;
-  color: white;
-  font-size: 14px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 8px 12px;
+	border-radius: 8px;
+	color: white;
+	font-size: 14px;
 }
 
 .sound-text {
-  margin-left: 8px;
+	margin-left: 8px;
 }
 
+/* --- TEXT --- */
 
 .about-me-background {
-  background: var(--primary-color);
+	background: var(--primary-color);
 }
 
-.about-me-container {
-  height: 70vh;
-  position: relative;
-  padding: 7vh 5vw;
-  padding-right: 0;
-  padding-top: 4vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  z-index: 1;
+.about-me-text {
+	width: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-.about-me-text{
-  width: 45%;
-  margin-top: auto;
-  margin-bottom: auto;
+.about-me-container p {
+	margin-top: clamp(2rem, 6vh, 6rem);
 }
 
-.about-me-text p{
-  margin-top: 6vh;
-}
-
-.about-me-text-para-thin{
-  width: 70%;
+.about-me-text-para-thin {
+	width: 70%;
 }
 
 .kat-pic {
-  background-color: white;
-  width: 33vw;
-  height: 70%;
-  margin-bottom: 3vw;
-  align-self: flex-end;
-  border-radius: 60px 0 0 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+	background-color: white;
+	width: 33vw;
+	height: 70%;
+	border-radius: 60px 0 0 60px;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-.kat-pic img{
-  width:28vw;
+.kat-pic img {
+	width: 28vw;
+	transform: translateY(-20%);
 }
 
-.about-me-text h2{
-  margin-top: 0;
-  font-size: clamp(.8rem, 1.5vw, 1.5rem);
-  font-weight: 600;
+.about-me-text h2 {
+	margin-top: 0;
+	font-size: clamp(.8rem, 1.5vw, 1.5rem);
+	font-weight: 600;
+}
+
+.about-me-container {
+	height: 70vh;
+	position: relative;
+	padding: 7vh 5vw;
+	padding-right: 0;
+	padding-top: 4vh;
+	display: grid;
+	z-index: 1;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"a p"
+		"b p";
+}
+
+.about-me-container .a {
+	grid-area: a;
+	margin-top: auto;
+}
+
+.about-me-container .b {
+	grid-area: b;
+}
+
+.about-me-container .p {
+	grid-area: p;
+}
+
+@media (max-width: 768px) {
+	.about-me-video-container {
+		width: 100%;
+		height: 30vh;
+		z-index: 0;
+	}
+
+	.about-me-text {
+		width: 60%;
+		margin-top: 0;
+		margin-right: 3vw;
+	}
+
+	.about-me-container {
+		grid-template-areas:
+			"a a"
+			"p b";
+
+		padding-right: 5vw;
+	}
+
+	.about-me-container .a {
+		margin-top: 0;
+	}
+
+	.about-me-container .b p {
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.about-me-container .b {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(2rem, 6vh, 6rem);
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.kat-pic {
+		background-color: transparent;
+		border: 1px;
+		border-style: solid;
+		border-radius: 60px;
+		width: 33vw;
+		height: 30vh;
+		margin-left: 0;
+		margin-top: auto;
+		margin-bottom: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.kat-pic img{
+		transform: translateY(0);
+	}
+
 }

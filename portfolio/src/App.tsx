@@ -114,14 +114,9 @@ function AppContent() {
 export default function App() {
 	return (
 		<>
-			<BrowserView>
-				<BrowserRouter>
-					<AppContent />
-				</BrowserRouter>
-			</BrowserView>
-			<MobileView>
-				<PhoneMode />
-			</MobileView>
+			<BrowserRouter>
+				<AppContent />
+			</BrowserRouter>
 		</>
 	);
 }

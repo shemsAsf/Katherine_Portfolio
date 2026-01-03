@@ -37,6 +37,17 @@ const projects: ProjectBlockProps[] = [
 			"/Img/CompLogo/Illustrator.png",
 		]
 	},
+	{
+		title: 'Alice in the Wonderland',
+		subtitle: 'Animation in After Effects',
+		link: '/alice',
+		background: '/Img/AliceBG.png',
+		images: [
+			"/Img/CompLogo/Audition.png",
+			"/Img/CompLogo/AfterEffect.png",
+			"/Img/CompLogo/Illustrator.png",
+		]
+	},
 ];
 
 export default function Presentation() {

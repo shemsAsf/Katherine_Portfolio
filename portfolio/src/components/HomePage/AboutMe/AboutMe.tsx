@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import "./AboutMe.css";
 import Presentation from "@/components/HomePage/Presentation/Presentation";
-import { ChevronDown, Volume2, VolumeX } from 'lucide-react';
+import { AlignCenter, ChevronDown, Volume2, VolumeX } from 'lucide-react';
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
 
@@ -34,7 +34,12 @@ export default function AboutMe() {
 
 				{/* Check icon (bottom center) */}
 				<div className="video-v-icon">
-					<ChevronDown size={70} />
+					<ChevronDown
+						style={{
+							width: 'clamp(2.5rem, 8vw, 4.5rem)',
+							height: 'clamp(2.5rem, 8vw, 4.5rem)',
+						}}
+					/>
 				</div>
 
 				{/* Sound control overlay */}
@@ -45,9 +50,10 @@ export default function AboutMe() {
 					</span>
 				</div>
 			</div>
+
 			<div className="about-me-background">
 				<div className="about-me-container">
-					<div className="about-me-text">
+					<div className="a">
 						<h1>
 							<DecoratedText
 								text="about me"
@@ -56,6 +62,7 @@ export default function AboutMe() {
 							/>
 						</h1>
 						<h2>Multidisciplinary Designer & Motion Artist</h2>
+
 						<p className="about-me-text-para">
 							With a strong foundation in graphic design, I focus on
 							<strong> motion 3D graphics</strong> and interested in
@@ -63,6 +70,8 @@ export default function AboutMe() {
 							sphere of 2d animation and <strong>communication design
 							</strong> branding.
 						</p>
+					</div>
+					<div className="b">
 						<p className="about-me-text-para-thin">
 							<strong>My passion</strong> is to make design interesting
 							and experiment with new complicated techniques and styles.
@@ -72,11 +81,13 @@ export default function AboutMe() {
 							appealing, but should also captivate minds.
 						</p>
 					</div>
-					<div className="kat-pic">
+					<div className="kat-pic p">
 						<img src="/Img/KatPic.png" alt="" />
 					</div>
 				</div>
+
 				<RoundCover bg_color="var(--primary-color)" color="white" />
+				
 			</div>
 			<Presentation />
 		</div>
