@@ -20,15 +20,15 @@ export default function ChromaLab() {
                 paragraph={(
                     <>
                         <p>
-                            The game about two cute characters, who are trying to escape a
-                            laboratory where they are being held as lab rats. The “Chroma
-                            Laboratory” is known for producing toxic paint which gives the
-                            special abilities depending on the color.
+                            The game about two cute characters, who are <strong>trying to escape a
+                                laboratory</strong> where they are <strong>being held as lab rats.</strong> The <strong>"Chroma
+                                    Laboratory"</strong> is known for producing <strong>toxic paint which gives
+                                        the special abilities</strong> depending on the color.
                         </p>
                         <p>
-                            In the story, the paint had to be tested before real life use,
-                            therefore the special test subjects were invented. You are
-                            playing as the test subject and have to proceed through all the
+                            <strong>In the story,</strong> the paint had to be tested before real life use,
+                            therefore the special test subjects were invented. <strong>You are
+                                playing as the test subject</strong> and have to proceed through all the
                             test chambers to escape.
                         </p>
                     </>
@@ -61,7 +61,7 @@ export default function ChromaLab() {
                     <br />
                     <div className="project-text-flex type1">
                         <p className="sm-txt">
-                            The game made in <strong>Unreal Engine</strong>
+                            The game made in <strong>Unreal Engine </strong>
                             from scratch. Using Blender as a 3d modeling tool
                             and for rigging and animations, and Substance Painter
                             for texturing, I made an environment.
@@ -77,9 +77,8 @@ export default function ChromaLab() {
             </div>
             <RoundCover bg_color="var(--primary-color)" color="white" />
             <ChromaBody />
-            <RoundCover bg_color="white" color="var(--primary-color)" />
             <YouTubeEmbed
-                src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"
+                srcs={["https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"]}
                 color="var(--primary-color)"
                 text_color="white" />
         </div>

@@ -37,7 +37,7 @@ export default function ProjectTitle({
                             <h2>{subtitle}</h2>
                         </div>
                         <div className="project-title-children-wrapper">
-                            <div className="project-title-children project-title-paragraph">{paragraph}</div>
+                            <div className="project-title-children project-title-paragraph tit-sm-txt">{paragraph}</div>
                             <div className="project-title-children project-title-components-wrapper">
                                 <div className="project-title-comp-imgs">
                                     {images.map((src) => (
@@ -47,9 +47,7 @@ export default function ProjectTitle({
                                 <div className="project-title-pigeon-list">
                                     <img src="/Img/Pigeons/speaking_pigeon.png" className="project-title-pigeon" alt="speaking-pigeon" />
 
-
-
-                                    <ul className="components-list">
+                                    <ul className="components-list tit-sm-txt">
                                         {components.map((item, idx) => (
                                             <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
                                         ))}

@@ -13,7 +13,7 @@ export default function Alice() {
 		<><ProjectTitle
 			title={['“Alice in the Wonderland”']}
 			subtitle="Animation in After Effects"
-			backgroundImage="/Img/Alice/AliceBackground.jpeg"
+			backgroundImage="/Img/Alice/AliceBackground.png"
 			accentColor="var(--secondary-color)"
 			paragraph={(
 				<>
@@ -45,9 +45,8 @@ export default function Alice() {
 				"/Img/CompLogo/Illustrator.png",
 			]} />
 			<AliceCarousel />
-			<RoundCover bg_color="var(--secondary-color)" color="white"/>
 			<YouTubeEmbed
-				src="https://www.youtube.com/embed/FtBIqwyKfEE?si=oAHJZDy8vK0kugcW"
+				srcs={["https://www.youtube.com/embed/FtBIqwyKfEE?si=oAHJZDy8vK0kugcW"]}
 				color="white"
 				text_color="var(--secondary-color)" />
 		</>

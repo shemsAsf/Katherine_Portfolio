@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import "./AboutMe.css";
 import Presentation from "@/components/HomePage/Presentation/Presentation";
-import { AlignCenter, ChevronDown, Volume2, VolumeX } from 'lucide-react';
+import { ChevronDown, Volume2, VolumeX } from 'lucide-react';
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
 

@@ -1,6 +1,6 @@
-.project-page-title.ouch{
-   margin-top: 10vh; 
-   width:100%;
+.project-page-title.ouch {
+    margin-top: 10vh;
+    width: 100%;
 }
 
 .header-maintext.ouch p {
@@ -13,21 +13,43 @@
     margin-top: 6vh;
 }
 
-.card-fan-wrapper{
+.card-fan-wrapper {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 5vh;;
+    margin-bottom: 5vh;
+    ;
 }
 
 .ouch-project {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--secondary-color);
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  overflow: hidden;
-  padding-top: 5vh;
-  min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 5vh;
+    min-height: 90vh;
+}
+
+.ouch_content {
+    padding: 0 4vw;
+    box-sizing: border-box;
+    color: black;
+}
+
+.ouch_content h1 {
+    color: var(--secondary-color);
+}
+
+.ouch_content .sm-txt {
+    width: 38%;
+    margin-top: 0;
+}
+
+.ouch_content_s1 {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
 }

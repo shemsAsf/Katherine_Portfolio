@@ -5,17 +5,30 @@
   overflow: hidden;
 }
 
-.fullwidth-video-container h1{
+.fullwidth-video-container h1 {
   padding-left: 20vw;
+  padding-top: 5vh;
 }
 
-.fullwidth-video-container iframe {
-  aspect-ratio: 16 / 9;
-  width: 60%;
-  height: auto;
+.video-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
-  border: 0;
+  width: 60%;
 }
+
+.video-row iframe {
+  aspect-ratio: 9 / 16;
+  height: 75vh;
+  width: auto;
+  border: 0;
+  flex-shrink: 0;
+}
+
+.video-row.count-2 iframe { height: 65vh; }
+.video-row.count-3 iframe { height: 60vh; }

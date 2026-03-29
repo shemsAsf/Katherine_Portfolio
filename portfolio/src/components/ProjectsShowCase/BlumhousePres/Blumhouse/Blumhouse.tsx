@@ -83,9 +83,8 @@ export default function Blumhouse() {
                 </h1>
             </div>
 
-            <RoundCover bg_color="white" color="var(--primary-color)" />
             <YouTubeEmbed
-                src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"
+                srcs={["https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"]}
                 color="var(--primary-color)"
                 text_color="white" />
         </div>

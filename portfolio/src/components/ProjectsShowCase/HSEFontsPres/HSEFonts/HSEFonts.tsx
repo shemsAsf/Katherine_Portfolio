@@ -7,12 +7,23 @@ import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
 import HSEFontsCarousel from "../HSEFontsCarousel/HSEFontsCarousel";
+import HSEFontsIcons from "./HSEFontsIcons";
+import Gallery from "@/components/layout/Gallery/Gallery";
 
 export default function HSEFonts() {
+    const gallery:string[] = [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+        "6.png",
+    ]
+
     return (
-        <div>
+        <div className="hseFonts">
             <ProjectTitle
-                title={['“HSE Fonts“']}
+                title={['"HSE', 'Fonts"']}
                 subtitle="Reels in After Effects"
                 backgroundImage="/Img/HSEFontsBG.png"
                 accentColor="var(--primary-color)"
@@ -61,21 +72,42 @@ export default function HSEFonts() {
                         </p>
                     </div>
                 </div>
-                <HSEFontsCarousel />
             </div>
-            <div className="branding-wrapper">
+
+            <RoundCover bg_color="var(--primary-color)" color="white" />
+            <div className="hsefont_content">
                 <h1>
                     <DecoratedText
                         text="branding"
                         decoratedIndex={2}
-                        imageSrc={"/Img/Pigeons/paint-pigeon.png"}
+                        imageSrc="/Img/Pigeons/paint-pigeon.png"
                     />
                 </h1>
+                <br />
+                <br />
+                <br />
+                <p className="m-txt">
+                    <strong>Bright colors</strong> that catch your eye, 
+                    making you want to stop and look at them.
+                </p>
+                <br />
+                <br />
+                <br />
+                <img 
+                src="/Img/HSEFonts/ColorPalette.svg"
+                style={{width: "100%"}}/>
+
+                <HSEFontsIcons/>
+                <Gallery path="/Img/HSEFonts/Gallery/" images={gallery}/>
+
             </div>
 
-            <RoundCover bg_color="white" color="var(--primary-color)" />
             <YouTubeEmbed
-                src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"
+                srcs={[
+                    "https://youtube.com/embed/L8nCGmDuO_g?feature=share",
+                    "https://youtube.com/embed/9ZBYSW7CugQ?feature=share",
+                    "https://www.youtube.com/embed/XW7ZaLGPi5I?feature=share",
+                ]}
                 color="var(--primary-color)"
                 text_color="white" />
         </div>
