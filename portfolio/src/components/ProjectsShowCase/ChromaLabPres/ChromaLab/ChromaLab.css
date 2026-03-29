@@ -1,20 +1,3 @@
-.cl-snd {
-    background: var(--primary-color);
-    background-size: over;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 5vh;
-    min-height: 85vh;
-}
-
-
-.project-text-flex.chroma{
-    flex-direction: column;
-    width: 70%;
-    gap: 0;
-}
-
 @media (max-width: 768px) {
     .overlay-ue {
         display: none;

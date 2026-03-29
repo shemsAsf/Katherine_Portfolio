@@ -1,10 +1,10 @@
-.chroma-caroussel-wrapper {
+.caroussel-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.chroma-cards-container{
+.cards-container{
     width: 100%;
     margin-top: -20vh;
 }

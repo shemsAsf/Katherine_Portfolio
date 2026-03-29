@@ -44,13 +44,15 @@ export default function ChromaBody() {
 
     return (
         <div className="chroma-body">
-            <h1 className="blue-text presentation chroma-body-title">
-                <DecoratedText
-                    text="branding"
-                    decoratedIndex={2}
-                    imageSrc={"/Img/Pigeons/paint-pigeon.png"}
-                />
-            </h1>
+            <div className="branding-wrapper">
+                <h1 className="blue-text presentation chroma-body-title">
+                    <DecoratedText
+                        text="branding"
+                        decoratedIndex={2}
+                        imageSrc={"/Img/Pigeons/paint-pigeon.png"}
+                    />
+                </h1>
+            </div>
             <div className="chroma-walking-guys">
                 <img src="\Img\ChromaLab\ChromaBody\cl_walking.gif" />
             </div>

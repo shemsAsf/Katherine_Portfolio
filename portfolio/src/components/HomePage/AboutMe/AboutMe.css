@@ -86,8 +86,7 @@
 	height: 70%;
 	border-radius: 60px 0 0 60px;
 	margin-left: auto;
-	margin-top: auto;
-	margin-bottom: auto;
+	align-self: center;
 }
 
 .kat-pic img {
@@ -102,7 +101,6 @@
 }
 
 .about-me-container {
-	height: 70vh;
 	position: relative;
 	padding: 7vh 5vw;
 	padding-right: 0;
@@ -110,7 +108,8 @@
 	display: grid;
 	z-index: 1;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: auto auto;
+	align-content: center;
 	grid-template-areas:
 		"a p"
 		"b p";
@@ -145,7 +144,7 @@
 	.about-me-container {
 		grid-template-areas:
 			"a a"
-			"p b";
+			"b p";
 
 		padding-right: 5vw;
 	}
@@ -162,27 +161,21 @@
 	.about-me-container .b {
 		display: flex;
 		flex-direction: column;
-		gap: clamp(2rem, 6vh, 6rem);
-		margin-top: auto;
+		gap: clamp(1rem, 4vh, 5rem);
 		margin-bottom: auto;
+		margin-top: clamp(1rem, 4vh, 5rem);
 	}
 
 	.kat-pic {
-		background-color: transparent;
-		border: 1px;
-		border-style: solid;
-		border-radius: 60px;
-		width: 33vw;
-		height: 30vh;
-		margin-left: 0;
-		margin-top: auto;
-		margin-bottom: auto;
-		display: flex;
-		align-items: center;
+		width: 90%;
+		height: 60%;
+		transform: translateX(5vw);
+
+		margin-top: clamp(2rem, 6vh, 6rem);
 	}
 
-	.kat-pic img{
-		transform: translateY(0);
+	.kat-pic img {
+		width: 100%;
 	}
 
 }

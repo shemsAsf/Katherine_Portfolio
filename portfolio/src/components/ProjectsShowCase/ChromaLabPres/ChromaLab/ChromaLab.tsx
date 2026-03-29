@@ -47,7 +47,7 @@ export default function ChromaLab() {
                     "/Img/CompLogo/AfterEffect.png",
                 ]} />
 
-            <div className="cl-snd">
+            <div className="type1-snd">
                 <div className="project-text">
                     <h1>
                         <DecoratedText
@@ -57,7 +57,9 @@ export default function ChromaLab() {
                         />
                     </h1>
                     <br />
-                    <div className="project-text-flex chroma">
+                    <br />
+                    <br />
+                    <div className="project-text-flex type1">
                         <p className="sm-txt">
                             The game made in <strong>Unreal Engine</strong>
                             from scratch. Using Blender as a 3d modeling tool

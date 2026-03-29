@@ -47,7 +47,7 @@ header p {
 	border-bottom-right-radius: 1rem;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	z-index: 9999;
 	padding: 1rem 0;
 }
@@ -71,5 +71,9 @@ header p {
 @media (max-width: 768px) {
 	.nav-box {
 		width: 30vw;
+	}
+
+	header p {
+		font-size: clamp(1rem, 1vh, 1.3rem);
 	}
 }

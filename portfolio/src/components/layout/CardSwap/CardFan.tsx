@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from "react";
-import CardSwap, { Card } from '../../../layout/CardSwap/CardSwap';
-import "./OuchCarousel.css";
+import { useEffect, useState } from "react";
+import CardSwap, { Card } from './CardSwap';
+import "./CardFan.css";
 
-const imageNames = [
-  "/Img/Ouch/ouchCaroussel1.png",
-  "/Img/Ouch/ouchCaroussel2.png",
-  "/Img/Ouch/ouchCaroussel3.png",
-  "/Img/Ouch/ouchCaroussel4.png",
-];
+interface CardFanProps {
+  images: string[]
+}
 
-export default function OuchCarousel() {
+export default function CardsFan({images}: CardFanProps) {
   const [dimensions, setDimensions] = useState({ width: 1000, height: 570 });
 
   useEffect(() => {
@@ -37,9 +34,9 @@ export default function OuchCarousel() {
         pauseOnHover={false}
         easing={"linear"}
       >
-        {imageNames.map((src, idx) => (
-          <Card key={idx} className="ouch-card">
-            <img src={src} alt={`Card ${idx + 1}`} className="ouch-card-image" />
+        {images.map((src, idx) => (
+          <Card key={idx} className="fan-card">
+            <img src={src} alt={`Card ${idx + 1}`} className="fan-card-image" />
           </Card>
         ))}
       </CardSwap>

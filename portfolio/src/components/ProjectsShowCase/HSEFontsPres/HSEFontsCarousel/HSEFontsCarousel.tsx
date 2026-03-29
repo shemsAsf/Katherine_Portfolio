@@ -12,10 +12,10 @@ const imageNames = [
     "/Img/ChromaLab/Barrel.png",
 ];
 
-export default function ChromaCarousel() {
+export default function HSEFontsCarousel() {
     return (
-        <div className="caroussel-wrapper">
-            <div className="cards-container">
+        <div className="chroma-caroussel-wrapper">
+            <div className="chroma-cards-container">
                 <div style={{ height: '800px', width: '100%', position: 'relative' }}>
                     <CircularGallery
                         bend={3}

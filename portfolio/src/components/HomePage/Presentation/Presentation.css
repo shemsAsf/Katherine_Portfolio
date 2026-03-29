@@ -1,5 +1,5 @@
 .presentation-container {
-  margin-left: 4%;
+  margin: 0 4%;
 }
 
 div.presentation {
@@ -25,4 +25,18 @@ h1.presentation {
   overflow-x: scroll;
   scroll-behavior: smooth;
   transform: translateX(-4%);
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+    flex-wrap: unset;
+    transform: none;
+    padding: 0;
+    box-sizing: border-box;
+    grid-gap: 5vw;
+    width: 100%
+  }
 }

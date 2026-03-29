@@ -353,11 +353,13 @@ class Media {
       const effectiveX = Math.min(Math.abs(x), H);
 
       const arc = R - Math.sqrt(R * R - effectiveX * effectiveX);
+      const maxDrop = this.plane.scale.y * 0.5;
+
       if (this.bend > 0) {
-        this.plane.position.y = -arc;
+        this.plane.position.y = -Math.min(arc, maxDrop);
         this.plane.rotation.z = -Math.sign(x) * Math.asin(effectiveX / R);
       } else {
-        this.plane.position.y = arc;
+        this.plane.position.y = Math.min(arc, maxDrop);
         this.plane.rotation.z = Math.sign(x) * Math.asin(effectiveX / R);
       }
     }
