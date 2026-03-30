@@ -122,7 +122,7 @@
 
 .project-text-flex.type1{
     flex-direction: column;
-    width: 35%;
+    width: 29%;
     gap: 0;
 }
 
@@ -133,6 +133,7 @@
 .branding-wrapper h1{
     margin-top: 10vh;
     color: var(--primary-color);
+    font-size: clamp(2rem, 6.6vw, 8rem);
 }
 
 @media (max-width: 768px) {

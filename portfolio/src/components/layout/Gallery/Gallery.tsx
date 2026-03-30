@@ -6,9 +6,10 @@ import "./Gallery.css"
 interface GalleryProps {
     images: string[]
     path: string
+    rowAmount?: number
 }
 
-export default function Gallery({images, path}: GalleryProps) {
+export default function Gallery({images, path, rowAmount = 3}: GalleryProps) {
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
     
         const openImage = (index: number) => {
@@ -42,6 +43,7 @@ export default function Gallery({images, path}: GalleryProps) {
                         alt={`img-${index}`}
                         onClick={() => openImage(index)}
                         className="gallery-image hover-target"
+                        style={{width: `${(100 - (4 * (rowAmount + 1))) / rowAmount}vw`}}
                     />
                 ))}
 

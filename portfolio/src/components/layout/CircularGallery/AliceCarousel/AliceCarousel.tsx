@@ -1,7 +1,9 @@
 "use client"
 
 import CircularGallery from "@/components/layout/CircularGallery/CircularGallery";
+import "../Carousel.css";
 import './AliceCarousel.css'
+import DecoratedText from "@/components/DecoratedText/DecoratedText";
 
 const imageNames = [
     "/Img/Alice/behance5.png",
@@ -16,14 +18,21 @@ const imageNames = [
 export default function AliceCarousel() {
     return (
         <div className="alice-caroussel-wrapper">
+            <h1>
+                <DecoratedText
+                    text="project details"
+                    decoratedIndex={11}
+                    imageSrc={"/Img/Pigeons/idea_pigeon.png"}
+                />
+            </h1>
             <div className="alice-text">
-                <p>                    
+                <p>
                     As an addition to the video, I made branding for a coworking place.
                 </p>
                 <p>
-                    Co working space with specifically Alice in the Wonderland theme, 
-                    since Lewa work of Luis Carol especially resonated in adults hearts 
-                    as we grow and we percieve his story from a completely different 
+                    Co working space with specifically Alice in the Wonderland theme,
+                    since Lewa work of Luis Carol especially resonated in adults hearts
+                    as we grow and we percieve his story from a completely different
                     perspective.
                 </p>
             </div>

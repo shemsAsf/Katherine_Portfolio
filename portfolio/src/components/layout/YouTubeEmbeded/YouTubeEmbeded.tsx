@@ -13,6 +13,7 @@ export default function YouTubeEmbed({ srcs, color, text_color }: YouTubeEmbedPr
             className="fullwidth-video-container"
             style={{ backgroundColor: color }}
         >
+            <br/>
             <h1 style={{ color: text_color }}>
                 <DecoratedText
                     text="video"

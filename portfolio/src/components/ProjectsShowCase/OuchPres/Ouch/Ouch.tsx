@@ -55,6 +55,7 @@ export default function Ouch() {
 
 			<div className="ouch-project">
 				<div className="project-text">
+					<br/><br/>
 					<h1>
 						<DecoratedText
 							text="project details"
@@ -105,9 +106,7 @@ export default function Ouch() {
 						imageSrc="/Img/Pigeons/paint-pigeon.png"
 					/>
 				</h1>
-				<br />
-				<br />
-				<br />
+				<br /><br /><br />
 				<p className="sm-txt">
 					Through symbolic elements and dynamic transformations,
 					the visuals depict the <strong>breakdown of communication, </strong>
@@ -119,7 +118,7 @@ export default function Ouch() {
 					leaving a lasting impact and a deeper connection with
 					the song's themes.</strong>
 				</p>
-				<br />
+				<br /><br />
 				<div className="ouch_content_s1">
 					<img src='/Img/Ouch/OuchCan00.png' />
 					<p className="sm-txt">

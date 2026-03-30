@@ -4,7 +4,7 @@ import "./ChromaLab.css";
 import "../../ShowCase.css"
 import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
-import ChromaCarousel from "../ChromaCarousel/ChromaCarousel";
+import ChromaCarousel from "../../../layout/CircularGallery/ChromaCarousel/ChromaCarousel";
 import ChromaBody from "../ChromaBody/ChromaBody";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";

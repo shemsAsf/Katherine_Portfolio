@@ -13,3 +13,11 @@
     width: 60%;
     margin-top: 5vh;
 }
+
+.alicemock{
+    padding: 8vh 4vw 0;
+}
+
+.alicemock h1{
+    color:var(--secondary-color)
+}

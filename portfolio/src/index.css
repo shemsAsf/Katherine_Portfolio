@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2rem, 6.6vw, 8rem);
+  font-size: clamp(2rem, 5.5vw, 8rem);
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 0;
@@ -31,7 +31,7 @@ h3 {
 }
 
 .sm-txt {
-  font-size: clamp(.6rem, 1.2vw, 1.6rem);
+  font-size: clamp(.6rem, 1vw, 1.6rem);
   width: 100%;
 }
 
@@ -41,7 +41,7 @@ h3 {
 }
 
 .tit-sm-txt {
-    font-size: clamp(1.5rem, 1.6vw, 2rem);
+  font-size: clamp(1.5rem, 1.6vw, 2rem);
 }
 
 code {
@@ -94,7 +94,7 @@ code {
   --secondary-color: #FD8394;
 }
 
-.blue-text{
+.blue-text {
   color: var(--primary-color);
 }
 

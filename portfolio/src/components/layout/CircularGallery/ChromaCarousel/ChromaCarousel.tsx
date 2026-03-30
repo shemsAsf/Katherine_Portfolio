@@ -2,6 +2,7 @@
 
 import CircularGallery from "@/components/layout/CircularGallery/CircularGallery";
 import '@/components/layout/CircularGallery/CircularGallery.css'
+import "../Carousel.css";
 
 const imageNames = [
     "/Img/ChromaLab/Tower.png",

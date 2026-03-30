@@ -11,7 +11,7 @@ import HSEFontsIcons from "./HSEFontsIcons";
 import Gallery from "@/components/layout/Gallery/Gallery";
 
 export default function HSEFonts() {
-    const gallery:string[] = [
+    const gallery: string[] = [
         "1.png",
         "2.png",
         "3.png",
@@ -31,19 +31,20 @@ export default function HSEFonts() {
                     <>
                         <p>
                             The video showcases experimental fonts developed and
-                            distributed by HSE Fonts and is styled as a catchy ad.
+                            distributed by HSE Fonts and is <strong>styled as a catchy ad.</strong>
                         </p>
                         <p>
                             The target audience is based on young professionals,
                             freelancers and university students. The video should
-                            attract attention and convey the nature of the fonts.
-                            I combined bright colors, catchy music and fast graphics
-                            that you won’t get tired of.
+                            <strong>attract attention and convey the nature of the fonts.</strong> I combined <strong>bright colors,
+                                catchy music and fast graphics</strong> that you won't get tired of.
                         </p>
                     </>
                 )}
                 components={[
-                    "<strong>Animation</strong> in After Effects"
+                    "<strong>Animation</strong> in After Effects",
+                    "Frame sketching in <strong>Adobe Illustrator</strong>",
+                    "<strong>Photoshop mockups</strong>"
                 ]}
                 images={[
                     "/Img/CompLogo/AfterEffect.png",
@@ -87,18 +88,18 @@ export default function HSEFonts() {
                 <br />
                 <br />
                 <p className="m-txt">
-                    <strong>Bright colors</strong> that catch your eye, 
+                    <strong>Bright colors</strong> that catch your eye,
                     making you want to stop and look at them.
                 </p>
                 <br />
                 <br />
                 <br />
-                <img 
-                src="/Img/HSEFonts/ColorPalette.svg"
-                style={{width: "100%"}}/>
+                <img
+                    src="/Img/HSEFonts/ColorPalette.svg"
+                    style={{ width: "100%" }} />
 
-                <HSEFontsIcons/>
-                <Gallery path="/Img/HSEFonts/Gallery/" images={gallery}/>
+                <HSEFontsIcons />
+                <Gallery path="/Img/HSEFonts/Gallery/" images={gallery} />
 
             </div>
 

@@ -11,7 +11,10 @@ footer {
 
 footer div {
     width: fit-content;
-    width: 20%;
+}
+
+footer div p {
+    margin:5px;
 }
 
 .footer-div:first-child {

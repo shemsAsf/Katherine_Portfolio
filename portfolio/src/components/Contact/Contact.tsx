@@ -1,4 +1,3 @@
-import React from 'react';
 import './Contact.css';
 import DecoratedText from '../DecoratedText/DecoratedText';
 import RoundCover from '../layout/RoundCover/RoundCover';
