@@ -1,4 +1,3 @@
-import PercentageBar from "../../layout/PercentageBar/PercentageBar";
 import ToolsGrid from "../ToolsGrid/ToolsGrid";
 import Timeline from "../Timeline/Timeline"; // <-- import it here
 import "./CV.css";

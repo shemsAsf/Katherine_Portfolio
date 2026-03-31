@@ -4,7 +4,6 @@ import "../../ShowCase.css"
 import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
-import RoundCover from "@/components/layout/RoundCover/RoundCover";
 import CardsFan from "@/components/layout/CardSwap/CardFan";
 
 export default function Blumhouse() {

@@ -120,7 +120,7 @@ export default function Ouch() {
 				</p>
 				<br /><br />
 				<div className="ouch_content_s1">
-					<img src='/Img/Ouch/OuchCan00.png' />
+					<img src='/Img/Ouch/OuchCan00.png' alt=''/>
 					<p className="sm-txt">
 						<strong>The target audience</strong> is primarily Bring Me the Horizon fans, especially
 						those who like the emotionally charged songs of the group. This will include fans of alternative rock and post-hardcore who appreciate the unique sound of the group and the depth of the lyrics.

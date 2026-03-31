@@ -18,7 +18,7 @@ export default function YouTubeEmbed({ srcs, color, text_color }: YouTubeEmbedPr
                 <DecoratedText
                     text="video"
                     decoratedIndex={4}
-                    imageSrc={color == "white" ? "/Img/Pigeons/hat_pigeon.png" : "/Img/Pigeons/hat_pigeon_white.png"}
+                    imageSrc={color === "white" ? "/Img/Pigeons/hat_pigeon.png" : "/Img/Pigeons/hat_pigeon_white.png"}
                 />
             </h1>
             <div className={`video-row count-${srcs.length}`}>

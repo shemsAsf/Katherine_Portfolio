@@ -28,11 +28,11 @@ export default function ChromaBody() {
                 </h1>
             </div>
             <div className="chroma-walking-guys">
-                <img src="\Img\ChromaLab\ChromaBody\cl_walking.gif" />
+                <img src="\Img\ChromaLab\ChromaBody\cl_walking.gif" alt='Walking_Characters' />
             </div>
             <div className="chroma-color-palet">
-                <img src="\Img\ChromaLab\ChromaBody\Gifs for portfolio_text.gif" />
-                <img src="\Img\ChromaLab\ChromaBody\Colors_2.gif" />
+                <img src="\Img\ChromaLab\ChromaBody\Gifs for portfolio_text.gif" alt='fonts' />
+                <img src="\Img\ChromaLab\ChromaBody\Colors_2.gif" alt='color_palette'/>
             </div>
             <Gallery images={carousselImgs} path="/Img/ChromaLab/ChromaGallery/"/>
         </div>

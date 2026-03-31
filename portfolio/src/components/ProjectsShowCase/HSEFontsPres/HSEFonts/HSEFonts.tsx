@@ -6,7 +6,6 @@ import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitl
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
-import HSEFontsCarousel from "../HSEFontsCarousel/HSEFontsCarousel";
 import HSEFontsIcons from "./HSEFontsIcons";
 import Gallery from "@/components/layout/Gallery/Gallery";
 
@@ -96,7 +95,8 @@ export default function HSEFonts() {
                 <br />
                 <img
                     src="/Img/HSEFonts/ColorPalette.svg"
-                    style={{ width: "100%" }} />
+                    style={{ width: "100%" }} 
+                    alt='color_palette'/>
 
                 <HSEFontsIcons />
                 <Gallery path="/Img/HSEFonts/Gallery/" images={gallery} />

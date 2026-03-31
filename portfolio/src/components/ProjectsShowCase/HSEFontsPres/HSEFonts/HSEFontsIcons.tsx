@@ -34,6 +34,7 @@ export default function HSEFontsIcons() {
                         width: `${width / 1719 * 100}%`, // 1440 = your design's base width
                     }}
                     src={path}
+                    alt='cool_icon'
                 />
             ))}
             <p
