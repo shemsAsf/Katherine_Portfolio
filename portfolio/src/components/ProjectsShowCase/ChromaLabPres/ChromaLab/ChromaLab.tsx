@@ -4,10 +4,19 @@ import "./ChromaLab.css";
 import "../../ShowCase.css"
 import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
-import ChromaCarousel from "../../../layout/CircularGallery/ChromaCarousel/ChromaCarousel";
 import ChromaBody from "../ChromaBody/ChromaBody";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
+import Carousel from "@/components/layout/CircularGallery/CircularGalleryV2";
+
+const imageNames = [
+    "/Img/ChromaLab/Tower.png",
+    "/Img/ChromaLab/Button.png",
+    "/Img/ChromaLab/Traps.png",
+    "/Img/ChromaLab/LastLvl.png",
+    "/Img/ChromaLab/Levers.png",
+    "/Img/ChromaLab/Barrel.png",
+];
 
 export default function ChromaLab() {
     return (
@@ -73,7 +82,7 @@ export default function ChromaLab() {
                         </p>
                     </div>
                 </div>
-                <ChromaCarousel />
+                <Carousel images={ imageNames } />
             </div>
             <RoundCover bg_color="var(--primary-color)" color="white" />
             <ChromaBody />

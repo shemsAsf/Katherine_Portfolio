@@ -4,18 +4,29 @@ import "./Alice.css";
 import "../../ShowCase.css"
 import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
-import AliceCarousel from "@/components/layout/CircularGallery/AliceCarousel/AliceCarousel";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import Gallery from "@/components/layout/Gallery/Gallery";
+import Carousel from "@/components/layout/CircularGallery/CircularGalleryV2";
 
 const carousselImgs = [
+	"behance4.png",
 	"behance5.png",
 	"behance6.png",
+	"behance10.png",
 	"behance7.png",
 	"behance8.png",
 	"behance9.png",
-	"behance10.png",
 	"behance11.png",
+];
+
+const circularCarousselImgs = [
+	"/Img/Alice/behance5.png",
+	"/Img/Alice/behance6.png",
+	"/Img/Alice/behance7.png",
+	"/Img/Alice/behance8.png",
+	"/Img/Alice/behance9.png",
+	"/Img/Alice/behance10.png",
+	"/Img/Alice/behance11.png",
 ];
 
 export default function Alice() {
@@ -56,7 +67,30 @@ export default function Alice() {
 					"/Img/CompLogo/AfterEffect.png",
 					"/Img/CompLogo/Illustrator.png",
 				]} />
-			<AliceCarousel />
+
+
+			<div className="alice-caroussel-wrapper">
+				<h1>
+					<DecoratedText
+						text="project details"
+						decoratedIndex={11}
+						imageSrc={"/Img/Pigeons/idea_pigeon.png"}
+					/>
+				</h1>
+				<div className="alice-text">
+					<p>
+						As an addition to the video, I made branding for a coworking place.
+					</p>
+					<p>
+						Co working space with specifically Alice in the Wonderland theme,
+						since Lewa work of Luis Carol especially resonated in adults hearts
+						as we grow and we percieve his story from a completely different
+						perspective.
+					</p>
+				</div>
+				<Carousel images={circularCarousselImgs} />
+			</div>
+
 			<div className="alicemock">
 				<h1>
 					<DecoratedText
@@ -70,7 +104,7 @@ export default function Alice() {
 				<Gallery
 					images={carousselImgs}
 					path="/Img/Alice/"
-					rowAmount={4}/>
+					rowAmount={4} />
 
 			</div>
 			<YouTubeEmbed

@@ -43,7 +43,7 @@ export default function Gallery({images, path, rowAmount = 3}: GalleryProps) {
                         alt={`img-${index}`}
                         onClick={() => openImage(index)}
                         className="gallery-image hover-target"
-                        style={{width: `${(100 - (4 * (rowAmount + 1))) / rowAmount}vw`}}
+                        style={{width: `${(100 - (4 * (rowAmount + 1))) / rowAmount -1}vw`}}
                     />
                 ))}
 

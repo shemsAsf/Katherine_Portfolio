@@ -20,7 +20,7 @@ export default function AboutMe() {
 	};
 
 	return (
-		<div>
+		<div className="about-me">
 			<div className="about-me-video-container" onClick={handleClick}>
 				<video
 					ref={videoRef}

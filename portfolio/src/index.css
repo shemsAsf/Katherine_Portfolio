@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 1.7vw, 2.5rem);
+  font-size: clamp(1.2rem, 1.7vw, 2.5rem);
 }
 
 h3 {
@@ -41,7 +41,7 @@ h3 {
 }
 
 .tit-sm-txt {
-  font-size: clamp(1.5rem, 1.6vw, 2rem);
+  font-size: clamp(1rem, 1.6vw, 2rem);
 }
 
 code {
