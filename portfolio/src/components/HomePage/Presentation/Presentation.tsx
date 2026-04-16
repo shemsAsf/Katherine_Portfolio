@@ -27,6 +27,17 @@ const projects: ProjectBlockProps[] = [
 		]
 	},
 	{
+		title: '"Alice in the Wonderland"',
+		subtitle: 'Animation in After Effects',
+		link: '/alice',
+		background: '/Img/AliceBG.png',
+		images: [
+			"/Img/CompLogo/Audition.png",
+			"/Img/CompLogo/AfterEffect.png",
+			"/Img/CompLogo/Illustrator.png",
+		]
+	},
+	{
 		title: '"HSE Fonts"',
 		subtitle: 'Animation in After Effects',
 		link: '/HSEFonts',
@@ -38,23 +49,12 @@ const projects: ProjectBlockProps[] = [
 	},
 	{
 		title: '"Blumhouse Productions"',
-		subtitle: 'Animation in After Effects',
+		subtitle: 'Movie opening in Blender',
 		link: '/Blumhouse',
 		background: '/Img/Blumhouse.png',
 		images: [
+			"/Img/CompLogo/Blender.png",
 			"/Img/CompLogo/AfterEffect.png",
-			"/Img/CompLogo/Illustrator.png",
-		]
-	},
-	{
-		title: '"Alice in the Wonderland"',
-		subtitle: 'Animation in After Effects',
-		link: '/alice',
-		background: '/Img/AliceBG.png',
-		images: [
-			"/Img/CompLogo/Audition.png",
-			"/Img/CompLogo/AfterEffect.png",
-			"/Img/CompLogo/Illustrator.png",
 		]
 	},
 ];

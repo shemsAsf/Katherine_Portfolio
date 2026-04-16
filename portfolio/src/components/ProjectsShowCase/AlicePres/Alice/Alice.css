@@ -15,7 +15,7 @@
 }
 
 .alicemock {
-    padding: 8vh 4vw 0;
+    padding: 8vh var(--default-left-spacing) 0;
 }
 
 .alicemock h1 {

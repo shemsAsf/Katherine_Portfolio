@@ -23,11 +23,19 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.2rem, 1.7vw, 2.5rem);
+  font-size: clamp(1.2rem, 1.6vw, 2.5rem);
 }
 
 h3 {
   font-size: clamp(.6rem, 1.2vw, 1.6rem);
+}
+
+.xxsm-txt {
+  font-size: clamp(.3rem, .6vw, 1.3rem);
+}
+
+.xsm-txt {
+  font-size: clamp(.4rem, .8vw, 1.4rem);
 }
 
 .sm-txt {
@@ -90,8 +98,9 @@ code {
 }
 
 :root {
-  --primary-color: #1C60FF;
-  --secondary-color: #FD8394;
+  --primary-color: rgb(28, 96, 255);
+  --secondary-color: rgb(253, 131, 148);
+  --default-left-spacing: 4vw;
 }
 
 .blue-text {

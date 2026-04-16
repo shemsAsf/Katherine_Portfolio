@@ -8,7 +8,7 @@
 }
 
 .hsefont_content {
-    padding: 0 4vw;
+    padding: 0 var(--default-left-spacing);
     box-sizing: border-box;
     color: black;
 }

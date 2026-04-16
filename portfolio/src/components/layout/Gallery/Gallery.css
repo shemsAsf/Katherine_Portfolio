@@ -1,8 +1,8 @@
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 4vw;
-  margin-top: 4vw;
+  gap: var(--default-left-spacing);
+  margin-top: var(--default-left-spacing);
   margin-bottom: 5vw;
   justify-content: center;
 }
