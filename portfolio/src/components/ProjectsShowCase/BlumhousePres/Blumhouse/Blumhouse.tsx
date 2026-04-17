@@ -1,10 +1,35 @@
 "use client";
 
 import "../../ShowCase.css"
+import "./Blumhouse.css"
 import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import CardsFan from "@/components/layout/CardSwap/CardFan";
+import RoundCover from "@/components/layout/RoundCover/RoundCover";
+import Gallery from "@/components/layout/Gallery/Gallery";
+
+const Gallery1: string[] = [
+    "gif 1.gif",
+    "video.gif",
+    "video_1.gif",
+    "video_2.gif",
+    "video_3.gif",
+    "video_4.gif",
+    "video_5.gif",
+    "video_6.gif",
+];
+
+const Gallery2: string[] = [
+    "horizontal mockup 1.png",
+    "Free_Citylight_Poster_Mockup_4 1.png",
+    "metalic poster 1.png",
+    "movie cup 1.png",
+    "popcorn 1.png",
+    "2a30a3174218789.649df1b7e700d 3.png",
+    "ticket 1.png",
+]
+
 
 export default function Blumhouse() {
     return (
@@ -42,7 +67,7 @@ export default function Blumhouse() {
 
 
             <div className="type1-snd">
-                <div className="project-text">
+                <div className="project-text blumhouse">
                     <h1>
                         <DecoratedText
                             text="project details"
@@ -63,16 +88,16 @@ export default function Blumhouse() {
                             </p>
                         </div>
                         <CardsFan images={[
-                            "/Img/Ouch/ouchCaroussel1.png",
-                            "/Img/Ouch/ouchCaroussel2.png",
-                            "/Img/Ouch/ouchCaroussel3.png",
-                            "/Img/Ouch/ouchCaroussel4.png",
+                            "Img/Blumhouse/Gallery2/horizontal mockup 1.png",
+                            "Img/Blumhouse/Gallery2/Free_Citylight_Poster_Mockup_4 1.png",
+                            "Img/Blumhouse/Gallery2/metalic poster 1.png",
+                            "Img/Blumhouse/Gallery2/movie cup 1.png",
                         ]} />
                     </div>
                 </div>
+                <RoundCover bg_color='var(--primary-color)' color="white" />
             </div>
-
-            <div className="branding-wrapper">
+            <div className="blumhouse_content">
                 <h1>
                     <DecoratedText
                         text="branding"
@@ -80,6 +105,31 @@ export default function Blumhouse() {
                         imageSrc={"/Img/Pigeons/paint-pigeon.png"}
                     />
                 </h1>
+                <br />
+                <br />
+                <br />
+                <p className="m-txt">
+                    For the intro of the film company, it was decided to make references to <strong>five of its most famous films</strong>. In these films, I tried to take the <strong>most iconic scenes</strong> that everyone who watched will recognize.
+                </p>
+
+                <p className="m-txt">
+                    Movie made with a <strong>custom shader</strong> I developed in Blender for this project. It resembles hand-drawn graphics, printed <strong>linocut or drypoint drawing</strong>. All scenes are connected by a camera path and all transitions are thought out in such a way that clips can be composed in any queue for any single film screening, and the company logo always comes as the final scene.
+                </p>
+                <Gallery images={Gallery1} path="Img/Blumhouse/Gallery/" rowAmount={4} />
+
+                <p className="m-txt">
+                    In addition to the video, I developed some <strong>posters</strong> and <strong>movie attributes</strong> that people could get at the cinema.
+                </p>
+
+                <div className="blumhouse-flex-gallery-wrapper">
+                    {Gallery2.map((item, index) => (
+                        <img
+                            className={`blumhouse-flex-gallery-img img-pos-${index + 1}`}
+                            src={process.env.PUBLIC_URL + "Img/Blumhouse/Gallery2/" + item}
+                            alt={item} />
+                    ))
+                    }
+                </div>
             </div>
 
             <YouTubeEmbed

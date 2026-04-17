@@ -1,7 +1,7 @@
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(var(--columns, 3), 1fr);
-  gap: var(--default-left-spacing);
+  gap: 2vw;
   margin-top: var(--default-left-spacing);
   margin-bottom: 5vw;
   width: 100%;

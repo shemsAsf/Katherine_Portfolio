@@ -52,6 +52,10 @@ h3 {
   font-size: clamp(1rem, 1.6vw, 2rem);
 }
 
+.l-txt {
+  font-size: clamp(.6rem, 1.2vw, 1.6rem);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
