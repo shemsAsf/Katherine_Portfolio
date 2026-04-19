@@ -27,10 +27,3 @@
   width: 50%;
 }
 
-.chroma-body .image-gallery > img:nth-child(2){
-  width: 37vw !important;
-}
-
-.chroma-body .image-gallery > img:nth-child(1){
-  width: 37vw !important;
-}

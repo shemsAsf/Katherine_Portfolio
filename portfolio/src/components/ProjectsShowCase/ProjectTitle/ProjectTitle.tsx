@@ -1,5 +1,6 @@
 "use client";
 
+import { renderText } from "@/Helper/TextRenderer";
 import "../ShowCase.css"
 
 interface ProjectTitleProps {
@@ -49,7 +50,7 @@ export default function ProjectTitle({
 
                                     <ul className="components-list tit-sm-txt">
                                         {components.map((item, idx) => (
-                                            <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+                                            <li key={idx}>{renderText(item)}</li>
                                         ))}
                                     </ul>
                                 </div>

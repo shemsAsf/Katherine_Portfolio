@@ -36,8 +36,7 @@ export default function Gallery({images, path, rowAmount = 3}: GalleryProps) {
 
         return(
             <div 
-            className="image-gallery"
-            style={{ "--columns": rowAmount } as React.CSSProperties}>
+            className="image-gallery">
                 {images.map((name, index) => (
                     <img
                         key={index}
@@ -45,6 +44,7 @@ export default function Gallery({images, path, rowAmount = 3}: GalleryProps) {
                         alt={`img-${index}`}
                         onClick={() => openImage(index)}
                         className="gallery-image hover-target"
+                        style={{ "--columns": rowAmount } as React.CSSProperties}
                     />
                 ))}
 

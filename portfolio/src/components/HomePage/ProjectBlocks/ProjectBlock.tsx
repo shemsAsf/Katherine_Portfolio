@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './ProjectBlock.css';
+import { renderText } from '@/Helper/TextRenderer';
 
 export interface ProjectBlockProps {
     title: string;
@@ -19,7 +20,6 @@ export default function ProjectBlock({
     const navigate = useNavigate();
 
     return (
-
         <div
             className={`project-block hover-target`}
             onClick={() => navigate(link)}
@@ -31,7 +31,7 @@ export default function ProjectBlock({
                         <img src={src} className="project-logo" alt="logo" />
                     ))}
                 </div>
-                <h2  dangerouslySetInnerHTML={{ __html: title }}></h2>
+                <h2>{renderText(title)}</h2>
                 <p className="xsm-txt">{subtitle}</p>
             </div>
         </div>

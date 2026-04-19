@@ -1,19 +1,18 @@
 .image-gallery {
-  display: grid;
-  grid-template-columns: repeat(var(--columns, 3), 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 2vw;
   margin-top: var(--default-left-spacing);
   margin-bottom: 5vw;
   width: 100%;
   max-width: 100vw;
-  box-sizing: border-box;
 }
 
 .gallery-image {
-  width: 100%;
-  object-fit: cover;
+  width: calc((100% - 2vw * (var(--columns, 3) - 1)) / var(--columns, 3));
+  height: auto;
   transition: transform 0.3s ease;
-  cursor: pointer;
+  border-radius: var(--default-rounded-corner);
 }
 
 .gallery-image:hover {
@@ -39,7 +38,6 @@
   max-width: 90%;
   max-height: 80%;
   margin-top: 3%;
-  border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 

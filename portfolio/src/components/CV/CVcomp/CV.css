@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 14vh;
-  padding: 14vh 7vw;
+  padding: 14vh 5vw;
 }
 
 .CV-main h2 {
@@ -19,13 +19,20 @@
   text-align: center;
 }
 
+.cv-content{
+  display: grid;
+  grid-template-columns: 55vw 25vw;
+  row-gap: 8vw;
+}
+
 .CV-history-wrapper {
   display: flex;
-  justify-content: space-around;
+  gap: var(--default-left-spacing);
+  padding-right: var(--default-left-spacing);
 }
 
 .CV-history {
-  width: 25%;
+  flex-grow: 1;
 }
 
 .CV-timeline {
@@ -88,16 +95,13 @@
 
 .CV-skills {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  padding-right: 5vw;
 }
 
 .CV-skills p {
   margin-bottom: 20px;
   margin-top: 0;
-}
-
-.soft-skills {
-  width: 30vw;
 }
 
 .CV-legal {

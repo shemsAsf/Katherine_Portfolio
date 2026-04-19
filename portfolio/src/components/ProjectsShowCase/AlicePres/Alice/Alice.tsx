@@ -6,7 +6,7 @@ import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitl
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import Gallery from "@/components/layout/Gallery/Gallery";
-import Carousel from "@/components/layout/CircularGallery/CircularGalleryV2";
+import Carousel from "@/components/layout/CircularGallery/CircularGallery";
 
 const carousselImgs = [
 	"behance4.png",
@@ -58,9 +58,9 @@ export default function Alice() {
 						</p>
 					</>
 				)}
-				components={["<strong>Animation</strong> in After Effects",
-					"Frame sketching in <strong>Adobe Illustrator</strong>",
-					"<strong>Photoshop mockups</strong>",
+				components={["**Animation** in After Effects",
+					"Frame sketching in **Adobe Illustrator**",
+					"**Photoshop mockups**",
 				]}
 				images={[
 					"/Img/CompLogo/Audition.png",

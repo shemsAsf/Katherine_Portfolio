@@ -55,8 +55,8 @@ export default function Blumhouse() {
                     </>
                 )}
                 components={[
-                    "<strong>3D object</strong> modeling using Blender",
-                    "<strong>Texture animation</strong> using Blender",
+                    "**3D object** modeling using Blender",
+                    "**Texture animation** using Blender",
                     "Animation in Blender",
                     "Editing in After effects"
                 ]}

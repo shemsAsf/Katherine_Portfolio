@@ -1,5 +1,6 @@
 .percentage-bar-container {
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .percentage-bar-circles {

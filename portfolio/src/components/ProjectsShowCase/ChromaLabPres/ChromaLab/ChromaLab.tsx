@@ -7,7 +7,7 @@ import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
 import ChromaBody from "../ChromaBody/ChromaBody";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
-import Carousel from "@/components/layout/CircularGallery/CircularGalleryV2";
+import Carousel from "@/components/layout/CircularGallery/CircularGallery";
 
 const imageNames = [
     "/Img/ChromaLab/Tower.png",
@@ -43,10 +43,10 @@ export default function ChromaLab() {
                     </>
                 )}
                 components={[
-                    "<strong>3D object</strong> modeling using Blender",
-                    "<strong>Texturing</strong> using Substance Painter",
-                    "Audio work in <strong>Adobe Audition</strong>",
-                    "<strong>Light and scenes</strong>, as well as <strong>gameplay using Unreal Engine 5</strong>"
+                    "**3D object** modeling using Blender",
+                    "**Texturing** using Substance Painter",
+                    "Audio work in **Adobe Audition**",
+                    "**Light and scenes**, as well as **gameplay using Unreal Engine 5**"
                 ]}
                 images={[
                     "/Img/CompLogo/Unreal.png",

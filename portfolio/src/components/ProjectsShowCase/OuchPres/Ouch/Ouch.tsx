@@ -44,9 +44,9 @@ export default function Ouch() {
 						</p>
 					</>
 				)} components={[
-					"<strong>Animation</strong> in After Effects",
-					"Frame sketching in <strong>Adobe Illustrator</strong>",
-					"<strong>Photoshop mockups</strong>",
+					"**Animation** in After Effects",
+					"Frame sketching in **Adobe Illustrator**",
+					"**Photoshop mockups**",
 				]}
 				images={[
 					"/Img/CompLogo/Blender.png",

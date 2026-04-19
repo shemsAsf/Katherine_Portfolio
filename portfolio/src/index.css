@@ -105,6 +105,7 @@ code {
   --primary-color: rgb(28, 96, 255);
   --secondary-color: rgb(253, 131, 148);
   --default-left-spacing: 4vw;
+  --default-rounded-corner: 8px;
 }
 
 .blue-text {
