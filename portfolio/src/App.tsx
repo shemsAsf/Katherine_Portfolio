@@ -13,6 +13,7 @@ import MouseFollower from "./components/layout/MouseTracker/MouseFollower";
 import Contact from "./components/Contact/Contact";
 import HSEFonts from "./components/ProjectsShowCase/HSEFontsPres/HSEFonts/HSEFonts";
 import Blumhouse from "./components/ProjectsShowCase/BlumhousePres/Blumhouse/Blumhouse";
+import Pigeon from "./components/WhyPigeon/Pigon";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
@@ -87,6 +88,7 @@ function AppContent() {
 				<Route path="/Blumhouse" element={<Blumhouse />} />
 				<Route path="/Alice" element={<Alice />} />
 				<Route path="/CV" element={<CV />} />
+				<Route path="/Pigeon" element={<Pigeon />} />
 				<Route path="/Contact" element={<Contact />} />
 			</Routes>
 			{location.pathname !== '/Contact' && <Footer />}

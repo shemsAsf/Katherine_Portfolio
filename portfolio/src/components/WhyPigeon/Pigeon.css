@@ -1,0 +1,76 @@
+.pigeon-main {
+    min-height: 70vh;
+    background-color: var(--primary-color);
+    padding: 5vh var(--default-left-spacing);
+}
+
+.pigeon-main p:first-of-type {
+    width: 60%;
+}
+
+.tit {
+    width: fit-content;
+}
+
+.pigeon-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: max-content;
+}
+
+.pigeon-gallery-row {
+    display: flex;
+    gap: 1vw;
+    width: max-content;
+}
+
+.pigeon-gallery img {
+    max-width: 25%;
+    max-height: 25vh;
+    object-fit: cover;
+}
+
+.pigeon-flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pigeon-flex-container .gallery-col {
+    max-width: 60%;
+    width: max-content;
+}
+
+.pigeon-flex-container .vert-text {
+    writing-mode: sideways-lr;
+    text-orientation: sideways-right;
+    align-self: flex-end;
+    margin-left: -0.5vw;
+}
+
+.pigeon-flex-container .speaking-pigeon {
+    width: 5%;
+    object-fit: contain;
+    align-self: flex-end;
+    margin-left: auto;
+    transform: scaleX(-1);
+}
+
+.pigeon-flex-container .chart {
+    max-width: 25%;
+    width: fit-content;
+    align-self: flex-end;
+    margin-left: 2vw;
+}
+
+.pigeon-chart {
+    width: 100%;
+}
+
+.pigeon-list{
+    padding-inline-start: 0;
+}
+
+.pigeon-list {
+    margin-bottom: 0;
+}
