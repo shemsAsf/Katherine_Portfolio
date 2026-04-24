@@ -1,6 +1,4 @@
-import Gallery from "../layout/Gallery/Gallery";
 import "./Pigeon.css";
-import DecoratedText from "@/components/DecoratedText/DecoratedText";
 
 const images: string[] = [
 
@@ -41,7 +39,7 @@ export default function Pigeon() {
                                         alt={item}
                                     />
                                 ))}
-                                {row == 1 ?
+                                {row === 1 ?
                                     <h3 className="l-txt vert-text">WHY NOT?</h3> :
                                     <></>
                                 }
