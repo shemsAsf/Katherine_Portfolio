@@ -14,16 +14,16 @@ export default function Ouch() {
 
 	const carousselImgs = [
 		'1.gif',
-		'4.gif',
-		'10.gif',
 		'8.gif',
-		'11_1.gif',
-		'14.gif',
 		'15.gif',
-		'3.gif',
-		'12.gif',
 		'5.gif',
+		'4.gif',
+		'11_1.gif',
+		'3.gif',
 		'2.gif',
+		'10.gif',
+		'14.gif',
+		'12.gif',
 		'16.gif',
 	];
 
@@ -120,7 +120,10 @@ export default function Ouch() {
 				</p>
 				<br /><br />
 				<div className="ouch_content_s1">
-					<img src='/Img/Ouch/OuchCan00.png' alt=''/>
+					<img 
+					src='/Img/Ouch/OuchCan00.png' 
+					alt=''
+                    style={{ width: "55%" }} />
 					<p className="sm-txt">
 						<strong>The target audience</strong> is primarily Bring Me the Horizon fans, especially
 						those who like the emotionally charged songs of the group. This will include fans of alternative rock and post-hardcore who appreciate the unique sound of the group and the depth of the lyrics.

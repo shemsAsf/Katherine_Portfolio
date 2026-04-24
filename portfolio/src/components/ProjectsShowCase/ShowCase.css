@@ -82,7 +82,7 @@
 }
 
 .project-title-comp-img {
-    height: clamp(30px, 3.2vw, 80px);
+    height: clamp(30px, 3vw, 80px);
     margin-right: 1vw;
 }
 

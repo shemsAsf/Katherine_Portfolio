@@ -17,7 +17,7 @@ const projects: ProjectBlockProps[] = [
 		],
 	},
 	{
-		title: '"Ouch" by<br>BMTH',
+		title: '"Ouch" by BMTH',
 		subtitle: 'Music Video in Blender',
 		link: '/ouch',
 		background: '/Img/OuchBG.png',

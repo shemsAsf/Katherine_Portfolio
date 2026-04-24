@@ -41,6 +41,7 @@
     display: flex;
     text-align: right;
     justify-content: space-between;
+    margin-bottom: 5vw;
 }
 
 .ouch-project .project-text{

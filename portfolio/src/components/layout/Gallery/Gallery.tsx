@@ -9,46 +9,46 @@ interface GalleryProps {
     rowAmount?: number
 }
 
-export default function Gallery({images, path, rowAmount = 3}: GalleryProps) {
+export default function Gallery({ images, path, rowAmount = 3 }: GalleryProps) {
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-    
-        const openImage = (index: number) => {
-            setSelectedIndex(index);
-        };
-    
-        const closeLightbox = () => {
-            setSelectedIndex(null);
-        };
-    
-        const prevImage = (e: React.MouseEvent) => {
-            e.stopPropagation(); // prevent closing the lightbox
-            setSelectedIndex((prev) =>
-                prev === 0 ? images.length - 1 : (prev! - 1)
-            );
-        };
-    
-        const nextImage = (e: React.MouseEvent) => {
-            e.stopPropagation(); // prevent closing the lightbox
-            setSelectedIndex((prev) =>
-                prev === images.length - 1 ? 0 : (prev! + 1)
-            );
-        };
 
-        return(
-            <div 
-            className="image-gallery">
-                {images.map((name, index) => (
-                    <img
-                        key={index}
-                        src={process.env.PUBLIC_URL + path + name}
-                        alt={`img-${index}`}
-                        onClick={() => openImage(index)}
-                        className="gallery-image hover-target"
-                        style={{ "--columns": rowAmount } as React.CSSProperties}
-                    />
-                ))}
+    const openImage = (index: number) => {
+        setSelectedIndex(index);
+    };
 
-                 {selectedIndex !== null && (
+    const closeLightbox = () => {
+        setSelectedIndex(null);
+    };
+
+    const prevImage = (e: React.MouseEvent) => {
+        e.stopPropagation(); // prevent closing the lightbox
+        setSelectedIndex((prev) =>
+            prev === 0 ? images.length - 1 : (prev! - 1)
+        );
+    };
+
+    const nextImage = (e: React.MouseEvent) => {
+        e.stopPropagation(); // prevent closing the lightbox
+        setSelectedIndex((prev) =>
+            prev === images.length - 1 ? 0 : (prev! + 1)
+        );
+    };
+
+    return (
+        <div
+            className="image-gallery"
+            style={{ "--columns": rowAmount } as React.CSSProperties}>
+            {images.map((name, index) => (
+                <img
+                    key={index}
+                    src={process.env.PUBLIC_URL + path + name}
+                    alt={`img-${index}`}
+                    onClick={() => openImage(index)}
+                    className="gallery-image hover-target"
+                />
+            ))}
+
+            {selectedIndex !== null && (
                 <div className="lightbox" onClick={closeLightbox}>
                     <button className="nav-button left hover-target" onClick={prevImage}>
                         <ChevronLeft size={50} />
@@ -64,8 +64,8 @@ export default function Gallery({images, path, rowAmount = 3}: GalleryProps) {
                 </div>
             )}
 
-            </div>
-            
-        )
-    
+        </div>
+
+    )
+
 }

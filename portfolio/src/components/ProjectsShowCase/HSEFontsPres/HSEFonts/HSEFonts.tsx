@@ -99,6 +99,7 @@ export default function HSEFonts() {
                     alt='color_palette'/>
 
                 <HSEFontsIcons />
+                <br/><br/><br/>
                 <Gallery path="/Img/HSEFonts/Gallery/" images={gallery} />
 
             </div>

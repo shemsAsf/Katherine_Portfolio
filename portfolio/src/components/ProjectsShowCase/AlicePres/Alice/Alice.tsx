@@ -99,7 +99,8 @@ export default function Alice() {
 						imageSrc={"/Img/Pigeons/paint-pigeon.png"}
 					/>
 				</h1>
-				<h1>space mockupss</h1>
+				<h1>space mockups</h1>
+				<br/><br/><br/>
 
 				<Gallery
 					images={carousselImgs}
