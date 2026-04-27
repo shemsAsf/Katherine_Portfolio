@@ -1,11 +1,16 @@
 .phone-mode {
     background: var(--primary-color);
     background: linear-gradient(40deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.phone-mode h1{
+    text-align: center;
+    font-size: xx-large;
 }
 
 .phone-mode .heading-underline {

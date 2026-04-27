@@ -14,6 +14,8 @@ import Contact from "./components/Contact/Contact";
 import HSEFonts from "./components/ProjectsShowCase/HSEFontsPres/HSEFonts/HSEFonts";
 import Blumhouse from "./components/ProjectsShowCase/BlumhousePres/Blumhouse/Blumhouse";
 import Pigeon from "./components/WhyPigeon/Pigon";
+import { BrowserView, MobileView } from "react-device-detect";
+import PhoneMode from "./components/PhoneMode/PhoneMode";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
@@ -118,9 +120,14 @@ function AppContent() {
 export default function App() {
 	return (
 		<>
-			<BrowserRouter>
-				<AppContent />
-			</BrowserRouter>
+			<BrowserView>
+				<BrowserRouter>
+					<AppContent />
+				</BrowserRouter>
+			</BrowserView>
+			<MobileView>
+				<PhoneMode />
+			</MobileView>
 		</>
 	);
 }
