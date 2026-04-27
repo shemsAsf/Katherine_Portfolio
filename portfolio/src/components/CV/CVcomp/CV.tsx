@@ -31,7 +31,7 @@ export default function CV() {
                         decoratedIndex={9}
                         imageSrc={"/Img/Pigeons/speaking_pigeon.png"}
                         style={{
-                            transform: "translate(-23%, -110%)",
+                            transform: "translate(-23%, 0)",
                             width: "clamp(1rem, 7vw, 6rem)",
                         }}
                     />
