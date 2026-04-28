@@ -8,7 +8,7 @@ export default function Header() {
 	const navigate = useNavigate();
 	const [showNav, setShowNav] = useState(false);
 	const navRef = useRef<HTMLDivElement>(null);
-	const logoRef = useRef<HTMLDivElement>(null);
+	const logoRef = useRef<HTMLImageElement>(null);
 
 	useEffect(() => {
 		function handleClickOutside(event: MouseEvent) {
@@ -61,13 +61,20 @@ export default function Header() {
 		<div className="header-container">
 			<header>
 				<p className="hover-target" onClick={() => handleNavigate('/')}>ekaterina potapova</p>
-				<img src="/Img/Pigeons/header_pigeon.png" className="header-logo hover-target" alt="logo" onClick={() => setShowNav(!showNav)} />
+				<img
+					ref={logoRef}
+					src="/Img/Pigeons/header_pigeon.png"
+					className="header-logo hover-target"
+					alt="logo"
+					onClick={() => setShowNav(!showNav)}
+				/>
 
 				{showNav && (
 					<div className="nav-box" ref={navRef}>
-						<button className="hover-target" onClick={() => handleNavigate('/Contact')}>Contact me</button>
-						<button className="hover-target" onClick={handleClickPortfolio}>Portfolio</button>
-						<button className="hover-target" onClick={() => handleNavigate('/CV')}>CV page</button>
+						<button className="hover-target l-txt" onClick={() => handleNavigate('/Contact')}>Contact me</button>
+						<button className="hover-target l-txt" onClick={handleClickPortfolio}>Portfolio</button>
+						<button className="hover-target l-txt" onClick={() => handleNavigate('/CV')}>CV page</button>
+						<button className="hover-target l-txt" onClick={() => handleNavigate('/Pigeon')}>Why Pigeon ?</button>
 					</div>
 				)}
 			</header>

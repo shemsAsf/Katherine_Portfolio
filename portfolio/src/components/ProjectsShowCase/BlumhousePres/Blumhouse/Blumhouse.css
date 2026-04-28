@@ -1,0 +1,61 @@
+.blumhouse.project-text{
+    min-height: 80vh;
+}
+
+.blumhouse_content {
+    position: relative;
+    padding: 0 var(--default-left-spacing) 10vh;
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+}
+
+.blumhouse_content h1 {
+    color: var(--primary-color);
+}
+
+.blumhouse_content p {
+    width: 55%;
+    margin-top: 0;
+}
+
+
+.blumhouse_content p:nth-of-type(3) {
+    text-align: right;
+    width: 55%;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-bottom: 10vh;
+}
+
+.blumhouse-flex-gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.blumhouse-flex-gallery-img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    height: 50vh;
+    width: auto;
+    object-fit: cover;
+    min-width: 0;
+}
+
+.blumhouse-flex-gallery-wrapper .img-pos-1, 
+.blumhouse-flex-gallery-wrapper .img-pos-2, 
+.blumhouse-flex-gallery-wrapper .img-pos-3 {
+    width: 30%;
+    height: auto;
+}
+
+.blumhouse-flex-gallery-wrapper .img-pos-4,
+.blumhouse-flex-gallery-wrapper .img-pos-5{
+    height: 60vh;
+}
+.blumhouse-flex-gallery-wrapper .img-pos-6,
+.blumhouse-flex-gallery-wrapper .img-pos-7{
+    height: 65vh;
+}

@@ -4,10 +4,19 @@ import "./ChromaLab.css";
 import "../../ShowCase.css"
 import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
-import ChromaCarousel from "../ChromaCarousel/ChromaCarousel";
 import ChromaBody from "../ChromaBody/ChromaBody";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
+import Carousel from "@/components/layout/CircularGallery/CircularGallery";
+
+const imageNames = [
+    "/Img/ChromaLab/Tower.png",
+    "/Img/ChromaLab/Button.png",
+    "/Img/ChromaLab/Traps.png",
+    "/Img/ChromaLab/LastLvl.png",
+    "/Img/ChromaLab/Levers.png",
+    "/Img/ChromaLab/Barrel.png",
+];
 
 export default function ChromaLab() {
     return (
@@ -20,24 +29,24 @@ export default function ChromaLab() {
                 paragraph={(
                     <>
                         <p>
-                            The game about two cute characters, who are trying to escape a
-                            laboratory where they are being held as lab rats. The “Chroma
-                            Laboratory” is known for producing toxic paint which gives the
-                            special abilities depending on the color.
+                            The game about two cute characters, who are <strong>trying to escape a
+                                laboratory</strong> where they are <strong>being held as lab rats.</strong> The <strong>"Chroma
+                                    Laboratory"</strong> is known for producing <strong>toxic paint which gives
+                                        the special abilities</strong> depending on the color.
                         </p>
                         <p>
-                            In the story, the paint had to be tested before real life use,
-                            therefore the special test subjects were invented. You are
-                            playing as the test subject and have to proceed through all the
+                            <strong>In the story,</strong> the paint had to be tested before real life use,
+                            therefore the special test subjects were invented. <strong>You are
+                                playing as the test subject</strong> and have to proceed through all the
                             test chambers to escape.
                         </p>
                     </>
                 )}
                 components={[
-                    "<strong>3D object</strong> modeling using Blender",
-                    "<strong>Texturing</strong> using Substance Painter",
-                    "Audio work in <strong>Adobe Audition</strong>",
-                    "<strong>Light and scenes</strong>, as well as <strong>gameplay using Unreal Engine 5</strong>"
+                    "**3D object** modeling using Blender",
+                    "**Texturing** using Substance Painter",
+                    "Audio work in **Adobe Audition**",
+                    "**Light and scenes**, as well as **gameplay using Unreal Engine 5**"
                 ]}
                 images={[
                     "/Img/CompLogo/Unreal.png",
@@ -47,7 +56,7 @@ export default function ChromaLab() {
                     "/Img/CompLogo/AfterEffect.png",
                 ]} />
 
-            <div className="cl-snd">
+            <div className="type1-snd">
                 <div className="project-text">
                     <h1>
                         <DecoratedText
@@ -57,9 +66,11 @@ export default function ChromaLab() {
                         />
                     </h1>
                     <br />
-                    <div className="project-text-flex chroma">
+                    <br />
+                    <br />
+                    <div className="project-text-flex type1">
                         <p className="sm-txt">
-                            The game made in <strong>Unreal Engine</strong>
+                            The game made in <strong>Unreal Engine </strong>
                             from scratch. Using Blender as a 3d modeling tool
                             and for rigging and animations, and Substance Painter
                             for texturing, I made an environment.
@@ -71,13 +82,12 @@ export default function ChromaLab() {
                         </p>
                     </div>
                 </div>
-                <ChromaCarousel />
+                <Carousel images={ imageNames } />
             </div>
             <RoundCover bg_color="var(--primary-color)" color="white" />
             <ChromaBody />
-            <RoundCover bg_color="white" color="var(--primary-color)" />
             <YouTubeEmbed
-                src="https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"
+                srcs={["https://www.youtube.com/embed/_w22oAPhTj4?si=l03lbVMrLALCvoBj"]}
                 color="var(--primary-color)"
                 text_color="white" />
         </div>

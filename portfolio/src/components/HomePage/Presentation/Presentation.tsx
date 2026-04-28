@@ -4,7 +4,7 @@ import DecoratedText from '@/components/DecoratedText/DecoratedText';
 
 const projects: ProjectBlockProps[] = [
 	{
-		title: 'Chroma Lab Experiment',
+		title: '"Chroma Lab Experiment"',
 		subtitle: 'Video Game Development in Unreal Engine',
 		link: '/Chroma_Lab_Experiment',
 		background: '/Img/chromaLabBG.png',
@@ -17,7 +17,7 @@ const projects: ProjectBlockProps[] = [
 		],
 	},
 	{
-		title: 'Ouch by<br>BMTH',
+		title: '"Ouch" by BMTH',
 		subtitle: 'Music Video in Blender',
 		link: '/ouch',
 		background: '/Img/OuchBG.png',
@@ -27,7 +27,7 @@ const projects: ProjectBlockProps[] = [
 		]
 	},
 	{
-		title: 'Alice in the Wonderland',
+		title: '"Alice in the Wonderland"',
 		subtitle: 'Animation in After Effects',
 		link: '/alice',
 		background: '/Img/AliceBG.png',
@@ -35,6 +35,26 @@ const projects: ProjectBlockProps[] = [
 			"/Img/CompLogo/Audition.png",
 			"/Img/CompLogo/AfterEffect.png",
 			"/Img/CompLogo/Illustrator.png",
+		]
+	},
+	{
+		title: '"HSE Fonts"',
+		subtitle: 'Animation in After Effects',
+		link: '/HSEFonts',
+		background: '/Img/HSEFonts.png',
+		images: [
+			"/Img/CompLogo/AfterEffect.png",
+			"/Img/CompLogo/Illustrator.png",
+		]
+	},
+	{
+		title: '"Blumhouse Productions"',
+		subtitle: 'Movie opening in Blender',
+		link: '/Blumhouse',
+		background: '/Img/Blumhouse.png',
+		images: [
+			"/Img/CompLogo/Blender.png",
+			"/Img/CompLogo/AfterEffect.png",
 		]
 	},
 ];

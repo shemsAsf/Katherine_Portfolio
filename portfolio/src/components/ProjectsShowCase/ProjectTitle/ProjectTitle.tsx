@@ -1,5 +1,6 @@
 "use client";
 
+import { renderText } from "@/Helper/TextRenderer";
 import "../ShowCase.css"
 
 interface ProjectTitleProps {
@@ -37,19 +38,19 @@ export default function ProjectTitle({
                             <h2>{subtitle}</h2>
                         </div>
                         <div className="project-title-children-wrapper">
-                            <div className="project-title-children project-title-paragraph">{paragraph}</div>
+                            <div className="project-title-children project-title-paragraph tit-sm-txt">{paragraph}</div>
                             <div className="project-title-children project-title-components-wrapper">
-                                <img src="/Img/Pigeons/speaking_pigeon.png" className="project-title-pigeon" alt="speaking-pigeon" />
-                                <div>
-                                    <div className="project-title-comp-imgs">
-                                        {images.map((src) => (
-                                            <img src={src} className="project-title-comp-img" alt="logo" />
-                                        ))}
-                                    </div>
+                                <div className="project-title-comp-imgs">
+                                    {images.map((src) => (
+                                        <img src={src} className="project-title-comp-img" alt="logo" />
+                                    ))}
+                                </div>
+                                <div className="project-title-pigeon-list">
+                                    <img src="/Img/Pigeons/speaking_pigeon.png" className="project-title-pigeon" alt="speaking-pigeon" />
 
-                                    <ul className="components-list">
+                                    <ul className="components-list tit-sm-txt">
                                         {components.map((item, idx) => (
-                                            <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+                                            <li key={idx}>{renderText(item)}</li>
                                         ))}
                                     </ul>
                                 </div>

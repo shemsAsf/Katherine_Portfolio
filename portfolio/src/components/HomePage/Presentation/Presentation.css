@@ -1,5 +1,5 @@
 .presentation-container {
-  margin-left: 4%;
+  margin: 0 4%;
 }
 
 div.presentation {
@@ -16,11 +16,26 @@ h1.presentation {
 }
 
 .project-container {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    flex-wrap: wrap;
-    gap: 3vw;
-    margin-top: 8vh;
-    margin-bottom: 25vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8vh;
+  margin-bottom: 25vh;
+  margin-left: var(--default-left-spacing);
+  flex-wrap: wrap;
+  row-gap: var(--default-left-spacing);
+  transform: translateX(-4%);
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+    flex-wrap: unset;
+    transform: none;
+    padding: 0;
+    box-sizing: border-box;
+    grid-gap: 5vw;
+    width: 100%
+  }
 }

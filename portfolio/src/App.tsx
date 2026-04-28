@@ -10,9 +10,12 @@ import Ouch from '@/components/ProjectsShowCase/OuchPres/Ouch/Ouch';
 import Alice from '@/components/ProjectsShowCase/AlicePres/Alice/Alice';
 import CV from "@/components/CV/CVcomp/CV";
 import MouseFollower from "./components/layout/MouseTracker/MouseFollower";
+import Contact from "./components/Contact/Contact";
+import HSEFonts from "./components/ProjectsShowCase/HSEFontsPres/HSEFonts/HSEFonts";
+import Blumhouse from "./components/ProjectsShowCase/BlumhousePres/Blumhouse/Blumhouse";
+import Pigeon from "./components/WhyPigeon/Pigon";
 import { BrowserView, MobileView } from "react-device-detect";
 import PhoneMode from "./components/PhoneMode/PhoneMode";
-import Contact from "./components/Contact/Contact";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
@@ -39,7 +42,7 @@ function AppContent() {
 
 			const videoPromises = videos.map(video =>
 				new Promise(resolve => {
-					if (video.readyState >= 4) return resolve(true); // HAVE_ENOUGH_DATA
+					if (video.readyState >= 4) return resolve(true);
 					video.addEventListener('canplaythrough', () => resolve(true), { once: true });
 					video.addEventListener('error', () => resolve(true), { once: true });
 				})
@@ -83,8 +86,11 @@ function AppContent() {
 				<Route path="/" element={<AboutMe />} />
 				<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
 				<Route path="/Ouch" element={<Ouch />} />
+				<Route path="/HSEFonts" element={<HSEFonts />} />
+				<Route path="/Blumhouse" element={<Blumhouse />} />
 				<Route path="/Alice" element={<Alice />} />
 				<Route path="/CV" element={<CV />} />
+				<Route path="/Pigeon" element={<Pigeon />} />
 				<Route path="/Contact" element={<Contact />} />
 			</Routes>
 			{location.pathname !== '/Contact' && <Footer />}

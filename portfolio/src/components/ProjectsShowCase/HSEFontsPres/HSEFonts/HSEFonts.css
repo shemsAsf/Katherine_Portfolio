@@ -1,0 +1,32 @@
+.hseFonts .type1-snd{
+    min-height: 0;
+}
+
+.hseFonts .type1-snd .sm-txt{
+    margin-bottom: 7vh;
+    margin-top: 8vh;
+}
+
+.hsefont_content {
+    padding: 0 var(--default-left-spacing);
+    box-sizing: border-box;
+    color: black;
+    overflow-x: hidden;
+}
+
+.hsefont_content h1 {
+    color: var(--primary-color);
+}
+
+.hsefont_content .m-txt {
+    width: 40%;
+    margin-top: 0;
+}
+
+.hsefonticons {
+    position: relative;
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 60%;
+}

@@ -1,0 +1,39 @@
+.card-swap-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+}
+
+.card-swap-container {
+  perspective: 1200px;
+  height: 100%;
+  width: 100%;
+  margin-top: 40%;
+}
+
+.fan-card {
+  width: 45vw;
+  height: auto;
+}
+
+.fan-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  z-index: 9;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .card-swap-container {
+    width: 90vw;
+  }
+
+  .fan-card {
+    width: 90vw;
+    height: auto;
+  }
+}

@@ -1,17 +1,17 @@
-.decorated-text {
-  position: relative;
-}
-
 .letter-wrapper {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .letter-image {
   position: absolute;
-  top: 50%;
+  bottom: 57%; 
   left: 50%;
-  transform: translate(-50%, -115%);
-  width: clamp(1rem, 5.5vw, 5rem);
+  transform: translateX(-50%);
+  width: 0.8em; 
   height: auto;
+  z-index: 20;
+  pointer-events: none;
 }
