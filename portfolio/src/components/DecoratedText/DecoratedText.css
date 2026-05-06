@@ -7,10 +7,10 @@
 
 .letter-image {
   position: absolute;
-  bottom: 57%; 
+  bottom: 57%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 0.8em; 
+  transform: translateX(calc(-50% + var(--tx, 0em))) translateY(var(--ty, 0em));
+  width: 0.8em;
   height: auto;
   z-index: 20;
   pointer-events: none;

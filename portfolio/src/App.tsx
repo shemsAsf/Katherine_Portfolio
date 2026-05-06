@@ -16,6 +16,10 @@ import Blumhouse from "./components/ProjectsShowCase/BlumhousePres/Blumhouse/Blu
 import Pigeon from "./components/WhyPigeon/Pigon";
 import { BrowserView, MobileView } from "react-device-detect";
 import PhoneMode from "./components/PhoneMode/PhoneMode";
+import ProjectBuilder from "./projects/ProjectBuilder";
+import Builder from "./projects/builder/Builder";
+import { AuthGuard } from "./Helper/AuthGuard";
+import ProjectManager from "./projects/ProjectManager";
 
 function AppContent() {
 	const [loading, setLoading] = useState(true);
@@ -84,14 +88,21 @@ function AppContent() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<AboutMe />} />
-				<Route path="/Chroma_Lab_Experiment" element={<ChromaLab />} />
-				<Route path="/Ouch" element={<Ouch />} />
-				<Route path="/HSEFonts" element={<HSEFonts />} />
-				<Route path="/Blumhouse" element={<Blumhouse />} />
-				<Route path="/Alice" element={<Alice />} />
+
+				<Route path="/project/:id" element={<ProjectBuilder/>} />
+				<Route
+					path="/Builder"
+					element={
+						<AuthGuard>
+							<ProjectManager />
+						</AuthGuard>
+					}
+				/>
+
 				<Route path="/CV" element={<CV />} />
 				<Route path="/Pigeon" element={<Pigeon />} />
 				<Route path="/Contact" element={<Contact />} />
+
 			</Routes>
 			{location.pathname !== '/Contact' && <Footer />}
 

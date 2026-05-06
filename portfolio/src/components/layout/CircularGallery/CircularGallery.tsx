@@ -3,9 +3,10 @@ import "./CircularGallery.css"
 
 interface CarouselProps {
     images: string[];
+    backgroundColor: string;
 }
 
-export default function Carousel({ images }: CarouselProps) {
+export default function Carousel({ images, backgroundColor }: CarouselProps) {
     const groupRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -64,7 +65,11 @@ export default function Carousel({ images }: CarouselProps) {
     }, []);
 
     return (
-        <div className="circ-car">
+        <div
+            className="circ-car"
+            style={{
+                ["--background-color" as any]: backgroundColor,
+            }}>
             <div className="circ-car-group" ref={groupRef}>
                 {[...images, ...images, ...images].map((item, i) => (
                     <img src={item} key={i} className="circ-car-card" alt="" />

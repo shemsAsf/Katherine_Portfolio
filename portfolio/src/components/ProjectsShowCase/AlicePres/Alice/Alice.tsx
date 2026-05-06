@@ -2,8 +2,8 @@
 
 import "./Alice.css";
 import "../../ShowCase.css"
-import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
-import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
+import ProjectTitle from "@/projects/components/ProjectTitle";
+import YouTubeEmbed from "@/projects/components/YouTubeEmbeded";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import Gallery from "@/components/layout/Gallery/Gallery";
 import Carousel from "@/components/layout/CircularGallery/CircularGallery";
@@ -33,7 +33,7 @@ export default function Alice() {
 
 	return (
 		<>
-			<ProjectTitle
+			{/* <ProjectTitle
 				title={['“Alice in the Wonderland”']}
 				subtitle="Animation in After Effects"
 				backgroundImage="/Img/Alice/AliceBackground.png"
@@ -66,7 +66,7 @@ export default function Alice() {
 					"/Img/CompLogo/Audition.png",
 					"/Img/CompLogo/AfterEffect.png",
 					"/Img/CompLogo/Illustrator.png",
-				]} />
+				]} /> */}
 
 
 			<div className="alice-caroussel-wrapper">

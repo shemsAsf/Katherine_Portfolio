@@ -6,9 +6,10 @@ interface DecoratedTextProps {
   decoratedIndex: number;
   imageSrc: string;
   style?: React.CSSProperties;
+  translation?: { x: number; y: number };
 }
 
-export default function DecoratedText({text, decoratedIndex, imageSrc, style={}} : DecoratedTextProps) {
+export default function DecoratedText({ text, decoratedIndex, imageSrc, translation }: DecoratedTextProps) {
   if (decoratedIndex < 0 || decoratedIndex >= text.length) {
     console.error('decoratedIndex is out of range.');
     return <span>{text}</span>;
@@ -23,7 +24,15 @@ export default function DecoratedText({text, decoratedIndex, imageSrc, style={}}
       {before}
       <span className="letter-wrapper">
         {decoratedLetter}
-        <img src={imageSrc} alt='' className="letter-image" style={style}/>
+        <img
+          src={imageSrc}
+          alt=""
+          className="letter-image"
+          style={translation ? {
+            "--tx": `${translation.x}em`,
+            "--ty": `${translation.y}em`,
+          } as React.CSSProperties : undefined}
+        />
       </span>
       {after}
     </span>

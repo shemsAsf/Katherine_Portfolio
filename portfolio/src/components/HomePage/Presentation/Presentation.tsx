@@ -1,65 +1,43 @@
 import ProjectBlock, { ProjectBlockProps } from '@/components/HomePage/ProjectBlocks/ProjectBlock';
 import './Presentation.css';
 import DecoratedText from '@/components/DecoratedText/DecoratedText';
-
-const projects: ProjectBlockProps[] = [
-	{
-		title: '"Chroma Lab Experiment"',
-		subtitle: 'Video Game Development in Unreal Engine',
-		link: '/Chroma_Lab_Experiment',
-		background: '/Img/chromaLabBG.png',
-		images: [
-			"/Img/CompLogo/Unreal.png",
-			"/Img/CompLogo/Blender.png",
-			"/Img/CompLogo/Audition.png",
-			"/Img/CompLogo/Substance painter.png",
-			"/Img/CompLogo/AfterEffect.png",
-		],
-	},
-	{
-		title: '"Ouch" by BMTH',
-		subtitle: 'Music Video in Blender',
-		link: '/ouch',
-		background: '/Img/OuchBG.png',
-		images: [
-			"/Img/CompLogo/Blender.png",
-			"/Img/CompLogo/AfterEffect.png"
-		]
-	},
-	{
-		title: '"Alice in the Wonderland"',
-		subtitle: 'Animation in After Effects',
-		link: '/alice',
-		background: '/Img/AliceBG.png',
-		images: [
-			"/Img/CompLogo/Audition.png",
-			"/Img/CompLogo/AfterEffect.png",
-			"/Img/CompLogo/Illustrator.png",
-		]
-	},
-	{
-		title: '"HSE Fonts"',
-		subtitle: 'Animation in After Effects',
-		link: '/HSEFonts',
-		background: '/Img/HSEFonts.png',
-		images: [
-			"/Img/CompLogo/AfterEffect.png",
-			"/Img/CompLogo/Illustrator.png",
-		]
-	},
-	{
-		title: '"Blumhouse Productions"',
-		subtitle: 'Movie opening in Blender',
-		link: '/Blumhouse',
-		background: '/Img/Blumhouse.png',
-		images: [
-			"/Img/CompLogo/Blender.png",
-			"/Img/CompLogo/AfterEffect.png",
-		]
-	},
-];
+import { useEffect, useState } from 'react';
+import { fetchIndex } from '@/projects/builder/BuilderApi';
 
 export default function Presentation() {
+	const [projects, setProjects] = useState<ProjectBlockProps[]>([]);
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		const loadProjects = async () => {
+			try {
+				const indexEntries = await fetchIndex();
+
+				const sortedEntries = indexEntries.sort((a, b) => a.id - b.id);
+
+				const mappedProjects: ProjectBlockProps[] = sortedEntries
+					.filter(entry => entry.visible)
+					.map(entry => ({
+						title: entry.title,
+						subtitle: entry.subtitle,
+						link: `/Project/${entry.id}`,
+						background: entry.cover,
+						images: entry.tools || []
+					}));
+
+				setProjects(mappedProjects);
+			} catch (err) {
+				console.error("Failed to load projects:", err);
+			} finally {
+				setLoading(false);
+			}
+		};
+
+		loadProjects();
+	}, []);
+
+	if (loading) return <div>Loading...</div>;
+
 	return (
 		<div className='presentation-container'>
 			<div>

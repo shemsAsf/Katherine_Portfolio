@@ -2,11 +2,11 @@
 
 import "./HSEFonts.css";
 import "../../ShowCase.css"
-import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
-import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
+import ProjectTitle from "@/projects/components/ProjectTitle";
+import YouTubeEmbed from "@/projects/components/YouTubeEmbeded";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
-import HSEFontsIcons from "./HSEFontsIcons";
+import HSEFontsIcons from "../../../../projects/components/HSEFontsIcons";
 import Gallery from "@/components/layout/Gallery/Gallery";
 
 export default function HSEFonts() {
@@ -21,7 +21,7 @@ export default function HSEFonts() {
 
     return (
         <div className="hseFonts">
-            <ProjectTitle
+            {/* <ProjectTitle
                 title={['"HSE', 'Fonts"']}
                 subtitle="Reels in After Effects"
                 backgroundImage="/Img/HSEFontsBG.png"
@@ -48,7 +48,7 @@ export default function HSEFonts() {
                 images={[
                     "/Img/CompLogo/AfterEffect.png",
                     "/Img/CompLogo/Illustrator.png",
-                ]} />
+                ]} /> */}
 
 
             <div className="type1-snd">

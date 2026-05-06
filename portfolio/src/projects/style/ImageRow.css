@@ -1,0 +1,29 @@
+.dynamic-image-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - (var(--default-left-spacing) * 2));
+    height: max-content;
+    padding: 0 var(--default-left-spacing);
+    justify-content: var(--align-mobile);
+    --gap: 8px;
+    gap: var(--gap);
+}
+
+.row-img {
+    object-fit: cover;
+    flex: 1 1 calc(var(--width-mobile) - var(--gap-offset));
+    height: var(--height-mobile);
+    min-width: 0;
+}
+
+@media (min-width: 768px) {
+    .dynamic-image-row {
+        justify-content: var(--align-desktop);
+    }
+
+    .row-img {
+        flex: 1 1 calc(var(--width-desktop) - var(--gap-offset));
+        height: var(--height-desktop);
+    }
+
+}

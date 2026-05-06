@@ -2,8 +2,8 @@
 
 import "../../ShowCase.css"
 import "./Blumhouse.css"
-import ProjectTitle from "@/components/ProjectsShowCase/ProjectTitle/ProjectTitle";
-import YouTubeEmbed from "@/components/layout/YouTubeEmbeded/YouTubeEmbeded";
+import ProjectTitle from "@/projects/components/ProjectTitle";
+import YouTubeEmbed from "@/projects/components/YouTubeEmbeded";
 import DecoratedText from "@/components/DecoratedText/DecoratedText";
 import CardsFan from "@/components/layout/CardSwap/CardFan";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
@@ -34,7 +34,7 @@ const Gallery2: string[] = [
 export default function Blumhouse() {
     return (
         <div>
-            <ProjectTitle
+            {/* <ProjectTitle
                 title={['“Blumhouse Productions“']}
                 subtitle="Movie opening in Blender"
                 backgroundImage="/Img/BlumhouseBG.png"
@@ -63,7 +63,7 @@ export default function Blumhouse() {
                 images={[
                     "/Img/CompLogo/Blender.png",
                     "/Img/CompLogo/AfterEffect.png",
-                ]} />
+                ]} /> */}
 
 
             <div className="type1-snd">

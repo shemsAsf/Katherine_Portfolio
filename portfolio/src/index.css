@@ -48,12 +48,12 @@ h3 {
   width: 100%;
 }
 
-.tit-sm-txt {
-  font-size: clamp(1rem, 1.6vw, 2rem);
-}
-
 .l-txt {
   font-size: clamp(.6rem, 1.2vw, 1.6rem);
+}
+
+.tit-sm-txt {
+  font-size: clamp(1rem, 1.6vw, 2rem);
 }
 
 code {
