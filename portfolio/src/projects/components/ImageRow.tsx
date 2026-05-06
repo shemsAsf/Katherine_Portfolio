@@ -1,4 +1,3 @@
-import React from "react";
 import "../style/ImageRow.css";
 import { resolveResponsive, ResponsiveProp } from "@/Helper/TextRenderer";
 
@@ -37,16 +36,11 @@ export default function ImageRow({ images, align, uniformHeight }: ImageRowProps
             {images.map((img: any, index: number) => {
                 const resWidth = resolveResponsive(img.width);
 
-                // const widthM = resHeight.m ? "auto" : (resWidth.m ? `${resWidth.m}%` : "auto");
-                // const heightM = resHeight.m ? `${resHeight.m}vh` : "auto";
-
-                // const widthD = resHeight.d ? "auto" : (resWidth.d ? `${resWidth.d}%` : "auto");
-                // const heightD = resHeight.d ? `${resHeight.d}vh` : "auto";
-
                 return (
                     <img
                         key={index}
                         src={img.url}
+                        alt={img.url}
                         className="row-img"
                         style={{
                             ['--width-mobile' as any]: `${resWidth.m}%`,

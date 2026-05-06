@@ -1,6 +1,5 @@
 import DecoratedText from "@/projects/components/DecoratedText";
 import CardsFan from "@/components/layout/CardSwap/CardFan";
-import Carousel from "@/components/layout/CircularGallery/CircularGallery";
 import { separateParagraphs } from "@/Helper/TextRenderer";
 
 export default function ProjectDetailsFan({ paragraphs, images, backgroundColor = 'var(--primary-color)', textColor = "white" }:

@@ -3,7 +3,7 @@ import RoundCover from "@/components/layout/RoundCover/RoundCover";
 import ImageRow, { ImageRowProps } from "./components/ImageRow";
 import Gallery, { GalleryProps } from "./components/Gallery";
 import ProjectDetailsFan from "./components/ProjectDetailsFan";
-import TextBlock, { TextBlockProps } from "./components/TextBlock";
+import TextBlock from "./components/TextBlock";
 import YouTubeEmbed, { YouTubeEmbedProps } from "@/projects/components/YouTubeEmbeded";
 import Title from "./components/Title";
 import PigeonTitle from "./components/PigeonTitle";

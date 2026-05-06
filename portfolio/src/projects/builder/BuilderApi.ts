@@ -1,5 +1,3 @@
-import { Console } from "console";
-
 const API = process.env.REACT_APP_API_URL;
 
 export interface IndexEntry {
@@ -70,7 +68,6 @@ export async function uploadImage(
     role: string,
     file: File
 ): Promise<string> {
-    const ext = file.name.split(".").pop();
     const form = new FormData();
     form.append("file", file);
     form.append("role", role);
