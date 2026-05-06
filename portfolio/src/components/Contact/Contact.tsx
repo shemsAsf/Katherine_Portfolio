@@ -1,5 +1,5 @@
 import './Contact.css';
-import DecoratedText from '../DecoratedText/DecoratedText';
+import DecoratedText from '../../projects/components/DecoratedText';
 import RoundCover from '../layout/RoundCover/RoundCover';
 
 export default function Contact() {

@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import "./AboutMe.css";
 import Presentation from "@/components/HomePage/Presentation/Presentation";
 import { ChevronDown, Volume2, VolumeX } from 'lucide-react';
-import DecoratedText from "@/components/DecoratedText/DecoratedText";
+import DecoratedText from "@/projects/components/DecoratedText";
 import RoundCover from "@/components/layout/RoundCover/RoundCover";
 
 export default function AboutMe() {

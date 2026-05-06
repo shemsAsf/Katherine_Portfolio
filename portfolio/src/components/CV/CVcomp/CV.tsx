@@ -1,7 +1,7 @@
 import ToolsGrid from "../ToolsGrid/ToolsGrid";
 import Timeline from "../Timeline/Timeline"; // <-- import it here
 import "./CV.css";
-import DecoratedText from "@/components/DecoratedText/DecoratedText";
+import DecoratedText from "@/projects/components/DecoratedText";
 
 export default function CV() {
     const workTimeline = [

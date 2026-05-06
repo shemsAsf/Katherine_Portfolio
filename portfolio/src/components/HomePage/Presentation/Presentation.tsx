@@ -1,6 +1,6 @@
 import ProjectBlock, { ProjectBlockProps } from '@/components/HomePage/ProjectBlocks/ProjectBlock';
 import './Presentation.css';
-import DecoratedText from '@/components/DecoratedText/DecoratedText';
+import DecoratedText from '@/projects/components/DecoratedText';
 import { useEffect, useState } from 'react';
 import { fetchIndex } from '@/projects/builder/BuilderApi';
 

@@ -1,4 +1,4 @@
-import DecoratedText from "@/components/DecoratedText/DecoratedText";
+import DecoratedText from "@/projects/components/DecoratedText";
 import "../style/Titles.css";
 import { resolveResponsive, ResponsiveProp } from "@/Helper/TextRenderer";
 

@@ -1,4 +1,4 @@
-import DecoratedText from "@/components/DecoratedText/DecoratedText";
+import DecoratedText from "@/projects/components/DecoratedText";
 import "../style/YouTubeEmbeded.css"
 
 export interface YouTubeEmbedProps {

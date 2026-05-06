@@ -1,5 +1,5 @@
 import React from 'react';
-import './DecoratedText.css';
+import '../style/DecoratedText.css';
 
 interface DecoratedTextProps {
   text: string;

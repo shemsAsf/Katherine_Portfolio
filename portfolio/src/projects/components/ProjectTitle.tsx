@@ -1,7 +1,7 @@
 "use client";
 
 import { renderText, separateParagraphs } from "@/Helper/TextRenderer";
-import "../../components/ProjectsShowCase/ShowCase.css"
+import "../style/ShowCase.css"
 
 export interface ProjectTitleProps {
     title: string[];
