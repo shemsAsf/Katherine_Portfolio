@@ -26,12 +26,6 @@ export default function ProjectManager() {
         }
     };
 
-    const toggleVisibility = (id: number) => {
-        setProjects(prev => prev.map(p =>
-            p.id === id ? { ...p, visible: !p.visible } : p
-        ));
-    };
-
     const handleAddNew = () => {
         const maxId = projects.length > 0
             ? Math.max(...projects.map(p => p.id))
@@ -47,7 +41,7 @@ export default function ProjectManager() {
                     setNewProjectId(null);
                     loadProjects();
                 }}>
-                    ← Back to Dashboard
+                    &lt; Back to Dashboard
                 </button>
                 <Builder
                     index={editingProject ?? undefined}
@@ -59,14 +53,9 @@ export default function ProjectManager() {
 
     return (
         <div className="project-dashboard">
-            <header className="dashboard-header">
+            <div className="dashboard-header">
                 <h1>Design Projects</h1>
-                <div>
-                    <button className="add-btn" onClick={handleAddNew}>
-                        + Add New Project
-                    </button>
-                </div>
-            </header>
+            </div>
 
             {loading ? <p>Loading projects...</p> : (
                 <ul className="project-list">
@@ -85,6 +74,13 @@ export default function ProjectManager() {
                     ))}
                 </ul>
             )}
+
+            
+                <div className="add-btn-div">
+                    <button className="add-btn" onClick={handleAddNew}>
+                        + Add New Project
+                    </button>
+                </div>
         </div>
     );
 }

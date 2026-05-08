@@ -223,9 +223,12 @@ export default function Builder({ index, newId }: BuilderProps) {
             // 3 — Resolve Tools in index
             var finalIndex: IndexEntry = ({
                 ...indexEntry,
+                id: projectId,
                 cover: coverUrl,
                 tools: [...new Set(indexEntry.tools.map(v => toolOptions.find(t => t.name === v)?.url))]
             } as IndexEntry);
+
+            console.log(finalIndex)
 
             // 4 — Publish JSON
             setStatus("Saving project…");

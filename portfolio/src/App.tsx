@@ -59,7 +59,7 @@ function AppContent() {
 			} else {
 				window.addEventListener('load', checkMediaReady, { once: true });
 			}
-		}, 3000);
+		}, 1000);
 
 		return () => {
 			clearTimeout(timer);
@@ -78,7 +78,7 @@ function AppContent() {
 	return (
 		<div style={{ position: "relative" }}>
 			<ScrollToTop />
-			<MouseFollower />
+			{location.pathname !== '/Builder' && <MouseFollower />}
 			<Header />
 			<Routes>
 				<Route path="/" element={<AboutMe />} />
@@ -98,7 +98,7 @@ function AppContent() {
 				<Route path="/Contact" element={<Contact />} />
 
 			</Routes>
-			{location.pathname !== '/Contact' && <Footer />}
+			{!['/Contact', '/Builder'].includes(location.pathname) && <Footer />}
 
 			{showLoader && (
 				<div
