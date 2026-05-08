@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchIndex, IndexEntry, updateProjectVisibility } from "./builder/BuilderApi";
+import { fetchIndex, IndexEntry } from "./builder/BuilderApi";
 import Builder from "./builder/Builder";
 import "./style/ProjectManager.css"
 
@@ -30,15 +30,6 @@ export default function ProjectManager() {
         setProjects(prev => prev.map(p =>
             p.id === id ? { ...p, visible: !p.visible } : p
         ));
-    };
-
-    const handleSaveVisibility = async () => {
-        try {
-            const token = localStorage.getItem("ekaterina_token") ?? "";
-            await updateProjectVisibility(token, projects.map(p => ({ id: p.id, visible: p.visible })));
-        } catch (err) {
-            alert("Failed to save visibility");
-        }
     };
 
     const handleAddNew = () => {
@@ -74,10 +65,6 @@ export default function ProjectManager() {
                     <button className="add-btn" onClick={handleAddNew}>
                         + Add New Project
                     </button>
-
-                    <button className="save-btn" onClick={() => handleSaveVisibility()}>
-                        Save Status
-                    </button>
                 </div>
             </header>
 
@@ -90,13 +77,6 @@ export default function ProjectManager() {
                             </span>
 
                             <div className="project-actions">
-                                <button
-                                    className={`toggle-btn ${project.visible ? 'visible' : 'hidden'}`}
-                                    onClick={() => toggleVisibility(project.id)}
-                                >
-                                    {project.visible ? "👁 Show" : "👁‍🗨 Hide"}
-                                </button>
-
                                 <button className="edit-btn" onClick={() => setEditingProject(project)}>
                                     Edit Content
                                 </button>

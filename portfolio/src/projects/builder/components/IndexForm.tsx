@@ -8,12 +8,11 @@ interface Props {
     value: IndexFormValue;
     onChange: (v: IndexFormValue) => void;
     projectId: number;
-    onProjectIdChange: (id: number) => void;
     toolOptions: { name: string; url: string; }[];
     onToolAdded: (name: string, url: string) => void;
 }
 
-export function IndexForm({ value, onChange, projectId, onProjectIdChange, toolOptions, onToolAdded }: Props) {
+export function IndexForm({ value, onChange, projectId, toolOptions, onToolAdded }: Props) {
     const coverRef = useRef<HTMLInputElement>(null);
     const importRef = useRef<HTMLInputElement>(null);
 

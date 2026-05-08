@@ -151,6 +151,7 @@ export default function Builder({ index, newId }: BuilderProps) {
     const handlePublish = async () => {
         setPublishing(true);
         setStatus("Uploading images…");
+        console.log("index: ", indexEntry)
         try {
             // 1 — Upload cover if it's a File
             let coverUrl = indexEntry.cover as string;
@@ -158,7 +159,7 @@ export default function Builder({ index, newId }: BuilderProps) {
                 coverUrl = await uploadImage(token, projectId, "cover", indexEntry.cover);
             }
 
-            // 2 — Walk all blocks and upload any File props
+            // 2 — Walk all blocks and upload any File props or filter it's data
             const resolvedBlocks = await Promise.all(
                 blocks.map(async (block, bi) => {
                     const schema = schemaByType[block.type];
@@ -210,6 +211,7 @@ export default function Builder({ index, newId }: BuilderProps) {
                                 })
                             );
                         }
+                        // Keep only the urls
                         if (field.type === "toolsSelector") {
                             resolvedProps[field.key] = (val as string[]).map(v => toolOptions.find(t => t.name === v)?.url);
                         }
@@ -218,9 +220,16 @@ export default function Builder({ index, newId }: BuilderProps) {
                 })
             );
 
-            // 3 — Publish JSON
+            // 3 — Resolve Tools in index
+            var finalIndex: IndexEntry = ({
+                ...indexEntry,
+                cover: coverUrl,
+                tools: [...new Set(indexEntry.tools.map(v => toolOptions.find(t => t.name === v)?.url))]
+            } as IndexEntry);
+
+            // 4 — Publish JSON
             setStatus("Saving project…");
-            await publishProject(token, projectId, { ...indexEntry, cover: coverUrl } as IndexEntry, resolvedBlocks);
+            await publishProject(token, projectId, finalIndex, resolvedBlocks);
             setStatus("✓ Published successfully");
         } catch (e: unknown) {
             setStatus("✗ " + (e instanceof Error ? e.message : "Unknown error"));
@@ -239,7 +248,6 @@ export default function Builder({ index, newId }: BuilderProps) {
                     value={indexEntry}
                     onChange={setIndexEntry}
                     projectId={projectId}
-                    onProjectIdChange={setProjectId}
                     toolOptions={toolOptions}
                     onToolAdded={(name, url) => setToolOptions(prev => [...prev, { name, url }])}
                 />

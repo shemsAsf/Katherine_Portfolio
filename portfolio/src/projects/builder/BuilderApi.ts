@@ -22,10 +22,6 @@ export async function fetchIndex(): Promise<IndexEntry[]> {
     return data.projects;
 }
 
-export async function updateProjectVisibility(toke: string, updates: { id: number; visible: boolean }[]) {
-    // TO IMPLEMENT
-}
-
 export function getDictFromPath(url: string): { name: string; url: string; } {
     const filename = url.split("/").pop() ?? url;
     return { name: filename.replace(/\.png$/i, ""), url };
