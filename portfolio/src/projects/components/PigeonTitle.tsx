@@ -6,7 +6,7 @@ export default function PigeonTitle({ text, color, index, pigeon, backgroundColo
     text: string;
     color: string;
     index: number;
-    pigeon: { url: string; translation?: { x: number; y: number } };
+    pigeon: { url: string; translation: { x: number; y: number } };
     backgroundColor?: string;
     align?: string | ResponsiveProp<string>
 }) {
@@ -21,16 +21,17 @@ export default function PigeonTitle({ text, color, index, pigeon, backgroundColo
                 ["--background-color" as any]: backgroundColor,
             }}
         >
+
+            {pigeon.translation &&
+                `${ pigeon.translation.x }, ${ pigeon.translation.y}`
+            }
+
             <h1 style={{ color, margin: 0 }}>
                 <DecoratedText
                     text={text}
                     decoratedIndex={index}
                     imageSrc={pigeon.url}
-                    {...(pigeon.translation && {
-                        style: {
-                            transform: `translate(${pigeon.translation.x}px, ${pigeon.translation.y}px)`
-                        }
-                    })}
+                    translation={pigeon.translation}
                 />
             </h1>
         </div>
