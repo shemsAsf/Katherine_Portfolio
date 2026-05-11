@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NumberInput from "./NumberInput";
 import DecoratedText from "@/projects/components/DecoratedText";
+import PigeonTitle from "@/projects/components/PigeonTitle";
 
 interface Props {
     value: PigeonValue;
@@ -34,6 +35,14 @@ export function PigeonSelectorField({ value, onChange, pigeonOptions }: Props) {
                     ))
                 }
             </div>
+            
+            <br/>
+
+            <label className="field-label">
+                CUSTOM TRANSLATION
+            </label>
+            
+            <br/>
 
             <div className="pigeon-translation">
                 <NumberInput
@@ -45,27 +54,45 @@ export function PigeonSelectorField({ value, onChange, pigeonOptions }: Props) {
                     onChange={y => onChange({ ...value, translation: { ...translation, y } })}
                 />
             </div>
+            
+            <br/>
+
+           <label className="field-label">
+                PREVIEW LETTER
+            </label>
+            
+            <br/>
+
+            <input
+                type="text"
+                value={previewLetter}
+                onChange={e => setPreviewLetter(e.target.value[0] || '')}
+            />
+
+            <br/>
+            <br/>
+
+            <label className="field-label">
+                PREVIEW
+            </label>  
+
+            <br/>
+            <br/>
 
             <div className="pigeon-preview">
                 {
-                    (previewLetter !== null) && 
+                    (previewLetter !== null) &&
                     (
-                        <h1 style={{ marginLeft: "var(--default-left-spacing)" }}>
-                            <DecoratedText
+                        <h1>
+                            <PigeonTitle
                                 text={previewLetter}
-                                decoratedIndex={0}
-                                imageSrc={value.url}
-                                translation={value.translation}
+                                index={0}
+                                pigeon={value}
+                                color="black"
                             />
                         </h1>
                     )
                 }
-
-                <input
-                    type="text"
-                    value={previewLetter}
-                    onChange={e => setPreviewLetter(e.target.value[0] || '')}
-                />
             </div>
         </div>
     );
