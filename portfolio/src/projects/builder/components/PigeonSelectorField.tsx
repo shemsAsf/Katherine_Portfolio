@@ -1,6 +1,5 @@
 import { useState } from "react";
 import NumberInput from "./NumberInput";
-import DecoratedText from "@/projects/components/DecoratedText";
 import PigeonTitle from "@/projects/components/PigeonTitle";
 
 interface Props {
