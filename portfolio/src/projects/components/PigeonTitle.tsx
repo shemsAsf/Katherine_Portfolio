@@ -21,11 +21,6 @@ export default function PigeonTitle({ text, color, index, pigeon, backgroundColo
                 ["--background-color" as any]: backgroundColor,
             }}
         >
-
-            {pigeon.translation &&
-                `${ pigeon.translation.x }, ${ pigeon.translation.y}`
-            }
-
             <h1 style={{ color, margin: 0 }}>
                 <DecoratedText
                     text={text}
