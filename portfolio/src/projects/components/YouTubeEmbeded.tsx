@@ -13,14 +13,6 @@ export default function YouTubeEmbed({ srcs, color, text_color }: YouTubeEmbedPr
             className="fullwidth-video-container"
             style={{ backgroundColor: color }}
         >
-            <br/>
-            <h1 style={{ color: text_color }}>
-                <DecoratedText
-                    text="video"
-                    decoratedIndex={4}
-                    imageSrc={color === "white" ? "/Img/Pigeons/hat_pigeon.png" : "/Img/Pigeons/hat_pigeon_white.png"}
-                />
-            </h1>
             <div className={`video-row count-${srcs.length}`}>
                 {srcs.map((src, i) => (
                     <iframe

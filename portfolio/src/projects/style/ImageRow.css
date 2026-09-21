@@ -10,10 +10,9 @@
 }
 
 .row-img {
-    object-fit: cover;
-    flex: 1 1 calc(var(--width-mobile) - var(--gap-offset));
-    height: var(--height-mobile);
-    min-width: 0;
+    width: calc(var(--width-mobile) - var(--gap-offset));
+    max-height: var(--height-mobile);
+    aspect-ratio: auto;
 }
 
 @media (min-width: 768px) {
@@ -22,8 +21,8 @@
     }
 
     .row-img {
-        flex: 1 1 calc(var(--width-desktop) - var(--gap-offset));
-        height: var(--height-desktop);
+        width: calc(var(--width-desktop) - var(--gap-offset));
+        max-height: var(--height-desktop);
+        aspect-ratio: auto;
     }
-
 }

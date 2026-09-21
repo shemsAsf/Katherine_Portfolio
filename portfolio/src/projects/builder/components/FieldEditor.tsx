@@ -314,6 +314,20 @@ export function FieldEditor({ field, value, onChange, toolOptions, pigeonOptions
                                         }}
                                     />
                                 </label>
+                                <input
+                                    className="field-input field-imagerow-url"
+                                    type="url"
+                                    placeholder="or paste a link"
+                                    value={typeof row.url === "string" ? row.url : ""}
+                                    onChange={e => {
+                                        const next = [...arr(value)];
+                                        next[i] = { ...row, url: e.target.value.trim() };
+                                        onChange(next);
+                                    }}
+                                />
+                                {typeof row.url === "string" && row.url && (
+                                    <img className="field-imagerow-preview" src={row.url} alt="" />
+                                )}
                                 <div className="field-input-wrapper">
                                     <label className="field-imagerow-width-label">
                                         <span>M</span>

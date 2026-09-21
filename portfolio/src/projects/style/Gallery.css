@@ -1,14 +1,14 @@
 .image-gallery {
-  columns: var(--columns, 3);
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 3), 1fr);
   gap: 2vw;
+  align-items: start;
   padding: var(--default-left-spacing);
 }
 
 .gallery-image {
   width: 100%;
   display: block;
-  margin-bottom: 2vw;
-  break-inside: avoid;
   border-radius: var(--default-rounded-corner);
   transition: transform 0.3s ease;
 }
