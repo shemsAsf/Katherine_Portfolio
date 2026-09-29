@@ -8,7 +8,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   font-weight: 400;
-  font-size: clamp(.6rem, 1.2vw, 1.6rem);
+  font-size: 1.2vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
@@ -16,44 +16,44 @@ body {
 }
 
 h1 {
-  font-size: clamp(2rem, 5.5vw, 8rem);
+  font-size: 5.5vw;
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 h2 {
-  font-size: clamp(1.2rem, 1.6vw, 2.5rem);
+  font-size: 1.66vw;
 }
 
 h3 {
-  font-size: clamp(.6rem, 1.2vw, 1.6rem);
+  font-size: 1.2vw;
 }
 
 .xxsm-txt {
-  font-size: clamp(.3rem, .6vw, 1.3rem);
+  font-size: .6vw;
 }
 
 .xsm-txt {
-  font-size: clamp(.4rem, .8vw, 1.4rem);
+  font-size: .8vw;
 }
 
 .sm-txt {
-  font-size: clamp(.6rem, 1vw, 1.6rem);
+  font-size: 1vw;
   width: 100%;
 }
 
 .m-txt {
-  font-size: clamp(.8rem, 1.5vw, 1.9rem);
+  font-size: 1.5vw;
   width: 100%;
 }
 
 .l-txt {
-  font-size: clamp(.6rem, 1.2vw, 1.6rem);
+  font-size: 1.2vw;
 }
 
 .tit-sm-txt {
-  font-size: clamp(1rem, 1.6vw, 2rem);
+  font-size: 1.5vw;
 }
 
 code {

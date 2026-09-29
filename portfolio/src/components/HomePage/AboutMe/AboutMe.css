@@ -70,6 +70,10 @@
 	background: var(--primary-color);
 }
 
+.about-me-title {
+	font-size:5.7vw;
+}
+
 .about-me-text {
 	width: 100%;
 	margin-top: auto;
@@ -78,6 +82,11 @@
 
 .about-me-container p {
 	margin-top: clamp(2rem, 6vh, 6rem);
+	font-size: 1.25vw;
+}
+
+.about-me-container h2 {
+	font-size: 1.25vw;
 }
 
 .about-me-text-para-thin {
@@ -87,7 +96,7 @@
 .kat-pic {
 	background-color: white;
 	width: 33vw;
-	height: 70%;
+	height: 50%;
 	border-radius: 60px 0 0 60px;
 	margin-left: auto;
 	align-self: center;
@@ -109,6 +118,7 @@
 	padding: 7vh 5vw;
 	padding-right: 0;
 	padding-top: 4vh;
+	margin-top: -1px;
 	display: grid;
 	z-index: 1;
 	grid-template-columns: 1fr 1fr;

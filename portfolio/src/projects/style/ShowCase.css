@@ -34,7 +34,7 @@
 }
 
 .project-title-title h1 {
-    font-size: clamp(5rem, 7.5vw, 9rem);
+    font-size: 7.3vw;
     line-height: 85%;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .project-title-comp-img {
-    height: clamp(30px, 3vw, 80px);
+    height: 2.5vw;
     margin-right: 1vw;
 }
 

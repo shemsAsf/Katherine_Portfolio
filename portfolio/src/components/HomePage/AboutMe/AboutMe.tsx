@@ -54,7 +54,7 @@ export default function AboutMe() {
 			<div className="about-me-background">
 				<div className="about-me-container">
 					<div className="a">
-						<h1>
+						<h1 className="about-me-title">
 							<DecoratedText
 								text="about me"
 								decoratedIndex={7}

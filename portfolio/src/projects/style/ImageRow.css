@@ -12,7 +12,7 @@
 .row-img {
     width: calc(var(--width-mobile) - var(--gap-offset));
     max-height: var(--height-mobile);
-    aspect-ratio: auto;
+    object-fit: contain;
 }
 
 @media (min-width: 768px) {
@@ -23,6 +23,5 @@
     .row-img {
         width: calc(var(--width-desktop) - var(--gap-offset));
         max-height: var(--height-desktop);
-        aspect-ratio: auto;
     }
 }
