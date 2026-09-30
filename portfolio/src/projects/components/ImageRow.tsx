@@ -9,9 +9,10 @@ export interface ImageRowProps {
     }[];
     align?: string | ResponsiveProp<string>;
     uniformHeight?: number | ResponsiveProp<number>;
+    backgroundColor?: string;
 }
 
-export default function ImageRow({ images, align, uniformHeight }: ImageRowProps) {
+export default function ImageRow({ images, align, uniformHeight, backgroundColor }: ImageRowProps) {
 
     const alignmentMap: any = {
         left: "flex-start",
@@ -31,6 +32,7 @@ export default function ImageRow({ images, align, uniformHeight }: ImageRowProps
                 ['--align-mobile' as any]: alignmentMap[resAlign.m as string] || "center",
                 ['--align-desktop' as any]: alignmentMap[resAlign.d as string] || "center",
                 ['--gap-offset' as any]: `8px`,
+                ['--backgroundColor' as any]: backgroundColor || "white",
             }}
         >
             {images.map((img: any, index: number) => {

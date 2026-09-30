@@ -7,6 +7,7 @@
     justify-content: var(--align-mobile);
     --gap: 8px;
     gap: var(--gap);
+    background-color: var(--backgroundColor);
 }
 
 .row-img {

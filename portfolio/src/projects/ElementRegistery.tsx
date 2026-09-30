@@ -99,8 +99,8 @@ const ImageElements = {
         <img src={url} alt={alt} style={{ width: "calc(100% - (2*var(--default-left-spacing))", borderRadius, margin: "0 var(--default-left-spacing)" }} />,
 
     // Horizontal row of images with per-image width control
-    imageRow: ({ images, align = "center", uniformHeight = 0 }: ImageRowProps) =>
-        <ImageRow images={images} align={align} uniformHeight={uniformHeight} />,
+    imageRow: ({ images, align = "center", uniformHeight = 0, backgroundColor = "white" }: ImageRowProps) =>
+        <ImageRow images={images} align={align} uniformHeight={uniformHeight} backgroundColor={backgroundColor} />,
 
     // Masonry-style image grid
     gallery: ({ rowAmount, images }: GalleryProps) =>

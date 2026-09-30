@@ -147,6 +147,7 @@ export const ELEMENT_SCHEMAS: ElementSchema[] = [
             { key: "images", label: "Images", type: "imageRowList", required: true },
             { key: "align", label: "Alignment", type: "options", default: "center", options: ["left", "center", "right", "between", "around"] },
             { key: "uniformHeight", label: "Uniform Height (vh)", type: "number", default: 0 },
+            { key: "backgroundColor", label: "Background Color", type: "color", default: "white" },
         ]
     },
     {
