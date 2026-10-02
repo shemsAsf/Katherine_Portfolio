@@ -21,15 +21,17 @@ export default function Footer() {
 	return (
 		<footer>
 			<div className="footer-div">
-				<p className="xxsm-txt">mail: katherineaston29@gmail.com</p>
-				<p className="xxsm-txt">whatsapp: +393383818706</p>
-				<p className="xxsm-txt">linkedin: Ekaterina Potapova</p>
-				<p className="xxsm-txt">behance: Katherine Aston</p>
+				<a href="mailto:katherinepotapof@gmail.com" className="xxsm-txt">mail: katherinepotapof@gmail.com</a>
+				<a href="https://wa.me/393383818706" className="xxsm-txt">whatsapp: +393383818706</a>
+				<a href="https://www.linkedin.com/in/katherine-aston/" className="xxsm-txt">linkedin: Ekaterina Potapova</a>
+				<a href="https://www.behance.net/katherineaston" className="xxsm-txt">behance: Ekaterina Potapova</a>
 			</div>
 			<div className="footer-img">
 				<img src="/Img/Pigeons/laptop_pigeon.png" className="footer-pigeon" alt="logo" />
 			</div>
-			<div className="xxsm-txt rotating-text footer-div">{RotatingText}</div>
+			<div className="xxsm-txt rotating-text footer-div">
+				<p className="xxsm-txt">{RotatingText}</p>
+			</div>
 		</footer>
 	);
 }
