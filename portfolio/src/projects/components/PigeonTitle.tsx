@@ -6,7 +6,7 @@ export default function PigeonTitle({ text, color, index, pigeon, backgroundColo
     text: string;
     color: string;
     index: number;
-    pigeon: { url: string; translation: { x: number; y: number } };
+    pigeon: { url: string; translation?: { x: number; y: number } };
     backgroundColor?: string;
     align?: string | ResponsiveProp<string>
 }) {
